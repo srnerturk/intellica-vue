@@ -52,6 +52,7 @@
             focus:border-b-gray-500
             pl-7
           "
+          v-model="user.username"
           type="text"
           placeholder="username"
         />
@@ -83,12 +84,16 @@
             focus:border-b-gray-500
             pl-7
           "
+          v-model="user.password"
           type="password"
           placeholder="password"
         />
       </div>
       <div class="action p-2 flex items-center justify-center">
-        <button class="bg-blue-800 text-amber-50 px-10 py-2 rounded-md">
+        <button
+          @click="signIn"
+          class="bg-blue-800 text-amber-50 px-10 py-2 rounded-md"
+        >
           Login
         </button>
       </div>
@@ -98,5 +103,18 @@
 <script>
 export default {
   name: "Login",
+  data() {
+    return {
+      user: {
+        username: "admin",
+        password: "password",
+      },
+    };
+  },
+  methods: {
+    signIn() {
+      this.$router.push({ name: "Home" });
+    },
+  },
 };
 </script>

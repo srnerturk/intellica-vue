@@ -38,7 +38,7 @@
         <h1 class="main-title">GSM</h1>
         <info-chart
           class="mt-5"
-          v-for="item in midChartData"
+          v-for="item in getDeviceInfoData"
           :key="item.id"
           :chartData="item"
         />
@@ -47,7 +47,7 @@
         <h1 class="main-title">WIFI</h1>
         <info-chart
           class="mt-5"
-          v-for="item in midChartData"
+          v-for="item in getDeviceInfoData"
           :key="item.id"
           :chartData="item"
         />
@@ -57,6 +57,7 @@
 </template>
 
 <script>
+import { mapActions, mapGetters } from "vuex";
 import InfoChart from "@/components/InfoChart.vue";
 
 export default {
@@ -64,71 +65,14 @@ export default {
   components: {
     InfoChart,
   },
-  data() {
-    return {
-      midChartData: [
-        {
-          id: 0,
-          text: "Today",
-          count: 36,
-          percent: "-1.64%",
-          dayText: "Yesterday",
-          isPlus: false,
-          datasets: [
-            {
-              data: [10, 50, 20, 100, 40, 60, 80],
-              smooth: true,
-              fill: true,
-            },
-          ],
-          grid: {
-            verticalLines: false,
-            horizontalLines: false,
-          },
-          labels: null,
-        },
-        {
-          id: 1,
-          text: "This Month",
-          count: 132,
-          percent: "+4.07%",
-          dayText: "Last month",
-          isPlus: true,
-          datasets: [
-            {
-              data: [15, 18, 31, 20, 32, 13, 80],
-              smooth: true,
-              fill: true,
-            },
-          ],
-          grid: {
-            verticalLines: false,
-            horizontalLines: false,
-          },
-          labels: null,
-        },
-        {
-          id: 2,
-          text: "Total",
-          count: 1400,
-          percent: "+2.07%",
-          dayText: "Last month",
-          isPlus: true,
-          datasets: [
-            {
-              data: [5, 14, 33, 44, 40, 8, 15],
-              smooth: true,
-              fill: true,
-            },
-          ],
-          grid: {
-            verticalLines: false,
-            horizontalLines: false,
-          },
-          labels: null,
-        },
-      ],
-    };
+  methods: {
+    ...mapActions(["fetchDeviceInfoData"]),
+  },
+  mounted() {
+    this.fetchDeviceInfoData();
+  },
+  computed: {
+    ...mapGetters(["getDeviceInfoData"]),
   },
 };
 </script>

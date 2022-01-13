@@ -93,9 +93,9 @@
         <nav class="pt-10 mt-20 w-70 flex items-center justify-center">
           <ul class="w-30">
             <li class="w-30 mb-10">
-              <router-link to="/">
+              <a class="pointer" @click="signOut">
                 <img src="@/assets/icons/logout.svg" alt="logout" />
-              </router-link>
+              </a>
             </li>
           </ul>
         </nav>
@@ -111,5 +111,16 @@
 <script>
 export default {
   name: "MainLayout",
+  methods: {
+    signOut() {
+      this.$router.push({ name: "Login" });
+    },
+  },
 };
 </script>
+
+<style lang="scss">
+.pointer {
+  cursor: pointer;
+}
+</style>

@@ -72,7 +72,12 @@
         </tr>
       </thead>
       <tbody class="bg-white top-5 relative">
-        <tr class="hover:bg-gray-200" v-for="item in tableData" :key="item.id">
+        <tr
+          @click="goToDetail(item.id)"
+          class="hover:bg-gray-200 pointer"
+          v-for="item in tableData"
+          :key="item.id"
+        >
           <td class="border-b border-bordergray p-2 text-center">
             <input type="checkbox" />
           </td>
@@ -170,12 +175,21 @@ export default {
   props: {
     tableData: Array,
   },
+  methods: {
+    goToDetail(id) {
+      console.log(id);
+      this.$router.push({ name: "DeviceDetail" });
+    },
+  },
 };
 </script>
 
 <style lang="scss">
 .custom-gap {
   gap: 3rem;
+}
+.pointer {
+  cursor: pointer;
 }
 .list-filter-items {
   button {
