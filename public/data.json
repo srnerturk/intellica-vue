@@ -1,0 +1,89 @@
+{
+  "dataCharts": [
+    {
+      "id": 0,
+      "text": "RSSI (GSM)",
+      "count": -49,
+      "percent": "-2.07%",
+      "dayText": "Yesterday",
+      "isPlus": true,
+      "data": [
+        10,
+        20,
+        24,
+        72,
+        44,
+        61,
+        80
+      ]
+    },
+    {
+      "id": 1,
+      "text": "RSRP",
+      "count": -120,
+      "percent": "+4.07%",
+      "dayText": "Yesterday",
+      "isPlus": true,
+      "data": [
+        15,
+        18,
+        31,
+        20,
+        32,
+        13,
+        80
+      ]
+    },
+    {
+      "id": 2,
+      "text": "RSRQ",
+      "count": -17,
+      "percent": "+2.07%",
+      "dayText": "Last month",
+      "isPlus": true,
+      "data": [
+        5,
+        14,
+        33,
+        44,
+        40,
+        8,
+        15
+      ]
+    },
+    {
+      "id": 3,
+      "text": "CQI",
+      "count": 132,
+      "percent": "+4.07%",
+      "dayText": "Last month",
+      "isPlus": true,
+      "data": [
+        5,
+        14,
+        33,
+        44,
+        40,
+        8,
+        15
+      ]
+    },
+    {
+      "id": 4,
+      "text": "RSSI (WI-FI)",
+      "count": -45,
+      "percent": "+7.07%",
+      "dayText": "Last month",
+      "isPlus": true,
+      "data": [
+        5,
+        14,
+        33,
+        44,
+        40,
+        8,
+        15
+      ]
+    }
+  ]
+}

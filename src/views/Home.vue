@@ -39,7 +39,7 @@ export default {
         id: 0,
         text: "Today",
         count: 36,
-        percent: "-1.64%",
+        percent: "-1.65%",
         dayText: "Yesterday",
         isPlus: false,
         datasets: [

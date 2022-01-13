@@ -1,0 +1,55 @@
+{
+  "dayCharts": [
+    {
+      "id": 0,
+      "text": "Today",
+      "count": 36,
+      "percent": "-1.64%",
+      "dayText": "Yesterday",
+      "isPlus": false,
+      "data": [
+        10,
+        50,
+        20,
+        100,
+        40,
+        60,
+        80
+      ]
+    },
+    {
+      "id": 1,
+      "text": "This Month",
+      "count": 132,
+      "percent": "+4.07%",
+      "dayText": "Last Month",
+      "isPlus": true,
+      "data": [
+        10,
+        50,
+        20,
+        100,
+        40,
+        60,
+        80
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Total",
+      "count": 1400,
+      "percent": "+2.07%",
+      "dayText": "Last Month",
+      "isPlus": true,
+      "data": [
+        10,
+        20,
+        24,
+        72,
+        44,
+        61,
+        80
+      ]
+    }
+  ]
+}
