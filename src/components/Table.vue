@@ -61,37 +61,37 @@
     </div>
     <div class="table w-full hover:table-auto">
       <thead class="h-40 mb-20 w-full bg-bordergray">
-        <tr>
-          <th></th>
-          <th>Mac Address</th>
-          <th>MSISDN</th>
-          <th>SSID</th>
-          <th>Last Reported Date</th>
-          <th>Last Reported Channel</th>
-          <th>Actions</th>
+        <tr class="h-40">
+          <th class="text-sm p-2"></th>
+          <th class="text-sm">Mac Address</th>
+          <th class="text-sm">MSISDN</th>
+          <th class="text-sm">SSID</th>
+          <th class="text-sm">Last Reported Date</th>
+          <th class="text-sm">Last Reported Channel</th>
+          <th class="text-sm">Actions</th>
         </tr>
       </thead>
       <tbody class="bg-white top-5 relative">
         <tr class="hover:bg-gray-200" v-for="item in tableData" :key="item.id">
-          <td class="border border-bordergray p-1 text-center">
+          <td class="border-b border-bordergray p-2 text-center">
             <input type="checkbox" />
           </td>
-          <td class="border border-bordergray p-1 text-center">
+          <td class="border-b text-sm border-bordergray p-2 text-center">
             {{ item.mac }}
           </td>
-          <td class="border border-bordergray p-1 text-center">
+          <td class="border-b text-sm border-bordergray p-2 text-center">
             {{ item.msi }}
           </td>
-          <td class="border border-bordergray p-1 text-center">
+          <td class="border-b text-sm border-bordergray p-2 text-center">
             {{ item.ssid }}
           </td>
-          <td class="border border-bordergray p-1 text-center">
+          <td class="border-b text-sm border-bordergray p-2 text-center">
             {{ item.last_reported_date }}
           </td>
-          <td class="border border-bordergray p-1 text-center">
+          <td class="border-b text-sm border-bordergray p-2 text-center">
             {{ item.last_reported_channel }}
           </td>
-          <td class="border border-bordergray p-1 text-center">
+          <td class="border-b text-sm border-bordergray p-1 text-center">
             <div class="actions grid grid-cols-3">
               <a>
                 <img src="@/assets/icons/info.svg" />

@@ -6,7 +6,7 @@
       "count": -49,
       "percent": "-2.07%",
       "dayText": "Yesterday",
-      "isPlus": true,
+      "isPlus": false,
       "data": [
         10,
         20,
@@ -23,7 +23,7 @@
       "count": -120,
       "percent": "+4.07%",
       "dayText": "Yesterday",
-      "isPlus": true,
+      "isPlus": false,
       "data": [
         15,
         18,
@@ -40,7 +40,7 @@
       "count": -17,
       "percent": "+2.07%",
       "dayText": "Last month",
-      "isPlus": true,
+      "isPlus": false,
       "data": [
         5,
         14,
@@ -74,7 +74,7 @@
       "count": -45,
       "percent": "+7.07%",
       "dayText": "Last month",
-      "isPlus": true,
+      "isPlus": false,
       "data": [
         5,
         14,

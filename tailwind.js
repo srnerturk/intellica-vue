@@ -19,7 +19,7 @@ module.exports = {
       colors: {
         mifiblue: "#1C2749",
         mifired: "#D1264D",
-        bordergray: "#EAEBED",
+        bordergray: "#EDEDED",
       },
     },
   },
