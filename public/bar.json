@@ -42,7 +42,7 @@
     "text": "Yesterday",
     "count": 52,
     "percent": "-1.65%",
-    "dayText": "Yesterday",
+    "dayText": "Previous day",
     "isPlus": false,
     "labels": [
       "08:00",

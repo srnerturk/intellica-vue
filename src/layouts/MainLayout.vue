@@ -83,11 +83,11 @@
                 <img src="@/assets/icons/reports.svg" alt="reports" />
               </router-link>
             </li>
-            <li>
+            <!-- <li>
               <router-link to="/">
                 <img src="@/assets/icons/help.svg" alt="help" />
               </router-link>
-            </li>
+            </li> -->
           </ul>
         </nav>
         <nav class="pt-10 mt-20 w-70 flex items-center justify-center">
