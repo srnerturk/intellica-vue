@@ -2,7 +2,7 @@
 import FakeModule from "@/utils/fakeModule";
 
 const state = {
-  devices: null,
+  devices: {},
   sketches: null,
 };
 const getters = {
