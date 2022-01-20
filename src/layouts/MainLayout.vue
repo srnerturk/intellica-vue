@@ -66,7 +66,7 @@
               </router-link>
             </li>
             <li class="w-30 mb-10">
-              <router-link to="/">
+              <router-link to="/device-locations">
                 <img
                   src="@/assets/icons/device_locations.svg"
                   alt="locations"
@@ -74,7 +74,7 @@
               </router-link>
             </li>
             <li class="w-30 mb-10">
-              <router-link to="/">
+              <router-link to="/plan-sketches/1">
                 <img src="@/assets/icons/sketch_plan.svg" alt="settings" />
               </router-link>
             </li>
@@ -122,5 +122,10 @@ export default {
 <style lang="scss">
 .pointer {
   cursor: pointer;
+}
+@media (max-width: 640px) {
+  .side-bar {
+    display: none;
+  }
 }
 </style>

@@ -12,6 +12,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body{
+  background: #E4E7EB;
+}
 .page-title {
   font-size: 32px;
   color: #1c2749;

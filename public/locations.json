@@ -1,0 +1,195 @@
+[
+  {
+    "location": "California",
+    "Devices": [
+      {
+        "id": 0,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Devs",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "test"
+      },
+      {
+        "id": 1,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Devs",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "dev"
+      },
+      {
+        "id": 2,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "My house",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "prod"
+      },
+      {
+        "id": 3,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Champ",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "dev"
+      },
+      {
+        "id": 4,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Devs",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "dev"
+      }
+    ]
+  },
+  {
+    "location": "Alaska",
+    "Devices": [
+      {
+        "id": 0,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Devs",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "test"
+      },
+      {
+        "id": 1,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Devs",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "dev"
+      },
+      {
+        "id": 2,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "My house",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "prod"
+      }
+    ]
+  },
+  {
+    "location": "Colorado",
+    "Devices": [
+      {
+        "id": 0,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Devs",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "test"
+      },
+      {
+        "id": 1,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Devs",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "dev"
+      }
+    ]
+  },
+  {
+    "location": "Nevada",
+    "Devices": [
+      {
+        "id": 0,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Devs",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "test"
+      },
+      {
+        "id": 1,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Devs",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "dev"
+      },
+      {
+        "id": 2,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Devs",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "dev"
+      }
+    ]
+  },
+  {
+    "location": "Oregon",
+    "Devices": [
+      {
+        "id": 0,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Devs",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "test"
+      },
+      {
+        "id": 1,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Devs",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "dev"
+      },
+      {
+        "id": 2,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Devs",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "dev"
+      },
+      {
+        "id": 3,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Devs",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "dev"
+      },
+      {
+        "id": 4,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Devs",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "dev"
+      },
+      {
+        "id": 5,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Devs",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "dev"
+      },
+      {
+        "id": 6,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Devs",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "dev"
+      },
+      {
+        "id": 7,
+        "mac": "00:A3:10:5F:21:E3:A3",
+        "msi": "2344666444",
+        "ssid": "Devs",
+        "last_reported_date": "dd.mm.yyyy",
+        "last_reported_channel": "dev"
+      }
+    ]
+  }
+]

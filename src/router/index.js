@@ -31,6 +31,22 @@ const routes = [
     },
   },
   {
+    path: "/device-locations",
+    name: "DeviceLocations",
+    component: () => import(/* webpackChunkName: "about" */ "../views/DeviceLocations.vue"),
+    meta: {
+      layout: "MainLayout",
+    },
+  },
+  {
+    path: "/plan-sketches/:device",
+    name: "PlanSketches",
+    component: () => import(/* webpackChunkName: "about" */ "../views/PlanSketches.vue"),
+    meta: {
+      layout: "MainLayout",
+    },
+  },
+  {
     path: "/device-detail",
     name: "DeviceDetail",
     component: () => import(/* webpackChunkName: "about" */ "../views/DeviceDetail.vue"),
