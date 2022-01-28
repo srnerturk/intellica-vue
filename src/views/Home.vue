@@ -76,6 +76,14 @@ export default {
   },
   mounted() {
     this.fetchDashboardData();
+
+    const response = fetch("https://4rfseui1y2.execute-api.us-east-1.amazonaws.com/api/dashboard", {
+      method: "get",
+      headers: {
+        "x-api-key": process.env.VUE_APP_API_KEY,
+      },
+    });
+    console.log(response.json());
   },
   computed: {
     ...mapGetters(["getDashboardData"]),
