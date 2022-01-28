@@ -178,7 +178,7 @@ export default {
   methods: {
     goToDetail(id) {
       console.log(id);
-      this.$router.push({ name: "DeviceDetail" });
+      this.$router.push({ name: "DeviceDetail", params: { deviceId: id } });
     },
   },
 };

@@ -31,5 +31,8 @@ const getters = {
 };
 
 export default {
-  state, actions, mutations, getters,
+  state,
+  actions,
+  mutations,
+  getters,
 };

@@ -4,6 +4,8 @@ import FakeModule from "@/utils/fakeModule";
 const state = {
   devices: {},
   sketches: null,
+  deviceList: [],
+  currentDevice: {},
 };
 const getters = {
   getDeviceByLocations(state) {
@@ -11,6 +13,12 @@ const getters = {
   },
   getSketchesByDevice(state) {
     return state.sketches;
+  },
+  getDeviceList(state) {
+    return state.deviceList;
+  },
+  getCurrentDevice(state) {
+    return state.currentDevice;
   },
 };
 const mutations = {
@@ -20,8 +28,39 @@ const mutations = {
   setSketchesByDevice(state, data) {
     state.sketches = data;
   },
+  setDeviceList(state, data) {
+    state.deviceList = data;
+  },
+  setCurrentDevice(state, data) {
+    state.currentDevice = data;
+  },
 };
 const actions = {
+  getDeviceDetail({ commit }, deviceId) {
+    console.log(deviceId);
+    return new Promise((resolve, reject) => {
+      new FakeModule().get("/device-detail.json").then((response) => {
+        try {
+          commit("setCurrentDevice", response.data);
+          resolve(response.data);
+        } catch (error) {
+          reject(error);
+        }
+      });
+    });
+  },
+  fetchDevices({ commit }) {
+    return new Promise((resolve, reject) => {
+      new FakeModule().get("/devices.json").then((response) => {
+        try {
+          commit("setDeviceList", response.data);
+          resolve(response.data);
+        } catch (error) {
+          reject(error);
+        }
+      });
+    });
+  },
   fetchDevicesByLocation({ commit }, location) {
     return new Promise((resolve, reject) => {
       new FakeModule().get("/locations.json").then((response) => {
@@ -68,5 +107,8 @@ const actions = {
 };
 
 export default {
-  state, getters, mutations, actions,
+  state,
+  getters,
+  mutations,
+  actions,
 };

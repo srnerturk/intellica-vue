@@ -47,7 +47,7 @@ const routes = [
     },
   },
   {
-    path: "/device-detail",
+    path: "/device-detail/:deviceId",
     name: "DeviceDetail",
     component: () => import(/* webpackChunkName: "about" */ "../views/DeviceDetail.vue"),
     meta: {

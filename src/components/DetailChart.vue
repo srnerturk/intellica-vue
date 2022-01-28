@@ -13,23 +13,6 @@
   >
     <div class="text-info flex-1 flex flex-col p-2">
       <h5 class="text-md font-bold mb-5">{{ text }}</h5>
-      <h2 class="text-3xl font-bold leading-1 mb-3 text-mifiblue">
-        {{ deviceCount }}
-      </h2>
-      <div class="info">
-        <div class="percent">
-          <span
-            v-if="!parseInt(chartData.device_count) < 0"
-            class="text-md text-red-900 font-bold"
-            >{{ chartData.percent }}</span
-          >
-          <span
-            v-if="!parseInt(chartData.device_count) >= 0"
-            class="text-md text-green-900 font-bold"
-            >{{ chartData.percent }}</span
-          >
-        </div>
-      </div>
     </div>
     <div v-if="this.dataset.length > 0" class="chart-info flex-1">
       <TrendChart
@@ -51,9 +34,9 @@
 </template>
 <script>
 export default {
-  name: "InfoChart",
+  name: "DetailChart",
   props: {
-    chartData: Object,
+    chartData: Array,
     text: String,
     deviceCount: String,
   },
@@ -65,8 +48,8 @@ export default {
   watch: {
     chartData: {
       handler(val) {
-        if (val.last_5) {
-          val.last_5.forEach((item) => {
+        if (val) {
+          val.forEach((item) => {
             this.dataset.push(parseInt(item, 0));
           });
         }

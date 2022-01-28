@@ -159,7 +159,6 @@ export default {
   overflow-y: scroll;
 }
 canvas {
-  border: 2px solid green;
   padding: 10px;
 }
 .device {

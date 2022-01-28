@@ -1,42 +1,2482 @@
 [
   {
-    "id": 0,
-    "mac": "00:A3:10:5F:21:E3:A3",
-    "msi": "2344666444",
-    "ssid": "Devs",
-    "last_reported_date": "dd.mm.yyyy",
-    "last_reported_channel": "test"
+    "mac": "ac:09:38:de:18:40",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6127",
+    "last_reported_date": "2022-01-24 20:13:14.844885",
+    "last_reported_channel": "4",
+    "id": "0202a3ac-389f-4918-906d-bc5d0212e0f8"
   },
   {
-    "id": 1,
-    "mac": "00:A3:10:5F:21:E3:A3",
-    "msi": "2344666444",
-    "ssid": "Devs",
-    "last_reported_date": "dd.mm.yyyy",
-    "last_reported_channel": "dev"
+    "mac": "c2:e6:29:87:bc:5c",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1557",
+    "last_reported_date": "2022-01-23 21:58:00.982983",
+    "last_reported_channel": "-9",
+    "id": "e37f2e16-ea17-4616-911c-65f59b161744"
   },
   {
-    "id": 2,
-    "mac": "00:A3:10:5F:21:E3:A3",
-    "msi": "2344666444",
-    "ssid": "My house",
-    "last_reported_date": "dd.mm.yyyy",
-    "last_reported_channel": "prod"
+    "mac": "80:d8:88:a9:4d:31",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5675",
+    "last_reported_date": "2022-01-23 13:37:10.650248",
+    "last_reported_channel": "8",
+    "id": "6862c4d7-3f3f-4db0-ab04-cf3a1fce00dd"
   },
   {
-    "id": 3,
-    "mac": "00:A3:10:5F:21:E3:A3",
-    "msi": "2344666444",
-    "ssid": "Champ",
-    "last_reported_date": "dd.mm.yyyy",
-    "last_reported_channel": "dev"
+    "mac": "ca:72:38:eb:0e:31",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4893",
+    "last_reported_date": "2022-01-22 17:34:25.866045",
+    "last_reported_channel": "9",
+    "id": "1794aa21-7fae-4b70-8cb6-108a8cd89a46"
   },
   {
-    "id": 4,
-    "mac": "00:A3:10:5F:21:E3:A3",
-    "msi": "2344666444",
-    "ssid": "Devs",
-    "last_reported_date": "dd.mm.yyyy",
-    "last_reported_channel": "dev"
+    "mac": "4c:e6:28:48:1c:60",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9428",
+    "last_reported_date": "2022-01-22 17:31:11.549485",
+    "last_reported_channel": "-14",
+    "id": "09515405-756a-4fc8-bc26-205fdb9c27da"
+  },
+  {
+    "mac": "01:e5:2a:65:e9:7e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9672",
+    "last_reported_date": "2022-01-22 17:28:05.538849",
+    "last_reported_channel": "8",
+    "id": "8b6d87c1-3ca5-4bec-910c-0015ebbb7048"
+  },
+  {
+    "mac": "6a:3b:6f:a0:40:7e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_732",
+    "last_reported_date": "2022-01-22 17:27:05.615392",
+    "last_reported_channel": "9",
+    "id": "96dd2528-10f8-4823-be4d-934b859cfe33"
+  },
+  {
+    "mac": "a1:57:da:7b:88:3c",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3791",
+    "last_reported_date": "2022-01-22 17:27:00.118417",
+    "last_reported_channel": "-15",
+    "id": "32eb6551-079e-46d8-97ee-9474ff6ba061"
+  },
+  {
+    "mac": "9f:94:26:71:a9:29",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4759",
+    "last_reported_date": "2022-01-22 17:26:56.897803",
+    "last_reported_channel": "0",
+    "id": "74190b3d-363d-48de-9644-0351ea715128"
+  },
+  {
+    "mac": "c8:35:f9:23:7a:08",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8802",
+    "last_reported_date": "2022-01-22 17:26:51.437312",
+    "last_reported_channel": "3",
+    "id": "dbbca41b-890f-45d2-8e53-e8ed0668f7c6"
+  },
+  {
+    "mac": "97:ef:ae:d8:ae:10",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8559",
+    "last_reported_date": "2022-01-22 17:26:45.973691",
+    "last_reported_channel": "-1",
+    "id": "f627f7ec-8ded-4241-a128-fca3ce1186c1"
+  },
+  {
+    "mac": "3a:ca:07:aa:f2:73",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_685",
+    "last_reported_date": "2022-01-22 17:26:40.683168",
+    "last_reported_channel": "10",
+    "id": "7741727b-ccb7-447f-8f27-124114efdd3a"
+  },
+  {
+    "mac": "a0:b2:75:54:d8:92",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_890",
+    "last_reported_date": "2022-01-22 17:26:35.224707",
+    "last_reported_channel": "3",
+    "id": "31762cda-a9fa-4129-b098-364b8cdc1043"
+  },
+  {
+    "mac": "bc:3a:1f:31:ea:ee",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4830",
+    "last_reported_date": "2022-01-22 17:26:29.761587",
+    "last_reported_channel": "4",
+    "id": "24d1cdcd-c206-457e-bc14-4ae610bb2733"
+  },
+  {
+    "mac": "f4:39:00:7d:8e:f1",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4206",
+    "last_reported_date": "2022-01-22 17:26:24.294706",
+    "last_reported_channel": "3",
+    "id": "65704418-9798-49c0-9445-72a8a54a6c3a"
+  },
+  {
+    "mac": "6c:e6:9d:17:4d:91",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2622",
+    "last_reported_date": "2022-01-22 17:26:18.833348",
+    "last_reported_channel": "-12",
+    "id": "b1993f1c-a84b-4354-bf24-8c42adc7adf5"
+  },
+  {
+    "mac": "2f:be:df:2e:6c:e2",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_470",
+    "last_reported_date": "2022-01-22 17:26:13.539737",
+    "last_reported_channel": "-5",
+    "id": "d61b4ea7-2b73-4a8b-bfd6-5a0f2ddfa46b"
+  },
+  {
+    "mac": "5f:f0:e2:81:c8:d2",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2313",
+    "last_reported_date": "2022-01-22 17:26:08.069839",
+    "last_reported_channel": "-1",
+    "id": "104ed683-1617-4cbf-ac5d-e1f03d0ab3a5"
+  },
+  {
+    "mac": "3e:13:17:c4:f6:5f",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2315",
+    "last_reported_date": "2022-01-22 17:26:02.613516",
+    "last_reported_channel": "13",
+    "id": "1d552fc9-0b80-44b8-9bbb-da91e7b59601"
+  },
+  {
+    "mac": "1e:a7:cb:d4:14:f9",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4791",
+    "last_reported_date": "2022-01-22 17:25:57.151808",
+    "last_reported_channel": "-7",
+    "id": "31ebad7c-1a34-46b2-973c-79303a3b6a53"
+  },
+  {
+    "mac": "bd:8a:1c:1f:58:3b",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_85",
+    "last_reported_date": "2022-01-22 17:25:51.687953",
+    "last_reported_channel": "4",
+    "id": "56f04e7f-1e42-48d9-9eec-4bcd7856495d"
+  },
+  {
+    "mac": "51:19:46:40:ff:61",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9056",
+    "last_reported_date": "2022-01-22 17:25:46.208637",
+    "last_reported_channel": "11",
+    "id": "48088af8-5b42-451b-a258-feb6adb4793b"
+  },
+  {
+    "mac": "f1:b3:ed:93:79:a4",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6339",
+    "last_reported_date": "2022-01-22 17:25:40.755596",
+    "last_reported_channel": "-15",
+    "id": "ce258a4c-8776-4950-996e-895bdbfade1f"
+  },
+  {
+    "mac": "de:ee:90:77:77:25",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2584",
+    "last_reported_date": "2022-01-22 17:25:26.562679",
+    "last_reported_channel": "0",
+    "id": "d06513e9-dae1-4261-9ecd-2c6bb929f7ad"
+  },
+  {
+    "mac": "4d:21:da:ed:fd:83",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8350",
+    "last_reported_date": "2022-01-22 17:25:21.107034",
+    "last_reported_channel": "-3",
+    "id": "9bfad716-c116-4755-8e54-8b4dfb849d94"
+  },
+  {
+    "mac": "72:8a:51:c1:e7:c6",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4490",
+    "last_reported_date": "2022-01-22 17:25:15.602552",
+    "last_reported_channel": "2",
+    "id": "656cd207-2f9b-49ee-8ff7-ca547a261bb9"
+  },
+  {
+    "mac": "4b:a7:9c:c9:76:8c",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_438",
+    "last_reported_date": "2022-01-22 17:25:10.150121",
+    "last_reported_channel": "-2",
+    "id": "753e78cd-9a32-4692-aed2-0c5487cd9c8d"
+  },
+  {
+    "mac": "ad:21:d6:59:fa:aa",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1454",
+    "last_reported_date": "2022-01-22 17:25:04.872882",
+    "last_reported_channel": "-1",
+    "id": "01cf31aa-9765-4019-845b-1d2d6472ee1f"
+  },
+  {
+    "mac": "bd:f3:93:3d:e9:29",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8660",
+    "last_reported_date": "2022-01-22 17:24:59.285837",
+    "last_reported_channel": "-5",
+    "id": "05944b83-5fb4-4b59-9f9a-84dc36eb972d"
+  },
+  {
+    "mac": "5d:2f:a6:11:e0:d9",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2759",
+    "last_reported_date": "2022-01-22 17:24:53.826026",
+    "last_reported_channel": "3",
+    "id": "689136ee-d746-43a5-9bca-398803fd5ce1"
+  },
+  {
+    "mac": "33:da:80:02:6e:7a",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1939",
+    "last_reported_date": "2022-01-22 17:24:48.328571",
+    "last_reported_channel": "-11",
+    "id": "febb545f-999c-430c-8871-be17cac53cb5"
+  },
+  {
+    "mac": "a8:e1:3b:49:be:f8",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_643",
+    "last_reported_date": "2022-01-22 17:24:42.874690",
+    "last_reported_channel": "3",
+    "id": "ab192bac-b9bb-431a-8316-49f6bebc2233"
+  },
+  {
+    "mac": "0c:43:86:31:b6:b1",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_949",
+    "last_reported_date": "2022-01-22 17:24:37.593698",
+    "last_reported_channel": "14",
+    "id": "f152f479-314c-46e0-81dc-ceb87153de8e"
+  },
+  {
+    "mac": "e5:f6:54:fd:b0:d4",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1958",
+    "last_reported_date": "2022-01-22 17:24:32.146788",
+    "last_reported_channel": "12",
+    "id": "b21d30e3-3162-40f2-a68e-0426b1f91e09"
+  },
+  {
+    "mac": "0b:75:77:0c:af:cc",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5609",
+    "last_reported_date": "2022-01-22 17:24:26.681950",
+    "last_reported_channel": "5",
+    "id": "bd5ff637-2a68-408a-b725-f1df99fdf260"
+  },
+  {
+    "mac": "6c:fe:ff:1c:1b:ba",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1710",
+    "last_reported_date": "2022-01-22 17:24:21.208085",
+    "last_reported_channel": "2",
+    "id": "80981e6c-aad0-4511-819d-c625eaf849f5"
+  },
+  {
+    "mac": "c4:fa:7a:88:d1:16",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6099",
+    "last_reported_date": "2022-01-22 17:24:15.737544",
+    "last_reported_channel": "-1",
+    "id": "9b4f1962-87d1-4ed5-a63a-34a0138c819c"
+  },
+  {
+    "mac": "1b:65:c1:d3:c3:d8",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8340",
+    "last_reported_date": "2022-01-22 17:24:10.277659",
+    "last_reported_channel": "3",
+    "id": "de16f877-b521-43d3-8903-6e05142ceda3"
+  },
+  {
+    "mac": "10:ff:45:7b:4d:17",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1973",
+    "last_reported_date": "2022-01-22 17:24:04.791089",
+    "last_reported_channel": "-7",
+    "id": "5ea4a1cc-af5e-4455-82f4-710f09241014"
+  },
+  {
+    "mac": "7f:ae:f8:1d:54:64",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4399",
+    "last_reported_date": "2022-01-22 17:23:59.323571",
+    "last_reported_channel": "-13",
+    "id": "582c2576-08d8-4400-b290-a949645d2150"
+  },
+  {
+    "mac": "7a:fd:c6:f4:18:79",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9771",
+    "last_reported_date": "2022-01-22 17:23:53.958280",
+    "last_reported_channel": "11",
+    "id": "7a27e7bb-1f50-45a2-b349-a93d095c5d20"
+  },
+  {
+    "mac": "dd:31:aa:d9:c2:af",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2974",
+    "last_reported_date": "2022-01-22 17:23:48.394765",
+    "last_reported_channel": "-2",
+    "id": "641c3f0e-0b96-4bb9-a9c8-67ee19c85359"
+  },
+  {
+    "mac": "63:3e:23:4c:ad:1d",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6453",
+    "last_reported_date": "2022-01-22 15:51:18.614884",
+    "last_reported_channel": "1",
+    "id": "976b9059-7b64-4450-8bca-b2d6da0d0049"
+  },
+  {
+    "mac": "d8:58:f5:a8:9c:8c",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2078",
+    "last_reported_date": "2022-01-22 15:51:13.326929",
+    "last_reported_channel": "13",
+    "id": "cb107983-da51-4f30-be0c-aec6274f2bd9"
+  },
+  {
+    "mac": "d7:33:5d:10:9c:cb",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4511",
+    "last_reported_date": "2022-01-22 15:51:08.027566",
+    "last_reported_channel": "9",
+    "id": "610dee48-05b8-4447-9840-8c97e9665196"
+  },
+  {
+    "mac": "e2:1c:87:36:d8:0f",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2958",
+    "last_reported_date": "2022-01-22 15:51:02.543625",
+    "last_reported_channel": "-8",
+    "id": "f4fe57d1-2f47-457d-a0dc-e4b51c9cc3dd"
+  },
+  {
+    "mac": "ab:b1:36:49:68:37",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7829",
+    "last_reported_date": "2022-01-22 15:50:57.087048",
+    "last_reported_channel": "-1",
+    "id": "d3edbf66-371f-4531-86e7-7c7a12d00ea5"
+  },
+  {
+    "mac": "7d:a7:d5:28:0f:40",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3631",
+    "last_reported_date": "2022-01-22 15:50:51.621958",
+    "last_reported_channel": "-4",
+    "id": "4846cf21-694f-421c-b56e-93addbdf3307"
+  },
+  {
+    "mac": "31:1b:c7:d8:02:7c",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7014",
+    "last_reported_date": "2022-01-22 15:50:46.159641",
+    "last_reported_channel": "8",
+    "id": "b899c6f7-66e3-440b-8127-35722523e723"
+  },
+  {
+    "mac": "c2:62:46:89:5e:2a",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5796",
+    "last_reported_date": "2022-01-22 15:50:40.703781",
+    "last_reported_channel": "-9",
+    "id": "40a50b78-cb53-4eb2-910f-9df8408ab69b"
+  },
+  {
+    "mac": "da:3f:de:ba:c6:db",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_312",
+    "last_reported_date": "2022-01-22 15:50:35.242166",
+    "last_reported_channel": "0",
+    "id": "6382d68a-810b-4602-b7d6-37a80354ed2e"
+  },
+  {
+    "mac": "b5:68:f3:d6:2f:de",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_560",
+    "last_reported_date": "2022-01-22 15:50:29.943884",
+    "last_reported_channel": "-15",
+    "id": "28d78ae9-ad68-459f-b6ee-5f96aa1311ae"
+  },
+  {
+    "mac": "e9:87:94:9e:5b:dc",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3905",
+    "last_reported_date": "2022-01-22 15:50:24.472883",
+    "last_reported_channel": "-11",
+    "id": "60a4ec82-d3f6-4688-b993-85e7dda0d068"
+  },
+  {
+    "mac": "e2:a0:0d:1d:43:4d",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6357",
+    "last_reported_date": "2022-01-22 15:50:19.001598",
+    "last_reported_channel": "5",
+    "id": "07d6cab4-5812-4b3e-98e5-d11d1a9abf96"
+  },
+  {
+    "mac": "e1:9d:3d:f7:4b:70",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4093",
+    "last_reported_date": "2022-01-22 15:50:13.531500",
+    "last_reported_channel": "-6",
+    "id": "55424b51-351b-4d30-bbe6-b5fdef427da7"
+  },
+  {
+    "mac": "90:a4:b8:78:8e:78",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3725",
+    "last_reported_date": "2022-01-22 15:50:08.052912",
+    "last_reported_channel": "6",
+    "id": "7f3c6fda-e62c-46c9-a47c-f32fbebf1741"
+  },
+  {
+    "mac": "fc:e7:31:7b:7a:74",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9359",
+    "last_reported_date": "2022-01-22 15:50:02.763772",
+    "last_reported_channel": "12",
+    "id": "62af475d-45e2-46c1-90c3-fd5922b2630c"
+  },
+  {
+    "mac": "04:42:9f:aa:3d:4d",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6504",
+    "last_reported_date": "2022-01-22 15:49:57.287533",
+    "last_reported_channel": "-12",
+    "id": "ae6f5867-6657-411d-9d2e-bb2bc23a31ff"
+  },
+  {
+    "mac": "c1:44:3b:d4:71:f9",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2743",
+    "last_reported_date": "2022-01-22 15:49:51.815606",
+    "last_reported_channel": "2",
+    "id": "586f4f5f-b596-4934-87d2-905a4f828011"
+  },
+  {
+    "mac": "e9:6a:f0:86:22:f6",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6665",
+    "last_reported_date": "2022-01-22 15:49:46.503284",
+    "last_reported_channel": "-1",
+    "id": "e26650ba-1099-44f5-bb4f-da062d1becbf"
+  },
+  {
+    "mac": "cf:7f:9c:ae:28:a5",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1993",
+    "last_reported_date": "2022-01-22 15:49:40.923493",
+    "last_reported_channel": "11",
+    "id": "e324c5cd-3764-4f54-a644-89ae08a6e705"
+  },
+  {
+    "mac": "ff:a1:02:39:f1:83",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9177",
+    "last_reported_date": "2022-01-22 15:49:35.462700",
+    "last_reported_channel": "14",
+    "id": "002e56aa-76a6-4935-aaf8-00418937d86e"
+  },
+  {
+    "mac": "a6:c8:9f:23:9c:88",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7432",
+    "last_reported_date": "2022-01-22 15:49:29.993071",
+    "last_reported_channel": "14",
+    "id": "ecda6ce7-565b-44a5-9dae-7b55b2366ce1"
+  },
+  {
+    "mac": "36:3c:cc:3c:86:0e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8526",
+    "last_reported_date": "2022-01-22 15:49:24.439391",
+    "last_reported_channel": "-8",
+    "id": "a44ed87b-2113-4a93-b586-5794f8d83b84"
+  },
+  {
+    "mac": "ba:09:ef:8d:aa:4d",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8901",
+    "last_reported_date": "2022-01-22 15:49:18.968421",
+    "last_reported_channel": "2",
+    "id": "73a50f24-bb69-49be-9042-b9494f3add32"
+  },
+  {
+    "mac": "24:4e:d9:8d:a2:0a",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6677",
+    "last_reported_date": "2022-01-22 15:49:13.499146",
+    "last_reported_channel": "-11",
+    "id": "3e5a5aca-69a6-46bd-abab-7230d6340563"
+  },
+  {
+    "mac": "54:7e:bb:e3:2b:32",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2482",
+    "last_reported_date": "2022-01-22 15:49:08.016312",
+    "last_reported_channel": "-9",
+    "id": "2863bd17-56ec-41de-b859-13fcddc6811d"
+  },
+  {
+    "mac": "44:4e:03:96:f5:2b",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8345",
+    "last_reported_date": "2022-01-22 15:49:02.544003",
+    "last_reported_channel": "-9",
+    "id": "149c32dd-91af-428f-b034-6d71ce67e2fe"
+  },
+  {
+    "mac": "9d:a0:e8:b8:cb:6a",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9686",
+    "last_reported_date": "2022-01-22 15:48:57.094488",
+    "last_reported_channel": "-9",
+    "id": "633387f7-ed88-44cb-90c5-d5c713bcb2d0"
+  },
+  {
+    "mac": "9c:7f:8d:70:06:22",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7189",
+    "last_reported_date": "2022-01-22 15:48:51.625720",
+    "last_reported_channel": "-3",
+    "id": "4a006ec2-4714-421c-9aeb-ad3e536a21ee"
+  },
+  {
+    "mac": "1f:2a:ed:64:c3:e5",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1781",
+    "last_reported_date": "2022-01-22 15:48:46.150506",
+    "last_reported_channel": "13",
+    "id": "2c1e0e67-f9ec-4d3a-8c7a-1e735188d2d8"
+  },
+  {
+    "mac": "64:78:58:e1:8b:b2",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1889",
+    "last_reported_date": "2022-01-22 15:48:40.670043",
+    "last_reported_channel": "-6",
+    "id": "6dace1f7-08e9-4dee-b21f-d844a1b15511"
+  },
+  {
+    "mac": "e9:8f:63:2d:8a:a6",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7167",
+    "last_reported_date": "2022-01-22 15:48:35.198825",
+    "last_reported_channel": "1",
+    "id": "1c8c185f-c5ad-44d9-803b-b0ac028d7a03"
+  },
+  {
+    "mac": "fe:ba:e8:6a:32:de",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9896",
+    "last_reported_date": "2022-01-22 15:48:29.710205",
+    "last_reported_channel": "5",
+    "id": "ecdc6a56-fce9-4604-8e74-9ce3af228b16"
+  },
+  {
+    "mac": "f1:fa:00:1a:d4:64",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4846",
+    "last_reported_date": "2022-01-22 15:48:24.425358",
+    "last_reported_channel": "-13",
+    "id": "049ef7e0-8bc7-4dd0-a448-00490697ecf7"
+  },
+  {
+    "mac": "d7:ce:2b:ec:2d:de",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1549",
+    "last_reported_date": "2022-01-22 15:48:18.974251",
+    "last_reported_channel": "-4",
+    "id": "b4fbb6a3-f898-4845-a8af-8afe6916e924"
+  },
+  {
+    "mac": "9e:8a:a9:53:da:ae",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9743",
+    "last_reported_date": "2022-01-22 15:48:13.502858",
+    "last_reported_channel": "3",
+    "id": "5a1b4010-cc2a-4135-a0a4-c9502fafa45f"
+  },
+  {
+    "mac": "31:92:21:79:d3:9a",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3728",
+    "last_reported_date": "2022-01-22 15:48:08.036632",
+    "last_reported_channel": "13",
+    "id": "7bb108d7-7a49-4e88-b03a-722d0a421d8b"
+  },
+  {
+    "mac": "f8:d6:e3:78:0c:98",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8698",
+    "last_reported_date": "2022-01-22 15:48:02.569413",
+    "last_reported_channel": "9",
+    "id": "c3c654c5-bb33-4f1d-90b4-107afd52495a"
+  },
+  {
+    "mac": "d8:63:5e:ba:16:37",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3823",
+    "last_reported_date": "2022-01-22 15:47:57.104348",
+    "last_reported_channel": "-13",
+    "id": "7e474d60-a7cf-40ba-815e-fb6e578ab143"
+  },
+  {
+    "mac": "22:a9:b7:f0:2b:d5",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7215",
+    "last_reported_date": "2022-01-22 15:47:51.643345",
+    "last_reported_channel": "9",
+    "id": "c6989a9b-3bb1-4ff8-98a7-da87296c47f0"
+  },
+  {
+    "mac": "02:e2:59:d1:8e:f3",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2335",
+    "last_reported_date": "2022-01-22 15:47:46.170279",
+    "last_reported_channel": "-6",
+    "id": "f7767c54-3ce5-4bb7-a9d3-648d8b91bc2a"
+  },
+  {
+    "mac": "4b:b1:3e:2d:8c:3e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4388",
+    "last_reported_date": "2022-01-22 15:47:40.675200",
+    "last_reported_channel": "11",
+    "id": "94bb0793-199c-40f6-901b-6cd46ba3853d"
+  },
+  {
+    "mac": "3e:43:5d:84:eb:0d",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6004",
+    "last_reported_date": "2022-01-22 15:47:35.218713",
+    "last_reported_channel": "14",
+    "id": "e8948546-5a3d-4d75-8eb1-8575a5e7106a"
+  },
+  {
+    "mac": "c4:e9:7c:08:78:8d",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5395",
+    "last_reported_date": "2022-01-22 15:47:29.760502",
+    "last_reported_channel": "-14",
+    "id": "60514b1c-118b-4655-8e4d-6c1a810664f9"
+  },
+  {
+    "mac": "ce:b6:ba:1e:e5:c8",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6522",
+    "last_reported_date": "2022-01-22 15:47:24.280970",
+    "last_reported_channel": "11",
+    "id": "35192b32-e65f-4915-ab03-7b8871e10ce7"
+  },
+  {
+    "mac": "21:c4:99:7f:0d:c8",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2047",
+    "last_reported_date": "2022-01-22 15:47:18.790279",
+    "last_reported_channel": "-2",
+    "id": "a0851d9f-b4fe-4c75-b1de-b107cfa666e9"
+  },
+  {
+    "mac": "c4:0c:97:10:0b:2d",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_748",
+    "last_reported_date": "2022-01-22 15:47:13.275350",
+    "last_reported_channel": "-7",
+    "id": "cb90c54e-4033-4d75-a6bc-3681160cd9c1"
+  },
+  {
+    "mac": "2a:01:91:b9:0a:f7",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9257",
+    "last_reported_date": "2022-01-22 15:47:07.736905",
+    "last_reported_channel": "10",
+    "id": "3a6c159d-870f-4fc2-bbbe-7b08e56fae67"
+  },
+  {
+    "mac": "0e:b1:bd:6f:98:9e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8617",
+    "last_reported_date": "2022-01-22 15:47:02.183652",
+    "last_reported_channel": "1",
+    "id": "e487ac7f-aceb-4d56-b7ba-f2890c262342"
+  },
+  {
+    "mac": "44:6b:39:18:98:6f",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2871",
+    "last_reported_date": "2022-01-22 15:46:56.711534",
+    "last_reported_channel": "-1",
+    "id": "192dd470-b9db-4ab2-814f-e3c1e67c05d9"
+  },
+  {
+    "mac": "d9:be:9d:f1:fb:fb",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7135",
+    "last_reported_date": "2022-01-22 15:46:51.252120",
+    "last_reported_channel": "-3",
+    "id": "06b513a9-0051-4ced-aa5a-8db871dc1402"
+  },
+  {
+    "mac": "b4:f5:32:73:e5:fb",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6759",
+    "last_reported_date": "2022-01-22 15:46:45.786203",
+    "last_reported_channel": "-2",
+    "id": "1a832cf9-1154-4388-a7f9-f35e4ac06d82"
+  },
+  {
+    "mac": "4f:45:5e:9e:71:5a",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8578",
+    "last_reported_date": "2022-01-22 15:46:40.484507",
+    "last_reported_channel": "14",
+    "id": "ff1a5f71-8fe4-4acd-9802-c945b39cae80"
+  },
+  {
+    "mac": "4c:52:82:56:17:82",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_590",
+    "last_reported_date": "2022-01-22 15:46:34.910088",
+    "last_reported_channel": "6",
+    "id": "fab631a0-1af2-4679-ad24-6f1ca3ac0029"
+  },
+  {
+    "mac": "bb:7f:36:86:08:4e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_524",
+    "last_reported_date": "2022-01-22 15:46:29.437345",
+    "last_reported_channel": "10",
+    "id": "e17209e4-e074-4baa-b549-8f2143423ac1"
+  },
+  {
+    "mac": "8e:09:c0:0d:01:4b",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7734",
+    "last_reported_date": "2022-01-22 15:46:24.147679",
+    "last_reported_channel": "-8",
+    "id": "273c0bfd-6598-42f1-9177-f2c96d0661be"
+  },
+  {
+    "mac": "ee:82:47:73:f0:de",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1696",
+    "last_reported_date": "2022-01-22 15:46:18.671005",
+    "last_reported_channel": "3",
+    "id": "4cb81e38-4714-4045-843a-62fa37ad20a2"
+  },
+  {
+    "mac": "2f:70:3e:5e:02:25",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4688",
+    "last_reported_date": "2022-01-22 15:46:13.203666",
+    "last_reported_channel": "14",
+    "id": "74a96655-c6dd-419f-9ec8-6b43cc8311ee"
+  },
+  {
+    "mac": "52:d0:ab:50:fc:56",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4684",
+    "last_reported_date": "2022-01-22 15:46:07.725964",
+    "last_reported_channel": "1",
+    "id": "8a4a094b-600b-473e-9028-15271cfaa865"
+  },
+  {
+    "mac": "a7:c2:38:a0:1b:c3",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2859",
+    "last_reported_date": "2022-01-22 15:46:02.443872",
+    "last_reported_channel": "1",
+    "id": "a2750321-ee0e-475b-9b46-c41ed1b0b43d"
+  },
+  {
+    "mac": "ab:3f:98:17:17:51",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4478",
+    "last_reported_date": "2022-01-22 15:45:56.980175",
+    "last_reported_channel": "12",
+    "id": "370ad881-364f-4a0b-8779-3010cbc81e7d"
+  },
+  {
+    "mac": "ef:cf:0b:dd:38:b2",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1272",
+    "last_reported_date": "2022-01-22 15:45:51.515980",
+    "last_reported_channel": "3",
+    "id": "de72361d-07fb-49ee-9bca-6bdd81c76951"
+  },
+  {
+    "mac": "33:98:75:cd:51:89",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7422",
+    "last_reported_date": "2022-01-22 15:45:46.047751",
+    "last_reported_channel": "-10",
+    "id": "ecec6b66-c7a4-4f9a-b25c-25e2f654c77e"
+  },
+  {
+    "mac": "31:90:a7:8e:eb:57",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_617",
+    "last_reported_date": "2022-01-22 15:45:40.526182",
+    "last_reported_channel": "-4",
+    "id": "b10d7917-02af-4205-a9a4-965f9886cf9a"
+  },
+  {
+    "mac": "be:37:87:20:ca:c3",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3337",
+    "last_reported_date": "2022-01-22 15:45:35.051759",
+    "last_reported_channel": "13",
+    "id": "0cad31b0-2dcb-4eba-8fc3-80072d853e61"
+  },
+  {
+    "mac": "f7:ab:70:75:43:e6",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4460",
+    "last_reported_date": "2022-01-22 15:45:29.579357",
+    "last_reported_channel": "-1",
+    "id": "15260217-cc58-4c1c-a4d8-a3a607c5eba1"
+  },
+  {
+    "mac": "3f:80:f1:ea:65:ce",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9374",
+    "last_reported_date": "2022-01-22 15:45:24.110360",
+    "last_reported_channel": "-1",
+    "id": "85bb0615-0190-4185-98fa-e3b57eea4c7a"
+  },
+  {
+    "mac": "f3:5b:47:20:42:9b",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4410",
+    "last_reported_date": "2022-01-22 15:45:18.644128",
+    "last_reported_channel": "10",
+    "id": "080202e5-146f-46b1-900a-01cc46a76742"
+  },
+  {
+    "mac": "34:60:ef:97:b5:77",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9376",
+    "last_reported_date": "2022-01-22 15:45:13.135738",
+    "last_reported_channel": "12",
+    "id": "782be695-2cf1-464d-b72b-1ac3035fbd93"
+  },
+  {
+    "mac": "8c:e6:bb:e9:5f:a0",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1816",
+    "last_reported_date": "2022-01-22 15:45:07.650272",
+    "last_reported_channel": "-1",
+    "id": "94010cab-485d-4a54-9762-4470673d324b"
+  },
+  {
+    "mac": "55:b2:ac:3d:7f:15",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6458",
+    "last_reported_date": "2022-01-22 15:45:02.173303",
+    "last_reported_channel": "-10",
+    "id": "ffe772c1-5183-485b-970d-7f7d23dbcd02"
+  },
+  {
+    "mac": "a5:98:05:7f:19:07",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4726",
+    "last_reported_date": "2022-01-22 15:44:56.687056",
+    "last_reported_channel": "5",
+    "id": "83e33ab0-a536-4d4e-8ba5-aa5408df1b10"
+  },
+  {
+    "mac": "03:58:9b:d5:3f:98",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1465",
+    "last_reported_date": "2022-01-22 15:44:51.211289",
+    "last_reported_channel": "4",
+    "id": "1f1e4ad2-8533-4478-b799-8cb4757c551c"
+  },
+  {
+    "mac": "07:2a:7d:b7:11:2e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3406",
+    "last_reported_date": "2022-01-22 15:44:45.738627",
+    "last_reported_channel": "-8",
+    "id": "4ac30dbc-2190-43a0-9480-312c6b3249f0"
+  },
+  {
+    "mac": "d5:67:4e:c1:e6:84",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7700",
+    "last_reported_date": "2022-01-22 15:44:40.266343",
+    "last_reported_channel": "-15",
+    "id": "22d19ec9-3ab9-4f8d-9b83-01b59f6e87d3"
+  },
+  {
+    "mac": "d6:b9:7b:48:3c:ff",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2440",
+    "last_reported_date": "2022-01-22 15:44:34.796608",
+    "last_reported_channel": "5",
+    "id": "fe98c1d5-2272-47de-87f5-3b1d31535509"
+  },
+  {
+    "mac": "c2:fc:c0:89:dd:1c",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9610",
+    "last_reported_date": "2022-01-22 15:44:29.330198",
+    "last_reported_channel": "12",
+    "id": "f7eb0ec5-518d-496f-8a6d-7b607c6c1ca0"
+  },
+  {
+    "mac": "2f:c9:65:0e:45:86",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_381",
+    "last_reported_date": "2022-01-22 15:44:24.048738",
+    "last_reported_channel": "12",
+    "id": "48a3d4b7-cb08-4c4c-86bc-bde1f6d7fb18"
+  },
+  {
+    "mac": "44:0a:91:98:c7:83",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5163",
+    "last_reported_date": "2022-01-22 15:44:18.551176",
+    "last_reported_channel": "13",
+    "id": "2f5cd0c4-1001-4285-9315-bc7e2ea30fb6"
+  },
+  {
+    "mac": "4b:4a:5f:27:3c:6e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6978",
+    "last_reported_date": "2022-01-22 15:44:13.081205",
+    "last_reported_channel": "2",
+    "id": "c0e3af08-14ac-442b-94a4-4f280424775a"
+  },
+  {
+    "mac": "0f:14:8a:23:33:da",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1941",
+    "last_reported_date": "2022-01-22 15:44:07.572213",
+    "last_reported_channel": "-14",
+    "id": "5205eb4c-11fc-4477-b49e-16b0aa17abbc"
+  },
+  {
+    "mac": "b8:67:7f:68:fa:23",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6312",
+    "last_reported_date": "2022-01-22 15:44:02.283034",
+    "last_reported_channel": "-12",
+    "id": "7263d80c-7fe2-404f-ab69-e072205b136d"
+  },
+  {
+    "mac": "8d:41:b4:67:cf:d9",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8270",
+    "last_reported_date": "2022-01-22 15:43:56.710130",
+    "last_reported_channel": "-5",
+    "id": "36c417b9-26be-495c-9e9c-53d06d5276d7"
+  },
+  {
+    "mac": "f7:84:15:9a:97:68",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2044",
+    "last_reported_date": "2022-01-22 15:43:51.235987",
+    "last_reported_channel": "0",
+    "id": "3e37e6c8-bc98-4a74-976c-ff6bbc172cac"
+  },
+  {
+    "mac": "e3:9d:8d:7b:a7:1c",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6583",
+    "last_reported_date": "2022-01-22 15:43:45.691996",
+    "last_reported_channel": "10",
+    "id": "8c9d8666-710d-4004-aef7-a41662f5fa86"
+  },
+  {
+    "mac": "51:9f:f0:8c:5f:a5",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3319",
+    "last_reported_date": "2022-01-22 15:43:40.182587",
+    "last_reported_channel": "-4",
+    "id": "a8768794-0aec-498b-9f8e-27438bf424d4"
+  },
+  {
+    "mac": "81:f0:c4:14:f4:9e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1522",
+    "last_reported_date": "2022-01-22 15:43:34.705723",
+    "last_reported_channel": "11",
+    "id": "7e328424-8da8-4ef7-990d-60901ace8f78"
+  },
+  {
+    "mac": "06:d3:cb:66:a0:c6",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6911",
+    "last_reported_date": "2022-01-22 15:43:29.238911",
+    "last_reported_channel": "12",
+    "id": "720e05c2-b2d2-4906-995e-3f2881a61190"
+  },
+  {
+    "mac": "08:e8:88:20:bb:23",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3380",
+    "last_reported_date": "2022-01-22 15:43:23.760479",
+    "last_reported_channel": "-10",
+    "id": "4ee402e5-746a-4fe3-9cb0-a4a21ef85ece"
+  },
+  {
+    "mac": "7f:5c:0e:f5:c7:c6",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5563",
+    "last_reported_date": "2022-01-22 15:43:18.287626",
+    "last_reported_channel": "-11",
+    "id": "01d3494e-e9fe-42c2-8cb1-bdc51e4ba4fd"
+  },
+  {
+    "mac": "44:88:cc:c6:a1:5b",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5512",
+    "last_reported_date": "2022-01-22 15:43:12.797523",
+    "last_reported_channel": "-5",
+    "id": "cbf9d299-4519-4e71-acbf-23d71b870b2b"
+  },
+  {
+    "mac": "31:10:7e:18:69:24",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8086",
+    "last_reported_date": "2022-01-22 15:43:07.330642",
+    "last_reported_channel": "-11",
+    "id": "9dfa5d9e-33ae-4c47-bfd1-8e426309ceb4"
+  },
+  {
+    "mac": "0b:9f:fa:2c:30:56",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6804",
+    "last_reported_date": "2022-01-22 15:43:01.865871",
+    "last_reported_channel": "-11",
+    "id": "45556395-1b4a-4b2b-85f4-f21870113ba6"
+  },
+  {
+    "mac": "3e:53:c8:1f:19:36",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4471",
+    "last_reported_date": "2022-01-22 15:42:56.386596",
+    "last_reported_channel": "-7",
+    "id": "f32ba5c2-1251-4829-86fa-44207bbc6f6c"
+  },
+  {
+    "mac": "27:82:3f:9c:73:48",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7691",
+    "last_reported_date": "2022-01-22 15:42:50.920498",
+    "last_reported_channel": "14",
+    "id": "04ff4d60-8c91-490d-aead-df40f08dcf5b"
+  },
+  {
+    "mac": "88:12:07:b4:1d:e7",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6571",
+    "last_reported_date": "2022-01-22 15:42:45.455305",
+    "last_reported_channel": "9",
+    "id": "aeb5c8ee-e331-4799-a70a-189814d40c25"
+  },
+  {
+    "mac": "90:1c:bb:23:ad:d6",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3302",
+    "last_reported_date": "2022-01-22 15:42:40.156779",
+    "last_reported_channel": "9",
+    "id": "90c0dc5c-6841-46e3-80a5-c6bd9b146f73"
+  },
+  {
+    "mac": "92:48:3d:14:fa:8d",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4701",
+    "last_reported_date": "2022-01-22 15:42:34.588527",
+    "last_reported_channel": "-8",
+    "id": "b433797f-4de3-4121-9eb5-bb9eb53fb9f5"
+  },
+  {
+    "mac": "3b:e8:79:d1:55:c8",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5861",
+    "last_reported_date": "2022-01-22 15:42:29.123558",
+    "last_reported_channel": "-13",
+    "id": "d35d0e0e-dfe8-4c2c-83e9-510170ccfea6"
+  },
+  {
+    "mac": "13:47:61:9a:8b:b6",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_212",
+    "last_reported_date": "2022-01-22 15:42:23.652703",
+    "last_reported_channel": "11",
+    "id": "bd79d6bf-2dde-4bca-872b-eea1e6f689bf"
+  },
+  {
+    "mac": "86:6f:3a:dd:3c:ad",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6173",
+    "last_reported_date": "2022-01-22 15:42:18.182848",
+    "last_reported_channel": "-9",
+    "id": "62b002f3-6b8a-4d42-bcd4-8c22d001010d"
+  },
+  {
+    "mac": "69:de:1d:f8:6f:71",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8336",
+    "last_reported_date": "2022-01-22 15:42:12.715006",
+    "last_reported_channel": "-7",
+    "id": "d75f5970-978f-42ed-b1b0-98375dcc8c6d"
+  },
+  {
+    "mac": "9f:fe:13:af:8b:27",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1628",
+    "last_reported_date": "2022-01-22 15:42:07.239894",
+    "last_reported_channel": "-4",
+    "id": "d98b651c-2d65-4d5b-9b04-a8bbcf948f21"
+  },
+  {
+    "mac": "a8:ac:e7:c4:d4:8b",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5749",
+    "last_reported_date": "2022-01-22 15:42:01.767816",
+    "last_reported_channel": "9",
+    "id": "5fec9267-9d4d-49ac-beba-8942c41840c9"
+  },
+  {
+    "mac": "13:08:19:6c:0d:56",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1974",
+    "last_reported_date": "2022-01-22 15:41:56.459823",
+    "last_reported_channel": "-13",
+    "id": "c4056584-5501-49a9-b067-1a38fabfa17b"
+  },
+  {
+    "mac": "5b:bb:91:3c:4c:5b",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_667",
+    "last_reported_date": "2022-01-22 15:41:50.990529",
+    "last_reported_channel": "4",
+    "id": "0e8642e9-d0d1-420f-b663-8983b171b02e"
+  },
+  {
+    "mac": "14:e1:e1:6d:a8:53",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8491",
+    "last_reported_date": "2022-01-22 15:41:45.519341",
+    "last_reported_channel": "6",
+    "id": "9b743506-5567-4584-a69f-8448c03e9995"
+  },
+  {
+    "mac": "af:c7:93:91:1b:27",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6704",
+    "last_reported_date": "2022-01-22 15:41:40.042851",
+    "last_reported_channel": "0",
+    "id": "948197dd-6cfd-41af-8680-e567eed6a244"
+  },
+  {
+    "mac": "8e:0a:8f:e5:7a:02",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1913",
+    "last_reported_date": "2022-01-22 15:41:34.735055",
+    "last_reported_channel": "-10",
+    "id": "eb5b58f9-999b-43dd-b23c-cce245158be7"
+  },
+  {
+    "mac": "b0:91:a5:cf:c4:69",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8117",
+    "last_reported_date": "2022-01-22 15:41:29.439921",
+    "last_reported_channel": "-5",
+    "id": "4d794f43-d7c0-4189-93c5-6665b65522ab"
+  },
+  {
+    "mac": "7f:7d:dc:42:f2:91",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4056",
+    "last_reported_date": "2022-01-22 15:41:23.972906",
+    "last_reported_channel": "-13",
+    "id": "77d2f24e-9f7b-4811-a12a-66731819bfd9"
+  },
+  {
+    "mac": "0f:f5:ad:de:1d:71",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8413",
+    "last_reported_date": "2022-01-22 15:41:18.504360",
+    "last_reported_channel": "-10",
+    "id": "2c9f9f61-071f-4b3f-842a-d1e74d8b31cf"
+  },
+  {
+    "mac": "95:96:2e:a3:b1:8b",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6038",
+    "last_reported_date": "2022-01-22 15:41:13.019319",
+    "last_reported_channel": "-10",
+    "id": "1a8f1684-4a03-4b8b-a761-47003731dee8"
+  },
+  {
+    "mac": "28:b4:98:bb:96:01",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3996",
+    "last_reported_date": "2022-01-22 15:41:07.533354",
+    "last_reported_channel": "9",
+    "id": "6f30bdd5-fb11-440e-b7ca-01cd030f9bff"
+  },
+  {
+    "mac": "24:c2:1c:84:8c:ce",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8863",
+    "last_reported_date": "2022-01-22 15:41:02.062739",
+    "last_reported_channel": "-6",
+    "id": "8b1927a4-bfb6-4096-a75b-455cfae41460"
+  },
+  {
+    "mac": "60:ea:51:c6:e7:32",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3821",
+    "last_reported_date": "2022-01-22 15:40:56.589915",
+    "last_reported_channel": "13",
+    "id": "175a3ac2-5b6d-48f7-819d-cd1ed20078b8"
+  },
+  {
+    "mac": "b1:54:fa:3d:3b:e3",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9480",
+    "last_reported_date": "2022-01-22 15:40:51.120119",
+    "last_reported_channel": "2",
+    "id": "e6ef53f4-30ae-40e8-86db-d808a7f8c2c6"
+  },
+  {
+    "mac": "9b:8e:f2:69:a5:9a",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7486",
+    "last_reported_date": "2022-01-22 15:40:45.647067",
+    "last_reported_channel": "2",
+    "id": "4137d46e-5afb-4bb9-acd5-f4cfc5c4d612"
+  },
+  {
+    "mac": "3a:a3:22:ba:b5:2d",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7726",
+    "last_reported_date": "2022-01-22 15:40:40.169687",
+    "last_reported_channel": "12",
+    "id": "ba6abefc-3a81-4be3-ab73-65c6189c68e9"
+  },
+  {
+    "mac": "5e:3a:9d:0a:16:d1",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8633",
+    "last_reported_date": "2022-01-22 15:40:34.681849",
+    "last_reported_channel": "3",
+    "id": "fb4d26f9-2cfe-4ca4-8695-5f75074b5985"
+  },
+  {
+    "mac": "ee:41:d4:84:ac:42",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8834",
+    "last_reported_date": "2022-01-22 15:40:29.202677",
+    "last_reported_channel": "5",
+    "id": "0073d210-f3f0-47a7-a039-30176cc3e789"
+  },
+  {
+    "mac": "e0:76:fc:a9:e8:05",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5480",
+    "last_reported_date": "2022-01-22 15:40:23.739825",
+    "last_reported_channel": "-13",
+    "id": "816146de-41dd-4feb-8656-378d95476986"
+  },
+  {
+    "mac": "90:ed:7b:0e:9d:93",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9085",
+    "last_reported_date": "2022-01-22 15:40:18.437012",
+    "last_reported_channel": "-2",
+    "id": "448bd368-b694-4858-84a9-1cb953d1ce89"
+  },
+  {
+    "mac": "bf:2e:23:3b:20:7c",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4919",
+    "last_reported_date": "2022-01-22 15:40:12.971681",
+    "last_reported_channel": "-15",
+    "id": "84d6df5f-6941-4bea-805a-e03fa1fc0616"
+  },
+  {
+    "mac": "8e:1c:b2:83:18:d7",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_789",
+    "last_reported_date": "2022-01-22 15:40:07.504751",
+    "last_reported_channel": "7",
+    "id": "37f17ec6-286b-4c6b-9138-ee437b5c6e85"
+  },
+  {
+    "mac": "ea:97:5a:72:3d:55",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6106",
+    "last_reported_date": "2022-01-22 15:40:02.043957",
+    "last_reported_channel": "-9",
+    "id": "52cc6596-d94e-4ee7-819f-0f20102731cb"
+  },
+  {
+    "mac": "f6:ae:5d:b6:cf:56",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5202",
+    "last_reported_date": "2022-01-22 15:39:56.585359",
+    "last_reported_channel": "11",
+    "id": "eab311f4-3fd5-4205-b8d5-c1a36d150cf3"
+  },
+  {
+    "mac": "c7:ce:4b:fd:6c:49",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4813",
+    "last_reported_date": "2022-01-22 15:39:51.293767",
+    "last_reported_channel": "-6",
+    "id": "6981f910-e707-447f-9d56-8862ae00d0db"
+  },
+  {
+    "mac": "b8:60:3e:54:9e:7c",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5346",
+    "last_reported_date": "2022-01-22 15:39:45.990800",
+    "last_reported_channel": "-9",
+    "id": "4818d4b1-0ccb-48e6-ba0e-c90698b912b2"
+  },
+  {
+    "mac": "eb:0b:99:7a:6c:33",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_844",
+    "last_reported_date": "2022-01-22 15:39:40.514412",
+    "last_reported_channel": "8",
+    "id": "74aeaa20-38f6-4e01-a6ba-50303a5e7b37"
+  },
+  {
+    "mac": "07:60:8a:5d:fc:49",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6737",
+    "last_reported_date": "2022-01-22 15:39:35.036395",
+    "last_reported_channel": "7",
+    "id": "cf3ce4f8-3966-4de1-a4ec-a245233c1046"
+  },
+  {
+    "mac": "cf:9f:66:6d:8a:43",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1083",
+    "last_reported_date": "2022-01-22 15:39:29.568069",
+    "last_reported_channel": "-12",
+    "id": "4686e477-ae3d-4ad3-b5a4-1a4fe5cf08ec"
+  },
+  {
+    "mac": "8e:63:de:6a:26:6b",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1438",
+    "last_reported_date": "2022-01-22 15:39:24.067434",
+    "last_reported_channel": "-10",
+    "id": "5a47bd8a-6cb4-4f7c-9d12-eb3e202258fd"
+  },
+  {
+    "mac": "53:67:96:52:25:1c",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1364",
+    "last_reported_date": "2022-01-22 15:39:18.572183",
+    "last_reported_channel": "-15",
+    "id": "7777306a-cab1-4576-a728-f9102cedce9a"
+  },
+  {
+    "mac": "d8:2b:3b:69:df:2e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8431",
+    "last_reported_date": "2022-01-22 15:39:13.102495",
+    "last_reported_channel": "-1",
+    "id": "7d524d4d-d758-456e-99e0-ca027abf29ef"
+  },
+  {
+    "mac": "f0:29:7d:40:bf:e8",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3251",
+    "last_reported_date": "2022-01-22 15:39:07.626620",
+    "last_reported_channel": "-7",
+    "id": "3fc85a8d-5820-49fb-bc63-567242c1015b"
+  },
+  {
+    "mac": "bf:38:52:17:e1:13",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4227",
+    "last_reported_date": "2022-01-22 15:39:02.113712",
+    "last_reported_channel": "-8",
+    "id": "47cbd590-68cd-4c65-9d94-077361791627"
+  },
+  {
+    "mac": "c7:4f:2f:85:3c:1e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9543",
+    "last_reported_date": "2022-01-22 15:38:56.633446",
+    "last_reported_channel": "6",
+    "id": "cc9336c1-48c8-47d8-9b38-4da787b36f50"
+  },
+  {
+    "mac": "17:36:c7:fe:b3:c7",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6434",
+    "last_reported_date": "2022-01-22 15:38:51.171091",
+    "last_reported_channel": "5",
+    "id": "01401d0e-35ca-42ca-8b6d-1d37eb60b94b"
+  },
+  {
+    "mac": "ba:12:92:ad:74:ca",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2276",
+    "last_reported_date": "2022-01-22 15:38:45.871413",
+    "last_reported_channel": "6",
+    "id": "e121ad00-e7ef-44bf-80d1-ce1250fde449"
+  },
+  {
+    "mac": "24:98:bf:8b:fe:01",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9248",
+    "last_reported_date": "2022-01-22 15:38:40.407877",
+    "last_reported_channel": "-1",
+    "id": "75e35cbc-8487-4792-ae81-8a1baf8bc811"
+  },
+  {
+    "mac": "42:ef:9e:cf:60:2b",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_725",
+    "last_reported_date": "2022-01-22 15:38:34.921515",
+    "last_reported_channel": "11",
+    "id": "2cb9a576-fa43-4467-b186-a1e743bd86fc"
+  },
+  {
+    "mac": "dd:68:22:16:a7:a4",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4864",
+    "last_reported_date": "2022-01-22 15:38:29.564309",
+    "last_reported_channel": "-6",
+    "id": "30f02dbb-82fb-4e5c-adfc-84001c4b1cb5"
+  },
+  {
+    "mac": "e4:e4:8f:0b:b8:56",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8312",
+    "last_reported_date": "2022-01-22 15:38:24.077058",
+    "last_reported_channel": "6",
+    "id": "ecfe4eda-c56b-4c58-a2fe-f7a9146521b9"
+  },
+  {
+    "mac": "40:47:55:6e:0e:26",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4449",
+    "last_reported_date": "2022-01-22 15:38:18.793765",
+    "last_reported_channel": "-9",
+    "id": "4d8bd402-7b4d-49d2-a440-cf55bb963ded"
+  },
+  {
+    "mac": "6c:6c:51:bb:76:eb",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8174",
+    "last_reported_date": "2022-01-22 15:38:13.269593",
+    "last_reported_channel": "-7",
+    "id": "0b23a379-5047-4f91-a53d-774b0abb2abb"
+  },
+  {
+    "mac": "8d:da:09:ae:3b:e7",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1908",
+    "last_reported_date": "2022-01-22 15:38:07.815579",
+    "last_reported_channel": "4",
+    "id": "965f10ce-846f-49d6-8895-49e37a33d23e"
+  },
+  {
+    "mac": "03:ad:fc:f9:18:01",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6266",
+    "last_reported_date": "2022-01-22 15:38:02.513060",
+    "last_reported_channel": "-1",
+    "id": "ce120a20-c031-413b-b662-8e25a702d5e8"
+  },
+  {
+    "mac": "97:2a:2c:af:ad:d6",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_196",
+    "last_reported_date": "2022-01-22 15:37:57.036774",
+    "last_reported_channel": "4",
+    "id": "c71e520f-079a-4168-b73d-e8fbdebf6e74"
+  },
+  {
+    "mac": "19:9f:82:19:1c:1e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2323",
+    "last_reported_date": "2022-01-22 15:37:51.281030",
+    "last_reported_channel": "12",
+    "id": "c47cbc5a-6de8-4f5c-8c02-4c6382805834"
+  },
+  {
+    "mac": "57:4e:4f:b4:7a:13",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8043",
+    "last_reported_date": "2022-01-22 15:37:45.778551",
+    "last_reported_channel": "0",
+    "id": "e4d55dd2-f90e-40c7-a492-0d0c10e29268"
+  },
+  {
+    "mac": "7d:27:01:99:1f:09",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4598",
+    "last_reported_date": "2022-01-22 15:37:38.947621",
+    "last_reported_channel": "-2",
+    "id": "eb729dd4-929e-48b2-bb30-9cf1e302c915"
+  },
+  {
+    "mac": "84:22:5a:c2:25:1e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5916",
+    "last_reported_date": "2022-01-22 15:37:33.462971",
+    "last_reported_channel": "11",
+    "id": "0591f6e0-7d88-4469-88ad-48ad76924c75"
+  },
+  {
+    "mac": "bf:27:cf:cd:19:23",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8681",
+    "last_reported_date": "2022-01-22 15:37:27.998649",
+    "last_reported_channel": "6",
+    "id": "d2fe1bd3-583c-45e5-8a2a-20e057bea58c"
+  },
+  {
+    "mac": "5b:f3:b8:54:f8:a6",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2672",
+    "last_reported_date": "2022-01-22 15:37:22.530575",
+    "last_reported_channel": "-10",
+    "id": "48b12d9e-f7ae-40fc-89d1-2bcc18e3de7c"
+  },
+  {
+    "mac": "c3:7e:15:15:97:c5",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4628",
+    "last_reported_date": "2022-01-22 15:37:17.070041",
+    "last_reported_channel": "4",
+    "id": "0bbc4e47-80d2-45e8-978d-28c782cb681a"
+  },
+  {
+    "mac": "a7:0e:be:e1:3d:5e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9224",
+    "last_reported_date": "2022-01-22 15:37:11.591589",
+    "last_reported_channel": "-13",
+    "id": "2f92623f-d963-4a96-857c-034476892412"
+  },
+  {
+    "mac": "53:3e:86:7c:e0:30",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8119",
+    "last_reported_date": "2022-01-22 15:37:06.108406",
+    "last_reported_channel": "1",
+    "id": "974040fd-647e-4c98-9a0c-13227c9902b2"
+  },
+  {
+    "mac": "49:c1:a8:56:fc:4f",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_210",
+    "last_reported_date": "2022-01-22 15:37:00.635461",
+    "last_reported_channel": "13",
+    "id": "d5654f73-2438-4940-8b59-e406d81d2e14"
+  },
+  {
+    "mac": "33:ca:c8:38:79:7f",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1240",
+    "last_reported_date": "2022-01-22 15:36:55.174010",
+    "last_reported_channel": "4",
+    "id": "9c303032-eecf-47e0-a572-594ff83cfd7a"
+  },
+  {
+    "mac": "37:5e:e6:6d:2a:0a",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6872",
+    "last_reported_date": "2022-01-22 15:36:49.709099",
+    "last_reported_channel": "-1",
+    "id": "a0f11dc8-d386-40b6-9fdc-b970744d01a7"
+  },
+  {
+    "mac": "44:24:5c:81:8d:42",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4158",
+    "last_reported_date": "2022-01-22 15:36:44.248867",
+    "last_reported_channel": "6",
+    "id": "ea230b6f-d063-4aa1-b7c7-214a423b9a30"
+  },
+  {
+    "mac": "fb:ee:ea:d8:9c:44",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6903",
+    "last_reported_date": "2022-01-22 15:36:38.782798",
+    "last_reported_channel": "8",
+    "id": "2f6045db-261c-4e7f-9333-6eeaa131764c"
+  },
+  {
+    "mac": "1f:e4:a2:56:53:d2",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_214",
+    "last_reported_date": "2022-01-22 15:36:33.323160",
+    "last_reported_channel": "-15",
+    "id": "ce02f59d-a512-4054-8e21-408dfdb7b9dc"
+  },
+  {
+    "mac": "e7:4d:19:ca:92:0e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1542",
+    "last_reported_date": "2022-01-22 15:36:27.937558",
+    "last_reported_channel": "14",
+    "id": "3adf455c-ec66-4225-902d-e7d2c84f8ceb"
+  },
+  {
+    "mac": "f0:db:2e:95:83:30",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_781",
+    "last_reported_date": "2022-01-22 15:36:22.467915",
+    "last_reported_channel": "8",
+    "id": "a97a8797-233a-40e0-8c5b-ba8fe4329180"
+  },
+  {
+    "mac": "a9:b2:a6:44:a5:da",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2131",
+    "last_reported_date": "2022-01-22 15:36:17.010035",
+    "last_reported_channel": "3",
+    "id": "0af904f3-e005-47bc-a11c-51033cccc46b"
+  },
+  {
+    "mac": "a8:8f:19:09:4d:a2",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3156",
+    "last_reported_date": "2022-01-22 15:36:11.523521",
+    "last_reported_channel": "-11",
+    "id": "09766193-6c8c-407e-af95-918e1fe28a9d"
+  },
+  {
+    "mac": "be:e4:01:7e:fc:7e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_860",
+    "last_reported_date": "2022-01-22 15:36:06.058767",
+    "last_reported_channel": "-1",
+    "id": "79e62dc6-b884-4663-9345-ebbc88f33dd4"
+  },
+  {
+    "mac": "3d:1d:44:dc:ff:d3",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7249",
+    "last_reported_date": "2022-01-22 15:36:00.762993",
+    "last_reported_channel": "-6",
+    "id": "52eca18d-3ca0-47b6-a847-2f8ae905faf1"
+  },
+  {
+    "mac": "ee:e0:d5:a4:3c:da",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8078",
+    "last_reported_date": "2022-01-22 15:35:55.283904",
+    "last_reported_channel": "-3",
+    "id": "0b030b4a-5097-4e22-819e-0dc8ba84dbff"
+  },
+  {
+    "mac": "3c:0d:7e:2d:4a:15",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8318",
+    "last_reported_date": "2022-01-22 15:35:49.801934",
+    "last_reported_channel": "-13",
+    "id": "609a8863-a5f2-4dca-a845-04abf84e3c9e"
+  },
+  {
+    "mac": "a1:38:45:6a:ec:b2",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7958",
+    "last_reported_date": "2022-01-22 15:35:44.505485",
+    "last_reported_channel": "-2",
+    "id": "101cee95-3baa-49a9-a60d-be6efe38b80f"
+  },
+  {
+    "mac": "8d:da:98:fc:50:0e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9418",
+    "last_reported_date": "2022-01-22 15:35:38.947174",
+    "last_reported_channel": "-10",
+    "id": "bd2423fc-5bf9-4d2e-9eb9-b2b71ae295a5"
+  },
+  {
+    "mac": "fc:16:88:fb:59:35",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3335",
+    "last_reported_date": "2022-01-22 15:35:33.455851",
+    "last_reported_channel": "-13",
+    "id": "a685ed99-c17a-4b47-ac77-36eb05b49fa8"
+  },
+  {
+    "mac": "fd:61:8a:e5:57:a0",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1777",
+    "last_reported_date": "2022-01-22 15:35:28.169048",
+    "last_reported_channel": "-7",
+    "id": "6cedccc1-bf19-4f96-95e6-0d38d3ffbe8c"
+  },
+  {
+    "mac": "a3:bd:a9:28:be:f0",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3095",
+    "last_reported_date": "2022-01-22 15:35:22.684693",
+    "last_reported_channel": "2",
+    "id": "1c13e5bd-2f24-4b9a-8fb6-cf261d57ab66"
+  },
+  {
+    "mac": "8a:9d:9b:12:d5:fb",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7672",
+    "last_reported_date": "2022-01-22 15:35:17.197766",
+    "last_reported_channel": "-5",
+    "id": "912e744f-f8da-4753-99d1-1a69354d1874"
+  },
+  {
+    "mac": "43:03:e5:95:aa:d9",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4122",
+    "last_reported_date": "2022-01-22 15:35:11.731304",
+    "last_reported_channel": "-13",
+    "id": "a0834d4b-0b89-4167-9cf3-1bde15853127"
+  },
+  {
+    "mac": "5e:8e:92:8f:70:25",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7760",
+    "last_reported_date": "2022-01-22 15:35:06.436528",
+    "last_reported_channel": "-3",
+    "id": "f53dabf9-bb41-4c57-b1c3-45a599a5acec"
+  },
+  {
+    "mac": "51:cf:eb:8e:4c:d9",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1587",
+    "last_reported_date": "2022-01-22 15:35:00.951964",
+    "last_reported_channel": "-14",
+    "id": "d24025d3-fd40-40cc-ad4e-b6b10e02b201"
+  },
+  {
+    "mac": "62:82:e4:7b:e0:a8",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7769",
+    "last_reported_date": "2022-01-22 15:34:55.662083",
+    "last_reported_channel": "-9",
+    "id": "fca310ef-1843-4317-abb0-e7023bde1d8e"
+  },
+  {
+    "mac": "3c:53:62:30:70:2c",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6411",
+    "last_reported_date": "2022-01-22 15:34:50.366515",
+    "last_reported_channel": "-7",
+    "id": "37f69054-71db-469b-98ce-507c9e8b4f59"
+  },
+  {
+    "mac": "35:af:fe:3a:45:6b",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8624",
+    "last_reported_date": "2022-01-22 15:34:44.895734",
+    "last_reported_channel": "-1",
+    "id": "8787bb23-2022-4690-a934-96f6bb98b122"
+  },
+  {
+    "mac": "09:bf:4a:0d:1a:ed",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8466",
+    "last_reported_date": "2022-01-22 15:34:39.423574",
+    "last_reported_channel": "-10",
+    "id": "ac7672d2-625b-49ab-8d7c-eba5f2839840"
+  },
+  {
+    "mac": "c8:a7:74:2a:18:79",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5714",
+    "last_reported_date": "2022-01-22 15:34:33.957365",
+    "last_reported_channel": "9",
+    "id": "a9b5becd-7cb2-4086-8deb-5b6b91ac8d17"
+  },
+  {
+    "mac": "b1:e0:4c:44:e2:4a",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8566",
+    "last_reported_date": "2022-01-22 15:34:28.490651",
+    "last_reported_channel": "12",
+    "id": "5f15df88-78b8-4ae1-b235-d266d573807b"
+  },
+  {
+    "mac": "f9:d3:3e:cd:00:59",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1302",
+    "last_reported_date": "2022-01-22 15:34:23.000064",
+    "last_reported_channel": "-12",
+    "id": "ce4537f8-dd77-4871-9c0b-85c28fc40a46"
+  },
+  {
+    "mac": "af:22:0d:7b:fb:00",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1426",
+    "last_reported_date": "2022-01-22 15:34:17.530083",
+    "last_reported_channel": "-9",
+    "id": "ddcc5c09-07ab-4073-ae10-b88402cc5861"
+  },
+  {
+    "mac": "57:ae:ab:a2:3d:fc",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8718",
+    "last_reported_date": "2022-01-22 15:34:11.940305",
+    "last_reported_channel": "-6",
+    "id": "9a539ff4-3137-4dde-a00a-eb7e51c840dc"
+  },
+  {
+    "mac": "53:29:1a:fe:13:95",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5014",
+    "last_reported_date": "2022-01-22 15:34:06.463270",
+    "last_reported_channel": "3",
+    "id": "7e024a2c-ebbc-4946-b5ab-186ac00ce157"
+  },
+  {
+    "mac": "6c:e4:5f:5b:4a:51",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5158",
+    "last_reported_date": "2022-01-22 15:34:01.165905",
+    "last_reported_channel": "-6",
+    "id": "95a0056c-fa33-431e-b382-c4b38d6f84fb"
+  },
+  {
+    "mac": "d1:2f:bb:a5:1c:e6",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1755",
+    "last_reported_date": "2022-01-22 15:33:55.854591",
+    "last_reported_channel": "-2",
+    "id": "533a765d-ee0f-4d9e-9a21-63298c28475e"
+  },
+  {
+    "mac": "d2:da:d3:ee:d8:48",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_69",
+    "last_reported_date": "2022-01-22 15:33:50.286840",
+    "last_reported_channel": "11",
+    "id": "f0112c4c-f139-43e4-b147-ecb1256a0d1a"
+  },
+  {
+    "mac": "bf:e8:29:09:8a:bd",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_619",
+    "last_reported_date": "2022-01-22 15:33:44.825029",
+    "last_reported_channel": "8",
+    "id": "780d5ea8-fa9c-48ce-ba8f-88641cb108dc"
+  },
+  {
+    "mac": "b5:06:c8:5d:16:5e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2054",
+    "last_reported_date": "2022-01-22 15:33:39.346216",
+    "last_reported_channel": "1",
+    "id": "eee55466-172c-4c47-8642-4fcebe3ca492"
+  },
+  {
+    "mac": "38:8f:26:7a:86:0d",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9282",
+    "last_reported_date": "2022-01-22 15:33:34.066207",
+    "last_reported_channel": "7",
+    "id": "8b1fe8bd-962d-4a3a-86d3-b74b895d8bda"
+  },
+  {
+    "mac": "37:8a:ee:e9:b9:e9",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3948",
+    "last_reported_date": "2022-01-22 15:33:28.590801",
+    "last_reported_channel": "-5",
+    "id": "a4d0c5c2-7f90-48d5-b418-6ffa5c683822"
+  },
+  {
+    "mac": "2d:c1:ac:15:5e:82",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_86",
+    "last_reported_date": "2022-01-22 15:33:23.075630",
+    "last_reported_channel": "10",
+    "id": "41cd3156-ec45-43da-83b8-5de1e0fc48e6"
+  },
+  {
+    "mac": "64:a5:30:5e:e8:75",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4920",
+    "last_reported_date": "2022-01-22 15:33:17.569149",
+    "last_reported_channel": "7",
+    "id": "8c04f06d-423b-440c-ba0f-9d2198354d88"
+  },
+  {
+    "mac": "92:da:d1:50:f5:35",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4430",
+    "last_reported_date": "2022-01-22 15:33:12.096373",
+    "last_reported_channel": "11",
+    "id": "bc8f9302-c153-41b7-b395-f2df67f8d58d"
+  },
+  {
+    "mac": "5f:e5:4e:1f:fc:1f",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2748",
+    "last_reported_date": "2022-01-22 15:33:06.607207",
+    "last_reported_channel": "5",
+    "id": "daa25f62-9b1a-44f6-a13c-f3d93e906cf7"
+  },
+  {
+    "mac": "e8:11:05:d7:57:15",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3907",
+    "last_reported_date": "2022-01-22 15:33:01.140399",
+    "last_reported_channel": "-11",
+    "id": "fd7a3583-75e1-4f34-b816-010ceda124aa"
+  },
+  {
+    "mac": "07:28:dc:d1:89:3f",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9239",
+    "last_reported_date": "2022-01-22 15:32:55.620206",
+    "last_reported_channel": "-11",
+    "id": "8826858a-b516-4e2b-ba0f-e2e8b1882a92"
+  },
+  {
+    "mac": "01:4f:5f:26:1c:a1",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7295",
+    "last_reported_date": "2022-01-22 15:32:50.039794",
+    "last_reported_channel": "7",
+    "id": "8fd51ce4-8b2c-4485-b1a7-4dfc461110e9"
+  },
+  {
+    "mac": "2c:f9:05:88:7a:6d",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6186",
+    "last_reported_date": "2022-01-22 15:32:44.278746",
+    "last_reported_channel": "-15",
+    "id": "6cd0c615-c1df-4061-9835-33b1d1da03f4"
+  },
+  {
+    "mac": "14:eb:2f:eb:0a:92",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_303",
+    "last_reported_date": "2022-01-22 15:32:38.547095",
+    "last_reported_channel": "-5",
+    "id": "3100435f-612c-414e-a1ae-eec769e4b27a"
+  },
+  {
+    "mac": "32:f8:eb:0b:5c:8e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9521",
+    "last_reported_date": "2022-01-22 15:32:33.171521",
+    "last_reported_channel": "-7",
+    "id": "1a208370-390c-4d43-a6a6-32fffa79a81a"
+  },
+  {
+    "mac": "c9:7a:66:15:59:ea",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9206",
+    "last_reported_date": "2022-01-22 15:32:27.703244",
+    "last_reported_channel": "-15",
+    "id": "4b0f0bcb-51ec-4845-ad5e-2bbdc40436b3"
+  },
+  {
+    "mac": "f2:8c:a9:f9:d6:20",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6969",
+    "last_reported_date": "2022-01-22 15:32:22.236403",
+    "last_reported_channel": "-3",
+    "id": "602f5451-9397-4fbd-8319-ab76277b43b2"
+  },
+  {
+    "mac": "75:d2:f7:e0:70:20",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_629",
+    "last_reported_date": "2022-01-22 15:32:16.911542",
+    "last_reported_channel": "14",
+    "id": "e641800a-b2ea-41df-bc23-748e7438b4a7"
+  },
+  {
+    "mac": "ae:33:9c:30:f6:d7",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_247",
+    "last_reported_date": "2022-01-22 15:32:11.408325",
+    "last_reported_channel": "-15",
+    "id": "58aaf722-66e8-4946-b80c-b56de2acdd2a"
+  },
+  {
+    "mac": "25:60:19:79:4a:19",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4063",
+    "last_reported_date": "2022-01-22 15:32:05.792701",
+    "last_reported_channel": "10",
+    "id": "d3c49790-1631-4348-becd-1defe77017ef"
+  },
+  {
+    "mac": "01:90:71:68:53:a7",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2670",
+    "last_reported_date": "2022-01-22 15:32:00.309004",
+    "last_reported_channel": "13",
+    "id": "c9ac26fa-b6f9-483d-9505-9a5aeab1dc26"
+  },
+  {
+    "mac": "03:60:c8:bd:e5:bc",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5282",
+    "last_reported_date": "2022-01-22 15:31:54.835353",
+    "last_reported_channel": "3",
+    "id": "e7437b9c-c33e-45bb-869b-85d9313fe19d"
+  },
+  {
+    "mac": "e3:ec:d7:e5:38:92",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3576",
+    "last_reported_date": "2022-01-22 15:31:49.348748",
+    "last_reported_channel": "1",
+    "id": "2ccc6729-3443-4d1b-ae87-8bcff2d96ffa"
+  },
+  {
+    "mac": "fb:5d:62:ee:f7:52",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8327",
+    "last_reported_date": "2022-01-22 15:31:43.882223",
+    "last_reported_channel": "2",
+    "id": "c42a76c0-3d95-4bda-bcb9-39790b8c2f0f"
+  },
+  {
+    "mac": "b4:a7:c5:84:78:a4",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6795",
+    "last_reported_date": "2022-01-22 15:31:38.415618",
+    "last_reported_channel": "0",
+    "id": "d905eced-4ae9-468b-b8eb-049e93a78d03"
+  },
+  {
+    "mac": "e3:65:0d:64:b5:b1",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3520",
+    "last_reported_date": "2022-01-22 15:31:32.902327",
+    "last_reported_channel": "-11",
+    "id": "2d2f0b0f-3e6a-432e-ab83-e82af3b976b8"
+  },
+  {
+    "mac": "32:87:66:ae:3d:32",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4646",
+    "last_reported_date": "2022-01-22 15:31:27.448944",
+    "last_reported_channel": "0",
+    "id": "568a1c24-2759-4600-ae1a-123b0ffcd7fe"
+  },
+  {
+    "mac": "bd:43:50:86:eb:41",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2973",
+    "last_reported_date": "2022-01-22 15:31:21.835263",
+    "last_reported_channel": "6",
+    "id": "b5545da6-01e5-4a25-b0de-7e40125704d7"
+  },
+  {
+    "mac": "26:fd:82:f3:82:1a",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4549",
+    "last_reported_date": "2022-01-22 15:31:16.372763",
+    "last_reported_channel": "3",
+    "id": "f61deaad-92d9-4269-bae8-36fb8b270482"
+  },
+  {
+    "mac": "d6:58:36:58:78:2b",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9464",
+    "last_reported_date": "2022-01-22 15:31:11.088965",
+    "last_reported_channel": "-3",
+    "id": "d10e89bb-8039-40dc-be9e-228a66b10cf0"
+  },
+  {
+    "mac": "33:c6:1b:2f:64:e5",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3771",
+    "last_reported_date": "2022-01-22 15:31:05.620952",
+    "last_reported_channel": "10",
+    "id": "2f0284d4-df47-4d9c-b570-d155065c6dae"
+  },
+  {
+    "mac": "ec:a9:1c:2e:a2:05",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9288",
+    "last_reported_date": "2022-01-22 15:31:00.157627",
+    "last_reported_channel": "3",
+    "id": "9612be1f-4958-4b1e-afad-7d9d2e614d5e"
+  },
+  {
+    "mac": "3e:36:12:26:1a:9a",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8816",
+    "last_reported_date": "2022-01-22 15:30:54.776373",
+    "last_reported_channel": "13",
+    "id": "2f922bb6-fd89-4707-b56e-e2561c4ee021"
+  },
+  {
+    "mac": "1a:83:1e:98:d2:29",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1214",
+    "last_reported_date": "2022-01-22 15:30:49.249956",
+    "last_reported_channel": "14",
+    "id": "8b25cba4-0fd1-49c3-bd16-9ea3c5550e35"
+  },
+  {
+    "mac": "ff:7c:9d:5b:f6:cd",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4825",
+    "last_reported_date": "2022-01-22 15:30:43.770920",
+    "last_reported_channel": "5",
+    "id": "a79f770b-79e4-4c95-8331-cfccc91b87b5"
+  },
+  {
+    "mac": "04:0c:05:2a:41:36",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_3695",
+    "last_reported_date": "2022-01-22 15:30:38.313145",
+    "last_reported_channel": "10",
+    "id": "22e43aa7-a338-48ea-ac78-f93f4967de0f"
+  },
+  {
+    "mac": "d3:9f:e3:8e:3d:38",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2661",
+    "last_reported_date": "2022-01-22 15:30:32.916833",
+    "last_reported_channel": "9",
+    "id": "9bb611a9-49eb-4b8f-8e9f-ea59507d8e06"
+  },
+  {
+    "mac": "46:7f:4d:ca:12:f8",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8501",
+    "last_reported_date": "2022-01-22 15:30:27.447816",
+    "last_reported_channel": "4",
+    "id": "7ad4a7bd-5790-4fef-9ba0-d07152ece5f2"
+  },
+  {
+    "mac": "86:1e:db:8d:cf:13",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5167",
+    "last_reported_date": "2022-01-22 15:30:21.919036",
+    "last_reported_channel": "8",
+    "id": "67cbfe60-1e98-4961-9b31-cf406f96e7ea"
+  },
+  {
+    "mac": "65:23:25:5d:af:4c",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9789",
+    "last_reported_date": "2022-01-22 15:30:16.330608",
+    "last_reported_channel": "10",
+    "id": "67cde041-dbc1-4fa6-8148-c30af12f4cfc"
+  },
+  {
+    "mac": "41:52:db:ee:c5:dc",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8533",
+    "last_reported_date": "2022-01-22 15:30:10.858251",
+    "last_reported_channel": "-9",
+    "id": "67edb583-01a0-4ef4-bc96-385fd13d9a20"
+  },
+  {
+    "mac": "ba:41:7c:4b:5b:50",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8621",
+    "last_reported_date": "2022-01-22 15:30:05.307201",
+    "last_reported_channel": "2",
+    "id": "2bc78d90-5980-4751-a286-04569c63b463"
+  },
+  {
+    "mac": "76:7a:34:d0:f0:2a",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_7025",
+    "last_reported_date": "2022-01-22 15:29:59.808664",
+    "last_reported_channel": "0",
+    "id": "3678e92a-3ab5-43dd-8bee-60ea5d1b2112"
+  },
+  {
+    "mac": "46:c2:3c:a3:10:dc",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9376",
+    "last_reported_date": "2022-01-22 15:29:54.334849",
+    "last_reported_channel": "0",
+    "id": "062e5ee0-64e2-467b-af73-f295fb16ce4d"
+  },
+  {
+    "mac": "cb:2e:2b:8e:f9:76",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1974",
+    "last_reported_date": "2022-01-22 15:29:48.859771",
+    "last_reported_channel": "7",
+    "id": "efbdb69e-18c1-412d-b5d7-4e542f0d475f"
+  },
+  {
+    "mac": "05:8e:27:2a:f3:ca",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5257",
+    "last_reported_date": "2022-01-22 15:29:43.344426",
+    "last_reported_channel": "-12",
+    "id": "0891f284-9034-4a4b-a8fa-3e638fc3025b"
+  },
+  {
+    "mac": "db:b2:ea:5a:80:ad",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_4091",
+    "last_reported_date": "2022-01-22 15:29:38.051597",
+    "last_reported_channel": "-3",
+    "id": "56f5a6e1-9d8d-4f11-b269-274ba968e0f8"
+  },
+  {
+    "mac": "cf:1f:dd:a0:8e:6f",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2744",
+    "last_reported_date": "2022-01-22 15:29:32.514983",
+    "last_reported_channel": "-5",
+    "id": "f73e102d-a417-48c1-844a-4afdcf1d9cc3"
+  },
+  {
+    "mac": "e7:de:54:f8:a5:70",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2026",
+    "last_reported_date": "2022-01-22 15:29:26.984847",
+    "last_reported_channel": "11",
+    "id": "09e03ab1-f9cd-46cd-9292-682fc65e0fb8"
+  },
+  {
+    "mac": "f3:f4:8d:aa:78:c8",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1689",
+    "last_reported_date": "2022-01-22 15:29:20.679220",
+    "last_reported_channel": "12",
+    "id": "f434c48a-cbe8-4ba4-83a8-1b2cef06397b"
+  },
+  {
+    "mac": "6d:86:68:bc:2b:dd",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1368",
+    "last_reported_date": "2022-01-22 15:29:15.147008",
+    "last_reported_channel": "10",
+    "id": "107a5bb8-52f5-43d4-a711-5b9643ff632a"
+  },
+  {
+    "mac": "3f:66:87:39:a0:ec",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5417",
+    "last_reported_date": "2022-01-22 15:29:09.682329",
+    "last_reported_channel": "14",
+    "id": "44be37e7-496a-4617-b20a-5c1660a58dde"
+  },
+  {
+    "mac": "00:de:7a:fd:1e:ab",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2846",
+    "last_reported_date": "2022-01-22 15:29:04.132508",
+    "last_reported_channel": "8",
+    "id": "d149a004-f36c-4815-bca3-c51d7028a13e"
+  },
+  {
+    "mac": "ae:b0:ff:b9:46:a6",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6374",
+    "last_reported_date": "2022-01-22 15:28:58.647970",
+    "last_reported_channel": "-8",
+    "id": "f424135a-90a5-43a2-9cc7-69cb71ef1a1b"
+  },
+  {
+    "mac": "18:60:85:30:62:ef",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6922",
+    "last_reported_date": "2022-01-22 15:28:53.077578",
+    "last_reported_channel": "4",
+    "id": "f51b22bf-0a44-456b-a136-f9dd93031916"
+  },
+  {
+    "mac": "f3:1b:b8:03:0e:65",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_612",
+    "last_reported_date": "2022-01-22 15:28:47.603306",
+    "last_reported_channel": "6",
+    "id": "eda0af63-5a61-4b3e-86e7-1ac0fdc07b13"
+  },
+  {
+    "mac": "be:f7:e1:ed:a5:94",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_1006",
+    "last_reported_date": "2022-01-22 15:28:41.619893",
+    "last_reported_channel": "10",
+    "id": "1c0db789-901b-49c5-8eff-2566a35787f1"
+  },
+  {
+    "mac": "89:78:1f:18:2f:30",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9218",
+    "last_reported_date": "2022-01-22 15:28:36.125665",
+    "last_reported_channel": "5",
+    "id": "ed3c5407-c84c-4c1d-a614-ebbcf2163ece"
+  },
+  {
+    "mac": "00:3e:3d:b0:ef:d3",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5342",
+    "last_reported_date": "2022-01-22 15:28:30.632963",
+    "last_reported_channel": "10",
+    "id": "46f62026-1e76-48eb-a0cb-d4db5a25a595"
+  },
+  {
+    "mac": "53:29:7b:70:00:cc",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_685",
+    "last_reported_date": "2022-01-22 15:28:25.096068",
+    "last_reported_channel": "-2",
+    "id": "f9087116-a740-48eb-9a1f-1b0154ea39d2"
+  },
+  {
+    "mac": "b2:c8:45:b0:f2:8e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_258",
+    "last_reported_date": "2022-01-22 15:28:19.528160",
+    "last_reported_channel": "-1",
+    "id": "cb87609d-6410-487a-b0e0-b167ac9a1bc1"
+  },
+  {
+    "mac": "47:a4:e3:59:09:b2",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9078",
+    "last_reported_date": "2022-01-22 15:28:13.997298",
+    "last_reported_channel": "2",
+    "id": "bc163422-553f-491c-a584-738da9560616"
+  },
+  {
+    "mac": "7e:f8:e2:e9:2c:70",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6720",
+    "last_reported_date": "2022-01-22 15:28:08.487573",
+    "last_reported_channel": "-10",
+    "id": "a92050f7-d0f7-4fc9-b9e5-3375dd55634d"
+  },
+  {
+    "mac": "2a:de:e7:96:01:e5",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_2175",
+    "last_reported_date": "2022-01-22 15:28:02.956281",
+    "last_reported_channel": "1",
+    "id": "6b2771a8-5460-4f9f-a0e2-63ca570b5175"
+  },
+  {
+    "mac": "f6:41:97:99:5d:78",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5015",
+    "last_reported_date": "2022-01-22 15:27:57.413827",
+    "last_reported_channel": "-14",
+    "id": "ebe368d3-3acf-4091-af90-1cc35d55a59b"
+  },
+  {
+    "mac": "24:dd:07:81:06:a7",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_9167",
+    "last_reported_date": "2022-01-22 15:27:51.922287",
+    "last_reported_channel": "-11",
+    "id": "1147bb0a-1631-4254-8222-7fe1a9dcc8a1"
+  },
+  {
+    "mac": "3c:50:22:f0:46:a1",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8763",
+    "last_reported_date": "2022-01-22 15:27:46.378608",
+    "last_reported_channel": "12",
+    "id": "a6bea37f-bde4-4b00-acc3-f9f3daab9990"
+  },
+  {
+    "mac": "f4:88:1a:7a:cb:21",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6276",
+    "last_reported_date": "2022-01-22 15:27:40.923271",
+    "last_reported_channel": "-13",
+    "id": "d840263c-903c-4aa7-bb42-ccc9b821cbfc"
+  },
+  {
+    "mac": "55:9b:e5:cd:3d:3d",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_8380",
+    "last_reported_date": "2022-01-22 15:27:35.443222",
+    "last_reported_channel": "-3",
+    "id": "62bc461c-532f-49a1-bc65-01ff23890a70"
+  },
+  {
+    "mac": "e6:50:8f:eb:2e:4e",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5963",
+    "last_reported_date": "2022-01-22 15:27:29.963931",
+    "last_reported_channel": "1",
+    "id": "2762f2d2-7428-4546-ae45-bde1f88a3c69"
+  },
+  {
+    "mac": "88:1f:32:99:f4:ba",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_5130",
+    "last_reported_date": "2022-01-22 15:27:24.455030",
+    "last_reported_channel": "-2",
+    "id": "cebf0f07-e3cd-4676-b153-d58042a48de4"
+  },
+  {
+    "mac": "b3:60:a4:aa:f2:f9",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_29",
+    "last_reported_date": "2022-01-22 15:27:18.882447",
+    "last_reported_channel": "1",
+    "id": "a1c4900c-f9e4-473a-85d7-cae2e6fdb7bd"
+  },
+  {
+    "mac": "0f:5f:8a:a3:e1:da",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_6590",
+    "last_reported_date": "2022-01-22 15:27:13.396605",
+    "last_reported_channel": "-5",
+    "id": "75dd0d41-84d3-485a-81e4-101a3612c65a"
+  },
+  {
+    "mac": "79:08:43:a7:bb:48",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_325",
+    "last_reported_date": "2022-01-22 15:27:07.924079",
+    "last_reported_channel": "-1",
+    "id": "1df4b988-d0a5-484e-8afd-39921208ff84"
+  },
+  {
+    "mac": "99:2b:19:77:cd:74",
+    "msisdn": "+15555215554",
+    "ssid": "SUPERONLINE_WIFI_452",
+    "last_reported_date": "2022-01-22 15:27:02.348949",
+    "last_reported_channel": "13",
+    "id": "a2576e07-42e1-4a02-b6d5-05752dc82c09"
+  },
+  {
+    "mac": "02:00:00:00:00:00",
+    "msisdn": "+15555215554",
+    "ssid": "<unknown ssid>",
+    "last_reported_date": "2022-01-22 12:55:40.591444",
+    "last_reported_channel": "-1",
+    "id": "8a51d04f-9272-4d9d-a4af-e93cf933ca6a"
   }
 ]

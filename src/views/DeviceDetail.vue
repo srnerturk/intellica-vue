@@ -5,51 +5,87 @@
       <div class="left col">
         <div class="item">
           <label>MSISDN</label>
-          <span>425-241-0055</span>
+          <span>{{getCurrentDevice.msisdn}}</span>
         </div>
         <div class="item">
-          <label>IMSI</label>
-          <span>784738726352</span>
+          <label>MAC</label>
+          <span>{{getCurrentDevice.mac}}</span>
         </div>
       </div>
       <div class="center col">
         <div class="item">
-          <label>MAC</label>
-          <span>AE:34:54:56:54D3:FF</span>
+          <label>IMEI</label>
+          <span>{{getCurrentDevice.imei}}</span>
         </div>
         <div class="item">
-          <label>ICCID</label>
-          <span>89034238943567321F</span>
+          <label>IMSI</label>
+          <span>{{getCurrentDevice.imsi}}</span>
         </div>
       </div>
       <div class="right col">
         <div class="item">
-          <label>IMEI</label>
-          <span>43565434233211</span>
+          <label>iccid  </label>
+          <span>{{getCurrentDevice.iccid}}</span>
         </div>
         <div class="item">
           <label>LAST REPORTED</label>
-          <span>12/25/2021 - 12:23:23</span>
+          <span>{{getCurrentDevice.last_reported}}</span>
         </div>
       </div>
     </div>
     <div class="grid grid-cols-2 gap-5 mt-10">
       <div class="group">
         <h1 class="main-title">GSM</h1>
-        <info-chart
+        <detail-chart
           class="mt-5"
-          v-for="item in getDeviceInfoData"
-          :key="item.id"
-          :chartData="item"
+          v-if="getCurrentDevice.gsm"
+          :chartData="getCurrentDevice.gsm.rssi"
+          text="RSSI"
+        />
+         <detail-chart
+          class="mt-5"
+          v-if="getCurrentDevice.gsm"
+          :chartData="getCurrentDevice.gsm.rsrp"
+          text="RSRP"
+        />
+         <detail-chart
+          class="mt-5"
+          v-if="getCurrentDevice.gsm"
+          :chartData="getCurrentDevice.gsm.rsrq"
+          text="RSRQ"
+        />
+         <detail-chart
+          class="mt-5"
+          v-if="getCurrentDevice.gsm"
+          :chartData="getCurrentDevice.gsm.cqi"
+          text="CQI"
         />
       </div>
       <div class="group">
         <h1 class="main-title">WIFI</h1>
-        <info-chart
+        <detail-chart
           class="mt-5"
-          v-for="item in getDeviceInfoData"
-          :key="item.id"
-          :chartData="item"
+          v-if="getCurrentDevice.wifi"
+          :chartData="getCurrentDevice.wifi.rssi"
+          text="RSSI"
+        />
+         <detail-chart
+          class="mt-5"
+          v-if="getCurrentDevice.wifi"
+          :chartData="getCurrentDevice.wifi.channel"
+          text="CHANNEL"
+        />
+         <detail-chart
+          class="mt-5"
+          v-if="getCurrentDevice.wifi"
+          :chartData="getCurrentDevice.wifi.frequency"
+          text="FREQ"
+        />
+         <detail-chart
+          class="mt-5"
+          v-if="getCurrentDevice.wifi"
+          :chartData="getCurrentDevice.wifi.snr"
+          text="SNR"
         />
       </div>
     </div>
@@ -58,21 +94,21 @@
 
 <script>
 import { mapActions, mapGetters } from "vuex";
-import InfoChart from "@/components/InfoChart.vue";
+import DetailChart from "@/components/DetailChart.vue";
 
 export default {
   name: "DeviceDetail",
   components: {
-    InfoChart,
+    DetailChart,
   },
   methods: {
-    ...mapActions(["fetchDeviceInfoData"]),
+    ...mapActions(["getDeviceDetail"]),
   },
   mounted() {
-    this.fetchDeviceInfoData();
+    this.getDeviceDetail();
   },
   computed: {
-    ...mapGetters(["getDeviceInfoData"]),
+    ...mapGetters(["getCurrentDevice"]),
   },
 };
 </script>

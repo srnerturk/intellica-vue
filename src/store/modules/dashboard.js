@@ -2,68 +2,31 @@
 import FakeModule from "@/utils/fakeModule";
 
 const state = {
-  dayData: [],
-  deviceInfoData: [],
-  barData: null,
+  dashboardData: [],
 };
 const mutations = {
-  setDayData(state, data) {
-    state.dayData = data;
-  },
-  setDeviceInfoData(state, data) {
-    state.deviceInfoData = data;
-  },
-  setBarData(state, data) {
-    state.barData = data;
+  setDashboardData(state, data) {
+    state.dashboardData = data;
   },
 };
 const getters = {
-  getDayData(state) {
-    return state.dayData;
-  },
-  getDeviceInfoData(state) {
-    return state.deviceInfoData;
-  },
-  getBarData(state) {
-    return state.barData;
+  getDashboardData(state) {
+    return state.dashboardData;
   },
 };
 const actions = {
-  fetchByDayChartData({ commit }) {
+  // eslint-disable-next-line no-unused-vars
+  fetchDashboardData({ commit }) {
     return new Promise((resolve, reject) => {
-      new FakeModule().get("/days.json").then((response) => {
-        try {
+      try {
+        new FakeModule().get("/dashboard.json").then((response) => {
+          commit("setDashboardData", response.data);
           console.log(response);
-          commit("setDayData", response.data.dayCharts);
-          resolve();
-        } catch (error) {
-          reject(error);
-        }
-      });
-    });
-  },
-  fetchDeviceInfoData({ commit }) {
-    return new Promise((resolve, reject) => {
-      new FakeModule().get("/data.json").then((response) => {
-        try {
-          commit("setDeviceInfoData", response.data.dataCharts);
-          resolve();
-        } catch (error) {
-          reject(error);
-        }
-      });
-    });
-  },
-  fetchBarData({ commit }) {
-    return new Promise((resolve, reject) => {
-      new FakeModule().get("/bar.json").then((response) => {
-        try {
-          commit("setBarData", response.data);
-          resolve();
-        } catch (error) {
-          reject(error);
-        }
-      });
+          resolve(response);
+        });
+      } catch (error) {
+        reject(error);
+      }
     });
   },
 };
