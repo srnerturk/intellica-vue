@@ -3,7 +3,7 @@
     <div class="text-info flex-1 flex flex-col p-2">
       <h5 class="text-md font-bold mb-5">{{ text }}</h5>
       <h2 class="text-3xl font-bold leading-1 mb-3 text-mifiblue">
-        {{ summary(chartData.last_5_days) }}
+        {{ chartData.today}}
       </h2>
       <div class="info">
         <div class="percent">
@@ -66,7 +66,7 @@ export default {
       handler(val) {
         if (val.last_5_days) {
           val.last_5_days.forEach((item) => {
-            this.dataset.push(parseInt(item, 0));
+            this.dataset.push(parseFloat(item, 0));
           });
         }
       },
