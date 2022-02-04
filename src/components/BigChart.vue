@@ -14,7 +14,7 @@
     <div class="text-info m-20 flex flex-col p-2">
       <h5 class="text-md font-bold mb-5">Today</h5>
       <h2 class="text-3xl font-bold leading-1 mb-3 text-mifiblue">
-        {{ summary }}
+        {{ parseInt(summary) }}
       </h2>
       <div class="info">
         <div class="percent">
@@ -74,7 +74,7 @@ export default {
       // eslint-disable-next-line radix
       return this.dataset[0].data.reduce(
         // eslint-disable-next-line radix
-        (partialSum, a) => parseInt(partialSum + a),
+        (partialSum, a) => Number(partialSum + parseInt(a), 0),
         0,
       );
     },

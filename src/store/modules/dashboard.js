@@ -1,5 +1,6 @@
 /* eslint-disable no-shadow */
-import FakeModule from "@/utils/fakeModule";
+// eslint-disable-next-line import/no-cycle
+import AxiosModule from "@/utils/axiosModule";
 
 const state = {
   dashboardData: [],
@@ -19,7 +20,7 @@ const actions = {
   fetchDashboardData({ commit }) {
     return new Promise((resolve, reject) => {
       try {
-        new FakeModule().get("/dashboard.json").then((response) => {
+        new AxiosModule().get("/dashboard").then((response) => {
           commit("setDashboardData", response.data);
           console.log(response);
           resolve(response);

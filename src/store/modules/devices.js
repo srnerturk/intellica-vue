@@ -1,4 +1,6 @@
 /* eslint-disable no-shadow */
+// eslint-disable-next-line import/no-cycle
+import AxiosModule from "@/utils/axiosModule";
 import FakeModule from "@/utils/fakeModule";
 
 const state = {
@@ -39,7 +41,7 @@ const actions = {
   getDeviceDetail({ commit }, deviceId) {
     console.log(deviceId);
     return new Promise((resolve, reject) => {
-      new FakeModule().get("/device-detail.json").then((response) => {
+      new AxiosModule().get("/device-detail").then((response) => {
         try {
           commit("setCurrentDevice", response.data);
           resolve(response.data);
@@ -51,7 +53,7 @@ const actions = {
   },
   fetchDevices({ commit }) {
     return new Promise((resolve, reject) => {
-      new FakeModule().get("/devices.json").then((response) => {
+      new AxiosModule().get("/list-device").then((response) => {
         try {
           commit("setDeviceList", response.data);
           resolve(response.data);

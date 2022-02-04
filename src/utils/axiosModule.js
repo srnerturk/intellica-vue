@@ -24,6 +24,7 @@ export default class AxiosModule {
   get(endpoint, extraHeaders = {}) {
     return this.instance.get(endpoint, {
       headers: {
+        mode: "no-cors",
         "x-api-key": process.env.VUE_APP_API_KEY,
         Authorization: this.token ? `Bearer ${this.token}` : null,
         ...extraHeaders,
