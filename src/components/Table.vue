@@ -73,7 +73,7 @@
       </thead>
       <tbody class="bg-white top-5 relative">
         <tr
-          @click="goToDetail(item.id)"
+          @click="goToDetail(item.mac)"
           class="hover:bg-gray-200 pointer"
           v-for="item in tableData"
           :key="item.id"
@@ -127,11 +127,10 @@
     >
       <span class="text-white result-text">Showing 10 of 100 result</span>
       <select class="select-page">
-        <option value="1">1</option>
-        <option value="1">2</option>
+        <option value="1">{{page}}</option>
       </select>
       <div class="arrows flex">
-        <a>
+        <a @click="prevPage">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -148,7 +147,7 @@
             <polyline points="12 19 5 12 12 5"></polyline>
           </svg>
         </a>
-        <a>
+        <a @click="nextPage">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -175,10 +174,33 @@ export default {
   props: {
     tableData: Array,
   },
+  data() {
+    return {
+      currentPage: 0,
+    };
+  },
+  mounted() {
+    this.currentPage = parseInt(this.page, 0);
+  },
   methods: {
     goToDetail(id) {
       console.log(id);
-      this.$router.push({ name: "DeviceDetail", params: { deviceId: id } });
+      this.$router.push({ name: "DeviceDetail", params: { mac: id } });
+    },
+    nextPage() {
+      this.currentPage += 1;
+      this.$router.push({ name: "DeviceList", params: { page: this.currentPage } });
+    },
+    prevPage() {
+      if (this.currentPage > 1) {
+        this.currentPage -= 1;
+        this.$router.push({ name: "DeviceList", params: { page: this.currentPage } });
+      }
+    },
+  },
+  computed: {
+    page() {
+      return this.$route.params.page;
     },
   },
 };

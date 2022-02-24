@@ -41,7 +41,7 @@ const actions = {
   getDeviceDetail({ commit }, deviceId) {
     console.log(deviceId);
     return new Promise((resolve, reject) => {
-      new AxiosModule().get("/device-detail").then((response) => {
+      new AxiosModule().get(`/device-detail/${deviceId}`).then((response) => {
         try {
           commit("setCurrentDevice", response.data);
           resolve(response.data);
@@ -51,9 +51,9 @@ const actions = {
       });
     });
   },
-  fetchDevices({ commit }) {
+  fetchDevices({ commit }, page) {
     return new Promise((resolve, reject) => {
-      new AxiosModule().get("/list-device").then((response) => {
+      new AxiosModule().get(`/list-device/${page}`).then((response) => {
         try {
           commit("setDeviceList", response.data);
           resolve(response.data);

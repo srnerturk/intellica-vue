@@ -23,7 +23,7 @@ const routes = [
     },
   },
   {
-    path: "/device-list",
+    path: "/device-list/:page",
     name: "DeviceList",
     component: () => import(/* webpackChunkName: "about" */ "../views/DeviceList.vue"),
     meta: {
@@ -47,7 +47,7 @@ const routes = [
     },
   },
   {
-    path: "/device-detail/:deviceId",
+    path: "/device-detail/:mac",
     name: "DeviceDetail",
     component: () => import(/* webpackChunkName: "about" */ "../views/DeviceDetail.vue"),
     meta: {

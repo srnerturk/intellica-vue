@@ -20,9 +20,12 @@ export default {
   },
   computed: {
     ...mapGetters(["getDeviceList"]),
+    page() {
+      return this.$route.params.page;
+    },
   },
   mounted() {
-    this.fetchDevices();
+    this.fetchDevices(this.page);
   },
 };
 </script>

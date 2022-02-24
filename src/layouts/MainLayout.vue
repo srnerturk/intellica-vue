@@ -61,7 +61,7 @@
               </router-link>
             </li>
             <li class="w-30 mb-10">
-              <router-link to="/device-list">
+              <router-link to="/device-list/1">
                 <img src="@/assets/icons/device_list.svg" alt="device list" />
               </router-link>
             </li>

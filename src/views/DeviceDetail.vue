@@ -105,10 +105,13 @@ export default {
     ...mapActions(["getDeviceDetail"]),
   },
   mounted() {
-    this.getDeviceDetail();
+    this.getDeviceDetail(this.macAdress);
   },
   computed: {
     ...mapGetters(["getCurrentDevice"]),
+    macAdress() {
+      return this.$route.params.mac;
+    },
   },
 };
 </script>
