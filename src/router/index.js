@@ -1,6 +1,5 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
 import Layout from "@/layouts/Layout.vue";
 
 Vue.use(VueRouter);
@@ -9,7 +8,7 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home,
+    component: () => import(/* webpackChunkName: "tester" */ "../views/TesterManagement/Index.vue"),
     meta: {
       layout: "MainLayout",
     },
@@ -17,23 +16,23 @@ const routes = [
   {
     path: "/login",
     name: "Login",
-    component: () => import(/* webpackChunkName: "about" */ "../views/Login.vue"),
+    component: () => import(/* webpackChunkName: "login" */ "../views/Login.vue"),
     meta: {
       layout: "LoginLayout",
     },
   },
   {
-    path: "/device-list",
-    name: "DeviceList",
-    component: () => import(/* webpackChunkName: "about" */ "../views/DeviceList.vue"),
+    path: "/testers",
+    name: "TesterList",
+    component: () => import(/* webpackChunkName: "tester" */ "../views/TesterManagement/Index.vue"),
     meta: {
       layout: "MainLayout",
     },
   },
   {
-    path: "/device-detail",
-    name: "DeviceDetail",
-    component: () => import(/* webpackChunkName: "about" */ "../views/DeviceDetail.vue"),
+    path: "/testers/:method",
+    name: "TestAddOrUpdate",
+    component: () => import(/* webpackChunkName: "addorupdate" */ "../views/TesterManagement/AddorUpdate.vue"),
     meta: {
       layout: "MainLayout",
     },

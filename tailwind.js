@@ -20,6 +20,7 @@ module.exports = {
         mifiblue: "#1C2749",
         mifired: "#D1264D",
         bordergray: "#EDEDED",
+        overlay: "rgba(0, 0, 0, 0.5)",
       },
     },
   },
