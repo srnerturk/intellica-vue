@@ -37,6 +37,8 @@
   .error {
     color: red;
     font-size: 11px;
+    padding-left: 2px;
+    padding-top: 5px;
   }
   label {
     @apply text-sm font-bold mb-2;

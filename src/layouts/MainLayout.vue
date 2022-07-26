@@ -23,7 +23,7 @@
             </router-link>
           </li>
           <li class="w-30 mb-10">
-            <router-link to="/">
+            <router-link to="/projects">
               <img src="@/assets/icons/device_locations.svg" alt="locations" />
             </router-link>
           </li>

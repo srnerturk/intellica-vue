@@ -8,7 +8,7 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: () => import(/* webpackChunkName: "tester" */ "../views/TesterManagement/Index.vue"),
+    component: () => import(/* webpackChunkName: "home" */ "../views/Home.vue"),
     meta: {
       layout: "MainLayout",
     },
@@ -33,6 +33,22 @@ const routes = [
     path: "/testers/:method",
     name: "TestAddOrUpdate",
     component: () => import(/* webpackChunkName: "addorupdate" */ "../views/TesterManagement/AddorUpdate.vue"),
+    meta: {
+      layout: "MainLayout",
+    },
+  },
+  {
+    path: "/projects",
+    name: "ProjectList",
+    component: () => import(/* webpackChunkName: "project" */ "../views/ProjectManagement/Index.vue"),
+    meta: {
+      layout: "MainLayout",
+    },
+  },
+  {
+    path: "/projects/add",
+    name: "ProjectAdd",
+    component: () => import(/* webpackChunkName: "project add" */ "../views/ProjectManagement/add.vue"),
     meta: {
       layout: "MainLayout",
     },
