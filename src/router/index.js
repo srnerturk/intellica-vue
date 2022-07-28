@@ -53,6 +53,22 @@ const routes = [
       layout: "MainLayout",
     },
   },
+  {
+    path: "/projects/edit",
+    name: "ProjectEdit",
+    component: () => import(/* webpackChunkName: "project add" */ "../views/ProjectManagement/edit.vue"),
+    meta: {
+      layout: "MainLayout",
+    },
+  },
+  {
+    path: "/projects/edit-floor-plan",
+    name: "EditFloorPlan",
+    component: () => import(/* webpackChunkName: "project add" */ "../views/ProjectManagement/edit-floorplan.vue"),
+    meta: {
+      layout: "MainLayout",
+    },
+  },
 ];
 
 Vue.component("layout", Layout);

@@ -19,7 +19,7 @@
             {{ value }}
           </td>
           <td class="border-b border-bordergray p-2 text-center actions">
-            <button v-if="map">
+            <button @click.stop="goToMap(item.id)" v-if="map">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -166,6 +166,9 @@ export default {
     },
     onRemove(id) {
       this.$emit("onRemove", id);
+    },
+    goToMap(id) {
+      this.$emit("goToMap", id);
     },
   },
 };

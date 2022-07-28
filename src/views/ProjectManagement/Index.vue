@@ -37,10 +37,7 @@
           </div>
         </div>
         <div class="right">
-          <router-link
-            class="action-link"
-            :to="{ name: 'ProjectAdd' }"
-          >
+          <router-link class="action-link" :to="{ name: 'ProjectAdd' }">
             <span class="text-lg font-bold text-mifiblue">Add New Project</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -64,6 +61,7 @@
       <data-table
         @onEdit="editProject"
         @onRemove="removeProject"
+        @goToMap="goToMap"
         :pageble="true"
         :editable="true"
         :map="true"
@@ -103,6 +101,9 @@ export default {
     ...mapActions(["fetchProjectList"]),
     editProject(id) {
       this.$router.push({ name: "ProjectEdit", query: { id } });
+    },
+    goToMap(id) {
+      this.$router.push({ name: "EditFloorPlan", query: { id } });
     },
     removeProject(id) {
       this.modalIsOpen = true;
