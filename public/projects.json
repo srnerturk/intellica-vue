@@ -1,0 +1,23 @@
+[
+  {
+    "id": "001",
+    "project_name": "Project Code 001",
+    "test_status": "0",
+    "created_date": "10.05.2022",
+    "total_floorplan": "14"
+  },
+  {
+    "id": "002",
+    "project_name": "Project Code 002",
+    "test_status": "2",
+    "created_date": "10.05.2022",
+    "total_floorplan": "14"
+  },
+  {
+    "id": "003",
+    "project_name": "Project Code 003",
+    "test_status": "1",
+    "created_date": "10.05.2022",
+    "total_floorplan": "4"
+  }
+]

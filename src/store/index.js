@@ -1,17 +1,16 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import dashboard from "./modules/dashboard";
+import tester from "./modules/tester";
+import projects from "./modules/project";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
+  state: {},
+  mutations: {},
+  actions: {},
   modules: {
-    dashboard,
+    tester,
+    projects,
   },
 });

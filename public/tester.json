@@ -1,0 +1,58 @@
+[
+  {
+    "id": 2562445666231,
+    "username": "Jason",
+    "location": "New York",
+    "created_date": "20.07.2022",
+    "total_floorplans": 15
+  },
+  {
+    "id": 2562444666333,
+    "username": "George",
+    "location": "New York",
+    "created_date": "24.07.2022",
+    "total_floorplans": 5
+  },
+  {
+    "id": 2252445666333,
+    "username": "John",
+    "location": "New York",
+    "created_date": "24.07.2022",
+    "total_floorplans": 5
+  },
+  {
+    "id": 2562445666333,
+    "username": "Jane",
+    "location": "Colarodo",
+    "created_date": "24.07.2022",
+    "total_floorplans": 123
+  },
+  {
+    "id": 2542445666233,
+    "username": "Jason",
+    "location": "New York",
+    "created_date": "20.07.2022",
+    "total_floorplans": 15
+  },
+  {
+    "id": 2564545666333,
+    "username": "George",
+    "location": "New York",
+    "created_date": "24.07.2022",
+    "total_floorplans": 5
+  },
+  {
+    "id": 2552446766333,
+    "username": "John",
+    "location": "New York",
+    "created_date": "24.07.2022",
+    "total_floorplans": 5
+  },
+  {
+    "id": 2553455666333,
+    "username": "Jane",
+    "location": "Colarodo",
+    "created_date": "24.07.2022",
+    "total_floorplans": 123
+  }
+]
