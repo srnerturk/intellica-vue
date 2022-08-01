@@ -1,14 +1,14 @@
 <!-- eslint-disable max-len -->
 <template>
   <div
-    class="login-wrapper w-full h-full fixed flex justify-center items-center flex-col bg-gray-200"
+    class="login-wrapper w-full p-2 h-full fixed  flex justify-center items-center flex-col bg-gray-200"
   >
-    <div class="head w-500 mb-5 flex flex-row justify-between items-center">
+    <div class="head w-full lg:w-[500px] mb-5 flex flex-row justify-between items-center">
       <img class="w-[140px]" src="@/assets/icons/logo.svg" alt="logo" />
       <h1 class="text-xl font-bold text-mifiblue">Sign In</h1>
     </div>
     <div
-      class="login w-500 relative bg-gray-50 rounded-md flex items-center justify-center flex-col p-10 z-10"
+      class="login w-full lg:w-[500px] relative bg-gray-50 rounded-md flex items-center justify-center flex-col p-10 z-10"
     >
       <div class="form-element p-2 mb-1 relative w-full">
         <svg
