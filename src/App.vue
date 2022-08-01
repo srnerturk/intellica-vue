@@ -30,6 +30,12 @@
 
   background: #1c2749;
 }
+.form-element{
+  input{
+    @apply
+    text-sm
+  }
+}
 .form-g {
   font-family: "Noto Sans", sans-serif;
   display: flex;

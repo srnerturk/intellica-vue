@@ -1,5 +1,7 @@
+/* eslint-disable import/no-cycle */
 import axios from "axios";
 import store from "@/store";
+import router from "@/router";
 
 export default class AxiosModule {
   constructor() {
@@ -12,7 +14,7 @@ export default class AxiosModule {
       (response) => response,
       (error) => {
         const { status } = error.response;
-        if (status === 401) {
+        if (status === 401 && router.currentRoute.name !== "Login") {
           store.dispatch("logout");
         }
         return error.response;

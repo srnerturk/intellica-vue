@@ -11,14 +11,25 @@ const routes = [
     component: () => import(/* webpackChunkName: "home" */ "../views/Home.vue"),
     meta: {
       layout: "MainLayout",
+      requiresAuth: true,
     },
   },
   {
     path: "/login",
     name: "Login",
-    component: () => import(/* webpackChunkName: "login" */ "../views/Login.vue"),
+    component: () => import(/* webpackChunkName: "login" */ "../views/auth/Login.vue"),
     meta: {
       layout: "LoginLayout",
+      requiresAuth: false,
+    },
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: () => import(/* webpackChunkName: "login" */ "../views/auth/Register.vue"),
+    meta: {
+      layout: "LoginLayout",
+      requiresAuth: false,
     },
   },
   {
@@ -27,6 +38,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "tester" */ "../views/TesterManagement/Index.vue"),
     meta: {
       layout: "MainLayout",
+      requiresAuth: true,
     },
   },
   {
@@ -35,6 +47,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "addorupdate" */ "../views/TesterManagement/AddorUpdate.vue"),
     meta: {
       layout: "MainLayout",
+      requiresAuth: true,
     },
   },
   {
@@ -43,6 +56,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "project" */ "../views/ProjectManagement/Index.vue"),
     meta: {
       layout: "MainLayout",
+      requiresAuth: true,
     },
   },
   {
@@ -51,6 +65,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "project add" */ "../views/ProjectManagement/add.vue"),
     meta: {
       layout: "MainLayout",
+      requiresAuth: true,
     },
   },
   {
@@ -59,6 +74,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "project add" */ "../views/ProjectManagement/edit.vue"),
     meta: {
       layout: "MainLayout",
+      requiresAuth: true,
     },
   },
   {
@@ -67,6 +83,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "project add" */ "../views/ProjectManagement/edit-floorplan.vue"),
     meta: {
       layout: "MainLayout",
+      requiresAuth: true,
     },
   },
 ];
@@ -77,6 +94,22 @@ const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes,
+});
+
+router.beforeEach((to, from, next) => {
+  const loginUrl = "Login";
+  if (to.matched.some((record) => record.meta.requiresAuth)) {
+    if (localStorage.getItem("mifi-token")) {
+      next();
+    } else {
+      next({
+        name: loginUrl,
+        params: { nextUrl: to.fullPath },
+      });
+    }
+  } else {
+    next();
+  }
 });
 
 export default router;
