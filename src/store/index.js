@@ -1,5 +1,8 @@
+/* eslint-disable import/no-cycle */
 import Vue from "vue";
 import Vuex from "vuex";
+
+import auth from "./modules/auth";
 import tester from "./modules/tester";
 import projects from "./modules/project";
 
@@ -10,6 +13,7 @@ export default new Vuex.Store({
   mutations: {},
   actions: {},
   modules: {
+    auth,
     tester,
     projects,
   },

@@ -16,7 +16,15 @@ const routes = [
   {
     path: "/login",
     name: "Login",
-    component: () => import(/* webpackChunkName: "login" */ "../views/Login.vue"),
+    component: () => import(/* webpackChunkName: "login" */ "../views/auth/Login.vue"),
+    meta: {
+      layout: "LoginLayout",
+    },
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: () => import(/* webpackChunkName: "login" */ "../views/auth/Register.vue"),
     meta: {
       layout: "LoginLayout",
     },
