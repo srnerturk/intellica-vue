@@ -4,6 +4,7 @@ import AxiosModule from "@/utils/axiosModule";
 
 const state = {
   token: "",
+  email: "",
 };
 const actions = {
   // eslint-disable-next-line no-unused-vars
@@ -13,7 +14,9 @@ const actions = {
         const token = response.data.accessToken;
         if (token) {
           commit("setToken", token);
+          commit("setEmail", response.data.email);
           localStorage.setItem("mifi-token", token);
+          localStorage.setItem("mifi-email", response.data.email);
           resolve({ status: true });
         } else {
           resolve({ status: false, error: response.data.message });
@@ -24,7 +27,9 @@ const actions = {
   logout({ commit }) {
     return new Promise((resolve) => {
       commit("setToken", "");
+      commit("setEmail", "");
       localStorage.removeItem("mifi-token");
+      localStorage.removeItem("mifi-email");
       resolve(true);
     });
   },
@@ -45,10 +50,16 @@ const mutations = {
   setToken(state, token) {
     state.token = token;
   },
+  setEmail(state, email) {
+    state.email = email;
+  },
 };
 const getters = {
   getToken(state) {
     return state.token;
+  },
+  getEmail(state) {
+    return state.email || localStorage.getItem("mifi-email");
   },
 };
 

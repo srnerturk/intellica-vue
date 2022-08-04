@@ -97,8 +97,8 @@ export default {
   data() {
     return {
       user: {
-        email: "mert@iointel.com",
-        password: "123456",
+        email: "",
+        password: "",
       },
       error: "",
       loading: false,
