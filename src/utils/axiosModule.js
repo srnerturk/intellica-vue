@@ -5,7 +5,7 @@ import router from "@/router";
 
 export default class AxiosModule {
   constructor() {
-    this.token = localStorage.getItem("access_token") || null;
+    this.token = localStorage.getItem("mifi-token") || null;
     this.instance = axios.create({
       baseURL: process.env.VUE_APP_API_URL,
     });
@@ -25,7 +25,6 @@ export default class AxiosModule {
   get(endpoint, extraHeaders = {}) {
     return this.instance.get(endpoint, {
       headers: {
-        "x-api-key": process.env.VUE_APP_API_KEY,
         Authorization: this.token ? `Bearer ${this.token}` : null,
         ...extraHeaders,
       },
@@ -35,7 +34,6 @@ export default class AxiosModule {
   post(endpoint, data, extraHeaders = {}) {
     return this.instance.post(endpoint, data, {
       headers: {
-        "x-api-key": process.env.VUE_APP_API_KEY,
         Authorization: this.token ? `Bearer ${this.token}` : null,
         ...extraHeaders,
       },

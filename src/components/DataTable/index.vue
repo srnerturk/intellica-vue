@@ -105,7 +105,7 @@
       class="pager-actions bg-mifiblue w-full h-40 mt-10 flex justify-end items-center rounded-b-lg"
     >
       <span class="text-white text-sm result-text"
-        >Showing {{ tableData.pagePerCount }} of {{ tableData.total }} result</span
+        >Showing {{ tableData.totalElements }} results</span
       >
       <select class="select-page min-w-[50px] text-center">
         <option :key="n" v-for="n in tableData.pageCount" :value="n">{{ n }}</option>

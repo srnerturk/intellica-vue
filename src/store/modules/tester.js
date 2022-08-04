@@ -1,5 +1,6 @@
 /* eslint-disable no-shadow */
-import FakeModule from "@/utils/fakeModule";
+// eslint-disable-next-line import/no-cycle
+import AxiosModule from "@/utils/axiosModule";
 
 const state = {
   testerList: [],
@@ -25,7 +26,7 @@ const mutations = {
 const actions = {
   fetchTesterList({ commit }) {
     return new Promise((resolve, reject) => {
-      new FakeModule().get("/tester.json").then((response) => {
+      new AxiosModule().get("/tester/all").then((response) => {
         try {
           commit("setTesterList", response.data);
           resolve(response.data);

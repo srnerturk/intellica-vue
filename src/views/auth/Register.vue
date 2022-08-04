@@ -7,7 +7,8 @@
       <img class="w-[140px]" src="@/assets/icons/logo.svg" alt="logo" />
       <h1 class="text-xl font-bold text-mifiblue">Register</h1>
     </div>
-    <div
+    <form
+      @submit.prevent="onSubmit"
       class="login relative w-full lg:w-[500px] bg-gray-50 rounded-md flex items-center justify-center flex-col p-10 z-10"
     >
       <div class="form-element p-2 mb-1 relative w-full">
@@ -32,6 +33,7 @@
           type="text"
           placeholder="Name"
         />
+        <div class="error" v-if="!$v.user.name.required">Name is required</div>
       </div>
       <div class="form-element p-2 mb-1 relative w-full">
         <svg
@@ -55,6 +57,7 @@
           type="text"
           placeholder="Surname"
         />
+        <div class="error" v-if="!$v.user.surname.required">Surname is required</div>
       </div>
       <div class="form-element p-2 mb-1 relative w-full">
         <svg
@@ -80,6 +83,7 @@
           type="email"
           placeholder="Email"
         />
+        <div class="error" v-if="!$v.user.email.required">Email is required</div>
       </div>
 
       <div class="form-element p-2 mb-1 relative w-full">
@@ -101,9 +105,13 @@
         <input
           class="border-0 bg-transparent h-40 w-full border-b-2 border-b-gray-300 outline-0 focus:border-b-gray-500 pl-6"
           v-model="user.password"
-          type="passsword"
+          type="password"
           placeholder="Password"
         />
+        <div class="error" v-if="!$v.user.password.minLength">
+          passwords must be min 8 character
+        </div>
+        <div class="error" v-if="!$v.user.password.required">Password is required</div>
       </div>
 
       <div class="form-element p-2 mb-5 relative w-full">
@@ -128,15 +136,19 @@
           type="password"
           placeholder="Re-enter Password"
         />
+        <div class="error" v-if="!$v.user.passwordRpt.sameAs">passwords must be the same</div>
       </div>
       <div class="action p-2 flex items-center justify-center flex-col">
         <button
-          @click="signUp"
-          class="bg-blue-800 text-amber-50 px-10 py-2 rounded-md text-sm font-bold"
+          :disabled="$v.$invalid"
+          type="submit"
+          class="bg-blue-800 text-amber-50 px-10 py-2 rounded-md text-sm font-bold register-btn"
         >
           Register
         </button>
-         <router-link class="text-sm font-medium text-mifiblue mt-2 underline" to="/login">go to login page</router-link>
+        <router-link class="text-sm font-medium text-mifiblue mt-2 underline" to="/login"
+          >go to login page</router-link
+        >
         <p class="mt-2 error text-red-700 text-sm">{{ error }}</p>
       </div>
       <div v-if="loading" class="loading rotating absolute right-[10px] bottom-[10px]">
@@ -162,11 +174,12 @@
           <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
         </svg>
       </div>
-    </div>
+    </form>
   </div>
 </template>
 <script>
 import { mapActions } from "vuex";
+import { required, sameAs, minLength } from "vuelidate/lib/validators";
 
 export default {
   name: "Register",
@@ -183,23 +196,58 @@ export default {
       loading: false,
     };
   },
+  validations: {
+    user: {
+      name: {
+        required,
+      },
+      surname: {
+        required,
+      },
+      email: {
+        required,
+      },
+      password: {
+        required,
+        minLength: minLength(8),
+      },
+      passwordRpt: {
+        sameAs: sameAs("password"),
+      },
+    },
+  },
   methods: {
     ...mapActions(["register"]),
-    signUp() {
-      this.loading = true;
-      this.register(this.user).then((r) => {
-        if (r.status) {
-          this.$router.push({ name: "Login" });
-        } else {
-          this.error = r.error;
-        }
-        this.loading = false;
-      });
+    onSubmit() {
+      console.log(this.$v);
+      this.$v.$touch();
+      if (this.$v.$invalid) {
+        alert("error");
+      } else {
+        this.loading = true;
+        this.register(this.user).then((r) => {
+          console.log(r);
+          if (r.status) {
+            this.$router.push({ name: "Login" });
+          } else {
+            this.error = r.error;
+          }
+          this.loading = false;
+        });
+      }
     },
   },
 };
 </script>
 <style lang="css">
+.form-element .error {
+  color: #d1264d;
+  font-size: 13px;
+}
+.register-btn[disabled] {
+  cursor: not-allowed;
+  background: gray;
+}
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
     -webkit-transform: rotate(0deg);
