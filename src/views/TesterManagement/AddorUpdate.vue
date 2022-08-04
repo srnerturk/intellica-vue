@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <h1 class="page-title">{{ !isEditMode ? "Add Tester" : "Edit Tester" }}</h1>
-    <form @submit.prevent="submit" class="add-tester bg-white rounded-lg mb-10 p-5">
+    <form class="add-tester bg-white rounded-lg mb-10 p-5">
       <div class="rows flex flex-col">
         <div class="border border-bordergray mb-5">
           <div class="row-header bg-mifiblue p-2">
@@ -48,32 +48,50 @@
             <div class="row flex space-x-5">
               <div class="form-g">
                 <label for="country">Country</label>
-                <select v-model="form.country" id="country">
+                <select v-model="form.address.country" id="country">
                   <option value="0">Select</option>
+                  <option value="Turkey">Turkey</option>
                 </select>
-                <div class="error" v-if="!$v.form.country.required">Country is required</div>
+                <div class="error" v-if="!$v.form.address.country.required">
+                  Country is required
+                </div>
               </div>
               <div class="form-g">
                 <label for="city">City</label>
-                <select v-model="form.city" id="city">
-                  <option value="0">Select</option>
-                </select>
-                <div class="error" v-if="!$v.form.city.required">City is required</div>
+                <input v-model="form.address.city" type="text" placeholder="City" id="city" />
+                <div class="error" v-if="!$v.form.address.city.required">City is required</div>
+              </div>
+
+              <div class="form-g">
+                <label for="state">State</label>
+                <input v-model="form.address.state" type="text" placeholder="State" id="state" />
+                <div class="error" v-if="!$v.form.address.state.required">State is required</div>
               </div>
             </div>
             <div class="row flex space-x-5">
               <div class="form-g">
                 <label for="zipcode">Zipcode</label>
-                <input v-model="form.zipcode" type="text" placeholder="Zip Code" id="zipcode" />
+                <input
+                  v-model="form.address.zipCode"
+                  type="text"
+                  placeholder="Zip Code"
+                  id="zipcode"
+                />
+                <div class="error" v-if="!$v.form.address.zipCode.required">
+                  Zip Code is required
+                </div>
               </div>
               <div class="form-g">
                 <label for="address">AddressLine</label>
                 <textarea
-                  v-model="form.address"
+                  v-model="form.address.address"
                   rows="5"
                   tplaceholder="Phone Number"
                   id="address"
                 />
+                <div class="error" v-if="!$v.form.address.address.required">
+                  Address is required
+                </div>
               </div>
             </div>
           </div>
@@ -81,27 +99,26 @@
       </div>
 
       <div class="actions flex justify-end mt-6">
-        <button type="submit" class="action-link">
-          <span class="text-lg font-bold text-mifiblue">{{
-            !isEditMode ? "Create Tester" : "Save Changes"
-          }}</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#1C2749"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-plus-circle"
-          >
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="12" y1="8" x2="12" y2="16"></line>
-            <line x1="8" y1="12" x2="16" y2="12"></line>
-          </svg>
-        </button>
+        <FormButton
+          :disabled="$v.$invalid"
+          @click="createTester"
+          :loading="loading"
+          type="button"
+          class="action-link"
+          v-if="isEditMode"
+        >
+          <span class="text-lg font-bold text-mifiblue">Save Changes</span>
+        </FormButton>
+        <FormButton
+          :disabled="$v.$invalid"
+          @click="createTester"
+          :loading="loading"
+          type="button"
+          class="action-link"
+          v-else
+        >
+          <span class="text-lg font-bold text-mifiblue">Create Tester</span>
+        </FormButton>
       </div>
     </form>
   </div>
@@ -109,28 +126,34 @@
 <script>
 import { mapActions, mapGetters } from "vuex";
 import { required } from "vuelidate/lib/validators";
+import FormButton from "@/components/formButton/index.vue";
 
 export default {
   name: "TestAddOrUpdate",
+  components: {
+    FormButton,
+  },
   created() {
     if (this.$route.params.method === "edit") {
       const { id } = this.$route.query;
-      const tester = this.getTesters.filter((x) => x.id === id)[0];
-      this.fetchTester(tester);
-      this.form.name = tester.username;
+      this.fetchTester(id);
     }
   },
   data() {
     return {
+      loading: false,
       form: {
         name: "",
         surname: "",
         email: "",
         phone: "",
-        country: "",
-        city: "",
-        zipcode: "",
-        address: "",
+        address: {
+          country: "",
+          city: "",
+          zipCode: "",
+          address: "",
+          state: "",
+        },
       },
     };
   },
@@ -148,24 +171,64 @@ export default {
       phone: {
         required,
       },
-      country: {
-        required,
-      },
-      city: {
-        required,
+      address: {
+        country: {
+          required,
+        },
+        city: {
+          required,
+        },
+        state: {
+          required,
+        },
+        zipCode: {
+          required,
+        },
+        address: {
+          required,
+        },
       },
     },
   },
   methods: {
-    ...mapActions(["fetchTester"]),
-    submit() {
+    ...mapActions(["fetchTester", "addNewTester"]),
+    clearForm() {
+      this.form = {
+        name: "",
+        surname: "",
+        email: "",
+        phone: "",
+        address: {
+          country: "",
+          city: "",
+          zipCode: "",
+          address: "",
+          state: "",
+        },
+      };
+    },
+    createTester() {
       this.$v.$touch();
       if (this.$v.$invalid) {
-        alert("error");
+        this.$alertify.error("check form validations");
       } else {
-        alert("success");
+        this.loading = true;
+        this.addNewTester(this.form).then((r) => {
+          if (r.status) {
+            this.$alertify.success("Tester Created Successfuly, Page Redirecting Tester List");
+            setTimeout(() => {
+              this.clearForm();
+              this.$router.push("/testers");
+            }, 2000);
+          } else {
+            this.$alertify.error(r.error || "error");
+          }
+          this.loading = false;
+        });
+        console.log(this.form);
       }
     },
+    saveChanges() {},
   },
   computed: {
     ...mapGetters(["getTesters"]),
