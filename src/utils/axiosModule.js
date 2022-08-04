@@ -39,4 +39,13 @@ export default class AxiosModule {
       },
     });
   }
+
+  put(endpoint, data, extraHeaders = {}) {
+    return this.instance.put(endpoint, data, {
+      headers: {
+        Authorization: this.token ? `Bearer ${this.token}` : null,
+        ...extraHeaders,
+      },
+    });
+  }
 }

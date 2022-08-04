@@ -36,8 +36,41 @@ const actions = {
       });
     });
   },
-  fetchTester({ commit }, tester) {
-    commit("setTester", tester);
+  // eslint-disable-next-line no-unused-vars
+  addNewTester({ commit }, tester) {
+    return new Promise((resolve) => {
+      new AxiosModule().post("/tester/create", tester).then((response) => {
+        if (response.status === 200) {
+          resolve({ status: true });
+        } else {
+          resolve({ status: false, error: response.data.message });
+        }
+      });
+    });
+  },
+  // eslint-disable-next-line no-unused-vars
+  updateTester({ commit }, tester) {
+    return new Promise((resolve) => {
+      new AxiosModule().put(`/tester/edit/${tester.id}`, tester).then((response) => {
+        try {
+          resolve({ status: true });
+        } catch (error) {
+          resolve({ status: false, error: response.data.message });
+        }
+      });
+    });
+  },
+  fetchTester({ commit }, id) {
+    return new Promise((resolve, reject) => {
+      new AxiosModule().get(`/tester/${id}`).then((response) => {
+        try {
+          commit("setTester", response.data);
+          resolve(response.data);
+        } catch (error) {
+          reject(error);
+        }
+      });
+    });
   },
 };
 

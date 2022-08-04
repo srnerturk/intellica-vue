@@ -55,7 +55,8 @@
     @apply text-sm rounded pl-2 outline-none;
     background: #e4ecf5;
     min-width: 250px;
-    height: 36px;
+    height: 38px;
+    font-size: 13px;
   }
   textarea {
     height: 75px;
