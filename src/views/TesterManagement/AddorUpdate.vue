@@ -101,7 +101,7 @@
       <div class="actions flex justify-end mt-6">
         <FormButton
           :disabled="$v.$invalid"
-          @click="createTester"
+          @click="saveChanges"
           :loading="loading"
           type="button"
           class="action-link"
@@ -136,13 +136,29 @@ export default {
   created() {
     if (this.$route.params.method === "edit") {
       const { id } = this.$route.query;
-      this.fetchTester(id);
+      this.fetchTester(id).then((tester) => {
+        this.form = {
+          id: tester.id,
+          name: tester.name,
+          surname: tester.surname,
+          email: tester.email,
+          phone: tester.phone,
+          address: {
+            country: tester.address.country,
+            city: tester.address.city,
+            zipCode: tester.address.zipCode,
+            address: tester.address.address,
+            state: tester.address.state,
+          },
+        };
+      });
     }
   },
   data() {
     return {
       loading: false,
       form: {
+        id: 0,
         name: "",
         surname: "",
         email: "",
@@ -191,7 +207,7 @@ export default {
     },
   },
   methods: {
-    ...mapActions(["fetchTester", "addNewTester"]),
+    ...mapActions(["fetchTester", "addNewTester", "updateTester"]),
     clearForm() {
       this.form = {
         name: "",
@@ -225,10 +241,28 @@ export default {
           }
           this.loading = false;
         });
-        console.log(this.form);
       }
     },
-    saveChanges() {},
+    saveChanges() {
+      this.$v.$touch();
+      if (this.$v.$invalid) {
+        this.$alertify.error("check form validations");
+      } else {
+        this.loading = true;
+        this.updateTester(this.form).then((r) => {
+          if (r.status) {
+            this.$alertify.success("Tester Updated Successfuly, Page Redirecting Tester List");
+            setTimeout(() => {
+              this.clearForm();
+              this.$router.push("/testers");
+            }, 2000);
+          } else {
+            this.$alertify.error(r.error || "error");
+          }
+          this.loading = false;
+        });
+      }
+    },
   },
   computed: {
     ...mapGetters(["getTesters"]),
