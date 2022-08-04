@@ -1,3 +1,4 @@
+<!-- eslint-disable max-len -->
 <template>
   <div class="wrapper w-full bg-gray-200 h-full flex flex-row fixed">
     <div class="side-bar w-70 h-full bg-mifiblue z-10 flex justify-between flex-col top-0">
@@ -64,10 +65,7 @@
           </div>
           <div class="user-profile h-80 flex items-center">
             <div
-              class="user-circle w-60 h-60
-              bg-mifiblue
-              rounded-full
-               border-2 border-mifired flex items-center justify-center"
+              class="user-circle w-60 h-60 bg-mifiblue rounded-full border-2 border-mifired flex items-center justify-center"
             >
               <span class="text-white font-bold text-xl">SE</span>
             </div>
@@ -83,11 +81,16 @@
   </div>
 </template>
 <script>
+import { mapActions } from "vuex";
+
 export default {
   name: "MainLayout",
   methods: {
+    ...mapActions(["logout"]),
     signOut() {
-      this.$router.push({ name: "Login" });
+      this.logout().then(() => {
+        this.$router.push({ name: "Login" });
+      });
     },
   },
 };

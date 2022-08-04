@@ -92,11 +92,20 @@ export default {
       modalIsOpen: false,
       removedId: 0,
       testers: {
-        thead: ["Tester ID", "Username", "Test Location", "Date of Creation", "Total Floorplan"],
+        thead: [
+          "Tester ID",
+          "Name",
+          "Surname",
+          "Location",
+          "Email",
+          "Phone",
+          "Total Floorplan",
+          "Date of Creation",
+        ],
         data: [],
-        total: 3,
-        pageCount: 1,
-        pagePerCount: 3,
+        totalElements: 0,
+        pageCount: 0,
+        pageSize: 0,
       },
     };
   },
@@ -119,8 +128,24 @@ export default {
   },
   mounted() {
     this.fetchTesterList().then((r) => {
-      this.testers.data = r;
-      this.testers.total = r.length;
+      const testers = [];
+      r.content.forEach((tester) => {
+        const user = {
+          id: tester.id,
+          name: tester.name,
+          surname: tester.surname,
+          location: `${tester.address.city}, ${tester.address.state}`,
+          email: tester.email,
+          phone: tester.phone,
+          total_floorplan: 0,
+          created_at: tester.createdAt,
+        };
+        testers.push(user);
+      });
+      this.testers.data = testers;
+      this.testers.totalElements = r.totalElements;
+      this.testers.pageCount = r.totalPages;
+      this.testers.pageSize = r.size;
     });
   },
 };
