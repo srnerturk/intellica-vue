@@ -1,5 +1,5 @@
 <template>
-  <button :disabled="loading" @click="onClick" type="button" class="action-link form-button">
+  <button :disabled="loading" @click="onClick" :type="type" class="action-link form-button">
     <slot />
     <svg
       v-if="!loading"
@@ -51,6 +51,10 @@ export default {
     loading: {
       type: Boolean,
       default: false,
+    },
+    type: {
+      type: String,
+      default: "button",
     },
   },
   methods: {
