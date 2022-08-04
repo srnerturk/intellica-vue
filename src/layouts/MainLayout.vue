@@ -65,9 +65,9 @@
           </div>
           <div class="user-profile h-80 flex items-center">
             <div
-              class="user-circle w-60 h-60 bg-mifiblue rounded-full border-2 border-mifired flex items-center justify-center"
+              class="user-circle bg-mifiblue rounded-lg cursor-pointer border-2 p-3 flex items-center justify-center"
             >
-              <span class="text-white font-bold text-xl">SE</span>
+              <span class="text-white font-bold text-sm">{{ getEmail }}</span>
             </div>
           </div>
         </div>
@@ -81,7 +81,7 @@
   </div>
 </template>
 <script>
-import { mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 
 export default {
   name: "MainLayout",
@@ -92,6 +92,9 @@ export default {
         this.$router.push({ name: "Login" });
       });
     },
+  },
+  computed: {
+    ...mapGetters(["getEmail"]),
   },
 };
 </script>
