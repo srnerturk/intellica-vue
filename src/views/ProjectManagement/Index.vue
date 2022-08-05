@@ -89,11 +89,11 @@ export default {
       modalIsOpen: false,
       removedId: 0,
       projects: {
-        thead: ["Project ID", "Project Name", "Test Status", "Date of Creation", "Total Floorplan"],
+        thead: ["Project ID", "Project Name", "Test Status", "Total Floorplan", "Date of Creation"],
         data: [],
-        total: 3,
-        pageCount: 1,
-        pagePerCount: 3,
+        totalElements: 0,
+        pageCount: 0,
+        pageSize: 0,
       },
     };
   },
@@ -119,8 +119,21 @@ export default {
   },
   mounted() {
     this.fetchProjectList().then((r) => {
-      this.projects.data = r;
-      this.projects.total = r.length;
+      const projects = [];
+      r.content.forEach((project) => {
+        const user = {
+          id: project.id,
+          name: project.name,
+          status: project.status,
+          floorPlanCount: project.floorPlanCount,
+          created_at: project.createdAt,
+        };
+        projects.push(user);
+      });
+      this.projects.data = projects;
+      this.projects.totalElements = r.totalElements;
+      this.projects.pageCount = r.totalPages;
+      this.projects.pageSize = r.size;
     });
   },
 };
