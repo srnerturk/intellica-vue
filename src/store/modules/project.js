@@ -1,5 +1,6 @@
 /* eslint-disable no-shadow */
-import FakeModule from "@/utils/fakeModule";
+// eslint-disable-next-line import/no-cycle
+import AxiosModule from "@/utils/axiosModule";
 
 const state = {
   projectList: [],
@@ -17,12 +18,24 @@ const mutations = {
 const actions = {
   fetchProjectList({ commit }) {
     return new Promise((resolve, reject) => {
-      new FakeModule().get("/projects.json").then((response) => {
+      new AxiosModule().get("/project/all").then((response) => {
         try {
           commit("setProjectList", response.data);
           resolve(response.data);
         } catch (error) {
           reject(error);
+        }
+      });
+    });
+  },
+  // eslint-disable-next-line no-unused-vars
+  addNewProject({ commit }, project) {
+    return new Promise((resolve) => {
+      new AxiosModule().post("/project/create", project).then((response) => {
+        if (response.status === 200) {
+          resolve({ status: true });
+        } else {
+          resolve({ status: false, error: response.data.message });
         }
       });
     });
