@@ -120,12 +120,12 @@ export default {
   mounted() {
     this.fetchProjectList().then((r) => {
       const projects = [];
-      r.content.forEach((project) => {
+      r.forEach((project) => {
         const user = {
           id: project.id,
           name: project.name,
           status: project.status,
-          floorPlanCount: project.floorPlanCount,
+          floorPlanCount: 0,
           created_at: project.createdAt,
         };
         projects.push(user);

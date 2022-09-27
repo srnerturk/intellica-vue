@@ -1,7 +1,7 @@
 <!-- eslint-disable max-len -->
 <template>
   <div class="page">
-    <h1 class="page-title">Edit Project</h1>
+    <h1 class="page-title">Edit Floor plans</h1>
     <form @submit.prevent="submit" class="add-tester bg-white rounded-lg mb-10 p-5 relative">
       <button
         @click="addTestPoint"

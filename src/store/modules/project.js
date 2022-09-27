@@ -18,7 +18,7 @@ const mutations = {
 const actions = {
   fetchProjectList({ commit }) {
     return new Promise((resolve, reject) => {
-      new AxiosModule().get("/project/all").then((response) => {
+      new AxiosModule().get("/project").then((response) => {
         try {
           commit("setProjectList", response.data);
           resolve(response.data);
@@ -31,11 +31,11 @@ const actions = {
   // eslint-disable-next-line no-unused-vars
   addNewProject({ commit }, project) {
     return new Promise((resolve) => {
-      new AxiosModule().post("/project/create", project).then((response) => {
-        if (response.status === 200) {
+      new AxiosModule().post("/project", project).then((response) => {
+        if (!response.isEror) {
           resolve({ status: true });
         } else {
-          resolve({ status: false, error: response.data.message });
+          resolve({ status: false, error: response.message });
         }
       });
     });

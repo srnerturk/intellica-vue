@@ -3,14 +3,12 @@
     <table class="table w-full hover:table-auto text-sm">
       <thead class="h-40 mb-20 w-full bg-bordergray">
         <tr class="h-40 rounded-t-lg">
-          <th class="rounded-tl-lg"></th>
           <th v-for="th in tableData.thead" :key="th" class="text-sm p-2">{{ th }}</th>
           <th class="rounded-tr-lg">Actions</th>
         </tr>
       </thead>
       <tbody class="bg-white top-5 relative">
         <tr class="hover:bg-gray-200 pointer" v-for="item in tableData.data" :key="item.id">
-          <td class="px-5"><input type="checkbox" /></td>
           <td
             class="border-b border-bordergray p-2 text-center"
             :key="key"
@@ -18,12 +16,12 @@
           >
             {{ value }}
           </td>
-          <td class="border-b border-bordergray p-2 text-center actions">
+          <td class="border-b border-bordergray p-2 text-center actions space-x-2">
             <button @click.stop="goToMap(item.id)" v-if="map">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
+                width="22"
+                height="22"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -40,8 +38,8 @@
             <button v-if="detail">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
+                width="22"
+                height="22"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -61,8 +59,8 @@
             <button @click.stop="onEdit(item.id)" v-if="editable" class="edit">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
+                width="22"
+                height="22"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -78,8 +76,8 @@
             <button @click.stop="onRemove(item.id)" v-if="deletable" class="delete">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
+                width="22"
+                height="22"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="red"

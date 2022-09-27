@@ -15,6 +15,16 @@
                 <div class="error" v-if="!$v.form.name.required">Name is required</div>
               </div>
             </div>
+            <div class="row flex space-x-5">
+              <div class="form-g">
+                <label for="name">Status</label>
+                <select v-model="form.status">
+                  <option value="Not Started">Not Started</option>
+                  <option value="On Going">On Going</option>
+                  <option value="Completed">Completed</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
         <div class="border border-bordergray">
@@ -32,7 +42,7 @@
                 :key="index"
                 v-for="(tester, index) in form.testers"
               >
-                <span class="text-sm text-gray-700 font-light">{{ tester }}</span>
+                <span class="text-sm text-gray-700 font-light">{{ tester.email }}</span>
                 <button @click="removeTester(tester)" class="action-link" type="button">
                   <span class="text-sm">Remove</span>
                 </button>
@@ -45,7 +55,13 @@
                 <label for="country">Tester Name</label>
                 <span class="text-xs font-light text-gray-500 mb-2">Pick and Add Tester</span>
                 <select @change="addTester($event)" v-model="tester" id="tester-pick">
-                  <option :key="tester.id" v-for="tester in testerList" :value="tester.email">
+                  <option value="">Select</option>
+                  <option
+                    :key="tester.id"
+                    v-for="tester in testerList"
+                    :data-email="tester.email"
+                    :value="tester.id"
+                  >
                     {{ tester.name }} {{ tester.surname }}
                   </option>
                 </select>
@@ -63,7 +79,7 @@
           type="button"
           class="action-link"
         >
-          <span class="text-lg font-bold text-mifiblue">Create Tester</span>
+          <span class="text-lg font-bold text-mifiblue">Create Project</span>
         </FormButton>
       </div>
     </form>
@@ -81,7 +97,7 @@ export default {
   },
   mounted() {
     this.fetchTesterList().then((r) => {
-      r.content.forEach((tester) => {
+      r.forEach((tester) => {
         const user = {
           id: tester.id,
           name: tester.name,
@@ -99,6 +115,7 @@ export default {
       tester: "",
       form: {
         name: "",
+        status: "Not Started",
         testers: [],
       },
     };
@@ -113,11 +130,12 @@ export default {
   methods: {
     ...mapActions(["fetchTesterList", "addNewProject"]),
     addTester(e) {
+      const { email } = e.target.selectedOptions[0].dataset;
       const val = e.target.value;
       if (this.form.testers.includes(val) || val === "") {
         return;
       }
-      this.form.testers.push(val);
+      this.form.testers.push({ testerId: parseInt(val, 0), email });
     },
     removeTester(tester) {
       this.form.testers = this.form.testers.filter((t) => t !== tester);
