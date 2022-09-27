@@ -110,7 +110,7 @@ export default {
     };
   },
   methods: {
-    ...mapActions(["fetchTesterList"]),
+    ...mapActions(["fetchTesterList", "deleteTester"]),
     editTester(id) {
       this.$router.push({ name: "TestAddOrUpdate", params: { method: "edit" }, query: { id } });
     },
@@ -121,32 +121,37 @@ export default {
     onCancel() {
       this.modalIsOpen = false;
     },
+    listTesters() {
+      this.fetchTesterList().then((r) => {
+        const testers = [];
+        r.forEach((tester) => {
+          const user = {
+            id: tester.id,
+            name: tester.name,
+            surname: tester.surname,
+            location: `${tester.address.city}, ${tester.address.state}`,
+            email: tester.email,
+            phone: tester.phone,
+            total_floorplan: 0,
+            created_at: tester.createdAt,
+          };
+          testers.push(user);
+        });
+        this.testers.data = testers;
+        this.testers.totalElements = r.totalElements;
+        this.testers.pageCount = r.totalPages;
+        this.testers.pageSize = r.size;
+      });
+    },
     onConfirm() {
-      this.modalIsOpen = false;
-      alert(this.removedId);
+      this.deleteTester(this.removedId).then(() => {
+        this.modalIsOpen = false;
+        this.listTesters();
+      });
     },
   },
   mounted() {
-    this.fetchTesterList().then((r) => {
-      const testers = [];
-      r.forEach((tester) => {
-        const user = {
-          id: tester.id,
-          name: tester.name,
-          surname: tester.surname,
-          location: `${tester.address.city}, ${tester.address.state}`,
-          email: tester.email,
-          phone: tester.phone,
-          total_floorplan: 0,
-          created_at: tester.createdAt,
-        };
-        testers.push(user);
-      });
-      this.testers.data = testers;
-      this.testers.totalElements = r.totalElements;
-      this.testers.pageCount = r.totalPages;
-      this.testers.pageSize = r.size;
-    });
+    this.listTesters();
   },
 };
 </script>

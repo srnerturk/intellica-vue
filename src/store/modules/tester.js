@@ -39,11 +39,11 @@ const actions = {
   // eslint-disable-next-line no-unused-vars
   addNewTester({ commit }, tester) {
     return new Promise((resolve) => {
-      new AxiosModule().post("/tester/create", tester).then((response) => {
-        if (response.status === 200) {
+      new AxiosModule().post("/tester", tester).then((response) => {
+        if (!response.isError) {
           resolve({ status: true });
         } else {
-          resolve({ status: false, error: response.data.message });
+          resolve({ status: false, error: response.message });
         }
       });
     });
@@ -51,11 +51,11 @@ const actions = {
   // eslint-disable-next-line no-unused-vars
   updateTester({ commit }, tester) {
     return new Promise((resolve) => {
-      new AxiosModule().put(`/tester/edit/${tester.id}`, tester).then((response) => {
+      new AxiosModule().put("/tester", tester).then((response) => {
         try {
           resolve({ status: true });
         } catch (error) {
-          resolve({ status: false, error: response.data.message });
+          resolve({ status: false, error: response.message });
         }
       });
     });
@@ -66,6 +66,19 @@ const actions = {
         try {
           commit("setTester", response.data);
           resolve(response.data);
+        } catch (error) {
+          reject(error);
+        }
+      });
+    });
+  },
+  // eslint-disable-next-line no-unused-vars
+  deleteTester({ commit }, id) {
+    console.log(id);
+    return new Promise((resolve, reject) => {
+      new AxiosModule().delete(`/tester/${id}`).then((response) => {
+        try {
+          resolve(response.message);
         } catch (error) {
           reject(error);
         }

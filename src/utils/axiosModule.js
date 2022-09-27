@@ -48,4 +48,13 @@ export default class AxiosModule {
       },
     });
   }
+
+  delete(endpoint, extraHeaders = {}) {
+    return this.instance.delete(endpoint, {
+      headers: {
+        Authorization: this.token ? `Bearer ${this.token}` : null,
+        ...extraHeaders,
+      },
+    });
+  }
 }

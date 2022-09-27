@@ -84,12 +84,12 @@
               <div class="form-g">
                 <label for="address">AddressLine</label>
                 <textarea
-                  v-model="form.address.address"
+                  v-model="form.address.detail"
                   rows="5"
                   tplaceholder="Phone Number"
                   id="address"
                 />
-                <div class="error" v-if="!$v.form.address.address.required">
+                <div class="error" v-if="!$v.form.address.detail.required">
                   Address is required
                 </div>
               </div>
@@ -147,7 +147,7 @@ export default {
             country: tester.address.country,
             city: tester.address.city,
             zipCode: tester.address.zipCode,
-            address: tester.address.address,
+            detail: tester.address.detail,
             state: tester.address.state,
           },
         };
@@ -167,7 +167,7 @@ export default {
           country: "",
           city: "",
           zipCode: "",
-          address: "",
+          detail: "",
           state: "",
         },
       },
@@ -200,7 +200,7 @@ export default {
         zipCode: {
           required,
         },
-        address: {
+        detail: {
           required,
         },
       },
@@ -218,7 +218,7 @@ export default {
           country: "",
           city: "",
           zipCode: "",
-          address: "",
+          detail: "",
           state: "",
         },
       };
