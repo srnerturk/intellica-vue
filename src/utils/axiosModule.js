@@ -11,7 +11,7 @@ export default class AxiosModule {
     });
 
     this.instance.interceptors.response.use(
-      (response) => response,
+      (response) => response.data,
       (error) => {
         const { status } = error.response;
         if (status === 401 && router.currentRoute.name !== "Login") {

@@ -26,7 +26,7 @@ const mutations = {
 const actions = {
   fetchTesterList({ commit }) {
     return new Promise((resolve, reject) => {
-      new AxiosModule().get("/tester/all").then((response) => {
+      new AxiosModule().get("/tester").then((response) => {
         try {
           commit("setTesterList", response.data);
           resolve(response.data);

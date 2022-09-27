@@ -129,7 +129,7 @@ export default {
   mounted() {
     this.fetchTesterList().then((r) => {
       const testers = [];
-      r.content.forEach((tester) => {
+      r.forEach((tester) => {
         const user = {
           id: tester.id,
           name: tester.name,

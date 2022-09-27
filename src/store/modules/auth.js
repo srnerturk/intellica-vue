@@ -19,7 +19,7 @@ const actions = {
           localStorage.setItem("mifi-email", response.data.email);
           resolve({ status: true });
         } else {
-          resolve({ status: false, error: response.data.error || response.data.message });
+          resolve({ status: false, error: response.errorMessage });
         }
       });
     });
