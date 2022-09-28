@@ -98,7 +98,7 @@ export default {
     };
   },
   methods: {
-    ...mapActions(["fetchProjectList"]),
+    ...mapActions(["fetchProjectList", "deleteTester"]),
     editProject(id) {
       this.$router.push({ name: "ProjectEdit", query: { id } });
     },
@@ -113,28 +113,33 @@ export default {
       this.modalIsOpen = false;
     },
     onConfirm() {
-      this.modalIsOpen = false;
-      alert(this.removedId);
+      this.deleteTester(this.removedId).then(() => {
+        this.modalIsOpen = false;
+        this.listProjects();
+      });
+    },
+    listProjects() {
+      this.fetchProjectList().then((r) => {
+        const projects = [];
+        r.forEach((project) => {
+          const user = {
+            id: project.id,
+            name: project.name,
+            status: project.status,
+            floorPlanCount: 0,
+            created_at: project.createdAt,
+          };
+          projects.push(user);
+        });
+        this.projects.data = projects;
+        this.projects.totalElements = r.totalElements;
+        this.projects.pageCount = r.totalPages;
+        this.projects.pageSize = r.size;
+      });
     },
   },
   mounted() {
-    this.fetchProjectList().then((r) => {
-      const projects = [];
-      r.forEach((project) => {
-        const user = {
-          id: project.id,
-          name: project.name,
-          status: project.status,
-          floorPlanCount: 0,
-          created_at: project.createdAt,
-        };
-        projects.push(user);
-      });
-      this.projects.data = projects;
-      this.projects.totalElements = r.totalElements;
-      this.projects.pageCount = r.totalPages;
-      this.projects.pageSize = r.size;
-    });
+    this.listProjects();
   },
 };
 </script>

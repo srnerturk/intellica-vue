@@ -35,7 +35,7 @@
                 <line x1="16" y1="6" x2="16" y2="22"></line>
               </svg>
             </button>
-            <button v-if="detail">
+            <!-- <button v-if="detail">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
@@ -55,7 +55,7 @@
                 <line x1="3" y1="12" x2="3.01" y2="12"></line>
                 <line x1="3" y1="18" x2="3.01" y2="18"></line>
               </svg>
-            </button>
+            </button> -->
             <button @click.stop="onEdit(item.id)" v-if="editable" class="edit">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

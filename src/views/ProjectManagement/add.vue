@@ -131,11 +131,11 @@ export default {
     ...mapActions(["fetchTesterList", "addNewProject"]),
     addTester(e) {
       const { email } = e.target.selectedOptions[0].dataset;
-      const val = e.target.value;
-      if (this.form.testers.includes(val) || val === "") {
+      const val = parseInt(e.target.value, 0);
+      if (this.form.testers.filter((x) => x.testerId === val).length > 0 || Number.isNaN(val)) {
         return;
       }
-      this.form.testers.push({ testerId: parseInt(val, 0), email });
+      this.form.testers.push({ testerId: val, email });
     },
     removeTester(tester) {
       this.form.testers = this.form.testers.filter((t) => t !== tester);
