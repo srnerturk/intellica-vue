@@ -68,6 +68,7 @@
         :detail="true"
         :deletable="true"
         :tableData="projects"
+        url="ProjectList"
       />
     </div>
   </div>
@@ -88,6 +89,7 @@ export default {
     return {
       modalIsOpen: false,
       removedId: 0,
+      currentPage: 0,
       projects: {
         thead: ["Project ID", "Project Name", "Test Status", "Total Floorplan", "Date of Creation"],
         data: [],
@@ -119,9 +121,9 @@ export default {
       });
     },
     listProjects() {
-      this.fetchProjectList().then((r) => {
+      this.fetchProjectList(this.currentPage).then((r) => {
         const projects = [];
-        r.forEach((project) => {
+        r.data.forEach((project) => {
           const user = {
             id: project.id,
             name: project.name,
@@ -132,11 +134,14 @@ export default {
           projects.push(user);
         });
         this.projects.data = projects;
-        this.projects.totalElements = r.totalElements;
-        this.projects.pageCount = r.totalPages;
-        this.projects.pageSize = r.size;
+        this.projects.totalElements = r.totalCount;
+        this.projects.pageCount = Math.ceil(r.totalCount / r.dataPerPage);
+        this.projects.pageSize = r.dataPerPage;
       });
     },
+  },
+  created() {
+    this.currentPage = this.$route.query.page;
   },
   mounted() {
     this.listProjects();

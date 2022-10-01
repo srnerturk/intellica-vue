@@ -235,7 +235,7 @@ export default {
     },
     async getTesters() {
       this.fetchTesterList().then((r) => {
-        r.forEach((tester) => {
+        r.data.forEach((tester) => {
           const user = {
             id: tester.id,
             name: tester.name,
@@ -313,7 +313,7 @@ export default {
           if (r.status) {
             this.$alertify.success("Project Updated Successfuly, Page Redirecting Project List");
             setTimeout(() => {
-              this.$router.push("/projects");
+              this.$router.push("/projects?page=1");
             }, 2000);
           } else {
             this.$alertify.error(r.error || "error");

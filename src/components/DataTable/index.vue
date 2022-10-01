@@ -103,13 +103,19 @@
       class="pager-actions bg-mifiblue w-full h-40 mt-10 flex justify-end items-center rounded-b-lg"
     >
       <span class="text-white text-sm result-text"
-        >Showing {{ tableData.totalElements }} results</span
+        >Showing {{ tableData.data.length }}
+        record in
+        {{ tableData.totalElements }} results</span
       >
-      <select class="select-page min-w-[50px] text-center">
+      <select
+        v-model="currentPage"
+        @change="onPageChange"
+        class="select-page min-w-[50px] text-center"
+      >
         <option :key="n" v-for="n in tableData.pageCount" :value="n">{{ n }}</option>
       </select>
       <div class="arrows flex">
-        <a>
+        <a @click="changePage(getPage - 1)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -126,7 +132,7 @@
             <polyline points="12 19 5 12 12 5"></polyline>
           </svg>
         </a>
-        <a>
+        <a @click="changePage(getPage + 1)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -157,6 +163,17 @@ export default {
     pageble: Boolean,
     detail: Boolean,
     map: Boolean,
+    url: String,
+  },
+  data() {
+    return {
+      currentPage: this.$route.query.page,
+    };
+  },
+  computed: {
+    getPage() {
+      return parseInt(this.$route.query.page, 0);
+    },
   },
   methods: {
     onEdit(id) {
@@ -167,6 +184,15 @@ export default {
     },
     goToMap(id) {
       this.$emit("goToMap", id);
+    },
+    onPageChange(e) {
+      const page = parseInt(e.target.value, 0);
+      this.$router.push({ name: this.url, query: { page } });
+    },
+    changePage(page) {
+      if (page > 0 && page <= this.tableData.pageCount) {
+        this.$router.push({ name: this.url, query: { page } });
+      }
     },
   },
 };

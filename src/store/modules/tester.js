@@ -24,9 +24,9 @@ const mutations = {
   },
 };
 const actions = {
-  fetchTesterList({ commit }) {
+  fetchTesterList({ commit }, cpp = 0) {
     return new Promise((resolve, reject) => {
-      new AxiosModule().get("/tester").then((response) => {
+      new AxiosModule().get(`tester/list/${cpp}`).then((response) => {
         try {
           commit("setTesterList", response.data);
           resolve(response.data);
@@ -62,7 +62,7 @@ const actions = {
   },
   fetchTester({ commit }, id) {
     return new Promise((resolve, reject) => {
-      new AxiosModule().get(`/tester/${id}`).then((response) => {
+      new AxiosModule().get(`/tester/get/${id}`).then((response) => {
         try {
           commit("setTester", response.data);
           resolve(response.data);

@@ -68,6 +68,7 @@
         :editable="true"
         :deletable="true"
         :tableData="testers"
+        url="TesterList"
       />
     </div>
   </div>
@@ -91,6 +92,7 @@ export default {
     return {
       modalIsOpen: false,
       removedId: 0,
+      currentPage: 0,
       testers: {
         thead: [
           "Tester ID",
@@ -122,9 +124,10 @@ export default {
       this.modalIsOpen = false;
     },
     listTesters() {
-      this.fetchTesterList().then((r) => {
+      this.fetchTesterList(this.currentPage).then((r) => {
+        console.log(r);
         const testers = [];
-        r.forEach((tester) => {
+        r.data.forEach((tester) => {
           const user = {
             id: tester.id,
             name: tester.name,
@@ -138,9 +141,9 @@ export default {
           testers.push(user);
         });
         this.testers.data = testers;
-        this.testers.totalElements = r.totalElements;
-        this.testers.pageCount = r.totalPages;
-        this.testers.pageSize = r.size;
+        this.testers.totalElements = r.totalCount;
+        this.testers.pageCount = Math.ceil(r.totalCount / r.dataPerPage);
+        this.testers.pageSize = r.dataPerPage;
       });
     },
     onConfirm() {
@@ -149,6 +152,9 @@ export default {
         this.listTesters();
       });
     },
+  },
+  created() {
+    this.currentPage = this.$route.query.page;
   },
   mounted() {
     this.listTesters();

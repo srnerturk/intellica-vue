@@ -23,9 +23,9 @@ const mutations = {
   },
 };
 const actions = {
-  fetchProjectList({ commit }) {
+  fetchProjectList({ commit }, cpp = 0) {
     return new Promise((resolve, reject) => {
-      new AxiosModule().get("/project").then((response) => {
+      new AxiosModule().get(`project/list/${cpp}`).then((response) => {
         try {
           commit("setProjectList", response.data);
           resolve(response.data);
@@ -37,7 +37,7 @@ const actions = {
   },
   fetchProject({ commit }, id) {
     return new Promise((resolve, reject) => {
-      new AxiosModule().get(`/project/${id}`).then((response) => {
+      new AxiosModule().get(`/project/get/${id}`).then((response) => {
         try {
           commit("setProject", response.data);
           resolve(response.data);

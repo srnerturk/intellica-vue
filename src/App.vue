@@ -54,8 +54,8 @@
   textarea {
     @apply text-sm rounded pl-2 outline-none;
     background: #e4ecf5;
-    min-width: 250px;
-    height: 38px;
+    min-width: 210px;
+    height: 42px;
     font-size: 13px;
   }
   textarea {
