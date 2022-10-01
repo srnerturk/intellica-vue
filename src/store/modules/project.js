@@ -60,6 +60,18 @@ const actions = {
     });
   },
   // eslint-disable-next-line no-unused-vars
+  updateTestPoint({ commit }, floorPlan) {
+    return new Promise((resolve) => {
+      new AxiosModule().post("/TestPoint", floorPlan).then((response) => {
+        try {
+          resolve({ status: true });
+        } catch (error) {
+          resolve({ status: false, error: response.message });
+        }
+      });
+    });
+  },
+  // eslint-disable-next-line no-unused-vars
   addNewProject({ commit }, project) {
     return new Promise((resolve) => {
       new AxiosModule().post("/project", project).then((response) => {

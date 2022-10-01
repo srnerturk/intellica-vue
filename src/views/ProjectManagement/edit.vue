@@ -260,6 +260,7 @@ export default {
           path: response.path,
           image: url,
           projectId: this.form.id,
+          isNew: true,
         };
         this.currentPlan = url;
         this.form.plans.push(image);
@@ -301,6 +302,13 @@ export default {
         this.$alertify.error("check form validations");
       } else {
         this.loading = true;
+        const newForms = this.form.plans.map((form) => {
+          if (form.isNew) {
+            return { ...form, id: 0 };
+          }
+          return form;
+        });
+        this.form.plans = newForms;
         this.updateProject(this.form).then((r) => {
           if (r.status) {
             this.$alertify.success("Project Updated Successfuly, Page Redirecting Project List");

@@ -3,29 +3,13 @@
   <div class="page">
     <h1 class="page-title">Edit Floor plans</h1>
     <form @submit.prevent="submit" class="add-tester bg-white rounded-lg mb-10 p-5 relative">
-      <button
+      <FormButton
         @click="addTestPoint"
         type="button"
         class="action-link absolute right-[20px] top-[8px]"
       >
         <span class="text-lg font-bold text-mifiblue">Add Test Point</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#1C2749"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="feather feather-plus-circle"
-        >
-          <circle cx="12" cy="12" r="10"></circle>
-          <line x1="12" y1="8" x2="12" y2="16"></line>
-          <line x1="8" y1="12" x2="16" y2="12"></line>
-        </svg>
-      </button>
+      </FormButton>
       <div class="header flex items-center space-x-2 mb-2">
         <div class="row-header bg-mifiblue p-2">
           <p class="text-white text-sm font-bold">Project Name: Project</p>
@@ -33,8 +17,9 @@
         <div class="assigned flex space-x-2">
           <p class="text-sm font-bold">Assigned Testers:</p>
           <div class="testers flex space-x-1">
-            <span class="text-sm">Serhan</span>
-            <span class="text-sm">Hasan</span>
+            <span :key="tester.id" v-for="tester in project.testers" class="text-sm">{{
+              tester.email
+            }}</span>
           </div>
         </div>
       </div>
@@ -45,7 +30,11 @@
             class="floorplan flex items-center justify-center w-full p-5 bg-[#E4ECF5]"
           >
             <div class="image-contain w-[500px] h-[400px] relative">
-              <img class="w-full h-[400px] object-contain" :src="currentPlan.image" alt="floor" />
+              <img
+                class="w-full h-[400px] object-contain"
+                :src="`${cdnUrl}/${currentPlan.path}`"
+                alt="floor"
+              />
               <div class="points h-full w-[500px] absolute top-0 left-0">
                 <vue-draggable-resizable
                   :w="35"
@@ -59,7 +48,7 @@
                   v-for="(point, index) in currentPlan.points"
                   class="point cursor-pointer font-bold absolute bg-[#E4ECF5] border-2 border-blue-500 w-[35px] h-[35px] rounded-full flex items-center justify-center"
                 >
-                  {{ point.id }}
+                  {{ index + 1 }}
                 </vue-draggable-resizable>
               </div>
             </div>
@@ -79,13 +68,13 @@
               <div
                 @click="changeImage(item.id)"
                 :key="item.id"
-                v-for="item in plans"
+                v-for="item in project.plans"
                 class="plan-list w-[90px] relative"
               >
                 <img
                   :class="{ activeImage: item.id === currentPlan.id }"
                   class="w-full border-2 h-[70px] object-contain border-gray-100 hover:border-blue-500 cursor-pointer"
-                  :src="item.image"
+                  :src="`${cdnUrl}/${item.path}`"
                   alt="plan"
                 />
               </div>
@@ -95,63 +84,73 @@
       </div>
 
       <div class="actions flex justify-end mt-6">
-        <button type="submit" class="action-link">
-          <span class="text-lg font-bold text-mifiblue">Save Changes</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#1C2749"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-plus-circle"
-          >
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="12" y1="8" x2="12" y2="16"></line>
-            <line x1="8" y1="12" x2="16" y2="12"></line>
-          </svg>
+        <button class="action-link form-button">
+          <span class="text-lg font-bold text-mifired">Remove Floorplan</span>
         </button>
+        <FormButton @click="update" :loading="loading" type="button" class="action-link">
+          <span class="text-lg font-bold text-mifiblue">Save Changes</span>
+        </FormButton>
       </div>
     </form>
   </div>
 </template>
 <script>
+import { mapActions } from "vuex";
+import FormButton from "@/components/formButton/index.vue";
+
 export default {
   name: "EditFloorPlan",
+  components: {
+    FormButton,
+  },
   created() {
-    // eslint-disable-next-line prefer-destructuring
-    this.currentPlan = this.plans[0];
+    const { id } = this.$route.query;
+    this.fetchProject(id).then((project) => {
+      const testers = [];
+      if (project.testers.length > 0) {
+        project.testers.forEach((t) => {
+          const user = {
+            testerId: t.tester.id,
+            email: t.tester.email,
+          };
+          testers.push(user);
+        });
+      }
+      this.project = {
+        id: project.id,
+        name: project.name,
+        status: project.status,
+        testers,
+        plans: project.plans,
+      };
+      // eslint-disable-next-line prefer-destructuring
+      this.currentPlan = this.project.plans[0];
+    });
   },
   data() {
     return {
+      cdnUrl: process.env.VUE_APP_IMAGE_CDN,
+      loading: false,
       currentPlan: null,
       x: 0,
       y: 0,
-      plans: [
-        {
-          id: 0,
-          // eslint-disable-next-line global-require
-          image: require("@/assets/images/floor1.png"),
-          points: [],
-        },
-        {
-          id: 1,
-          // eslint-disable-next-line global-require
-          image: require("@/assets/images/floor1.png"),
-          points: [],
-        },
-      ],
+      project: {
+        plans: [],
+        testers: [],
+        id: 0,
+        name: 0,
+      },
     };
   },
   methods: {
+    ...mapActions(["fetchProject", "updateTestPoint"]),
     addTestPoint() {
       this.currentPlan.points.push({
         x: Math.floor(Math.random() * 250),
         y: Math.floor(Math.random() * 250),
         id: this.currentPlan.points.length + 1,
+        floorPlanId: this.currentPlan.id,
+        isNew: true,
       });
     },
     onDrag(x, y) {
@@ -165,26 +164,30 @@ export default {
       console.log("stop", id, this.x, this.y);
     },
     changeImage(id) {
-      const image = this.plans.find((item) => item.id === id);
+      const image = this.project.plans.find((item) => item.id === id);
       this.currentPlan = image;
     },
     getImageUrl(url) {
       // eslint-disable-next-line import/no-dynamic-require, global-require
       return require(`@/assets/images/${url}`);
     },
-    addTester(e) {
-      const val = e.target.value;
-      this.tester = val;
-      if (this.testers.includes(val) || val === "") {
-        return;
-      }
-      this.testers.push(val);
-    },
-    removeTester(tester) {
-      this.testers = this.testers.filter((t) => t !== tester);
-    },
-    submit() {
-      console.log("plans", this.plans);
+    update() {
+      this.loading = true;
+      const newPoints = this.currentPlan.points.map((point) => {
+        if (point.isNew) {
+          return { ...point, id: 0 };
+        }
+        return point;
+      });
+      this.currentPlan.points = newPoints;
+      this.updateTestPoint(this.currentPlan).then((r) => {
+        this.loading = false;
+        if (r.status) {
+          this.$alertify.success("FloorPlan Updated Successfuly");
+        } else {
+          this.$alertify.error(r.error || "error");
+        }
+      });
     },
   },
 };
