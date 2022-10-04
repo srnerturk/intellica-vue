@@ -26,7 +26,16 @@ const routes = [
   {
     path: "/register",
     name: "Register",
-    component: () => import(/* webpackChunkName: "login" */ "../views/auth/Register.vue"),
+    component: () => import(/* webpackChunkName: "register" */ "../views/auth/Register.vue"),
+    meta: {
+      layout: "LoginLayout",
+      requiresAuth: false,
+    },
+  },
+  {
+    path: "/create-password",
+    name: "CreatePassword",
+    component: () => import(/* webpackChunkName: "create-password" */ "../views/auth/CreatePassword.vue"),
     meta: {
       layout: "LoginLayout",
       requiresAuth: false,
@@ -71,7 +80,7 @@ const routes = [
   {
     path: "/projects/edit",
     name: "ProjectEdit",
-    component: () => import(/* webpackChunkName: "project add" */ "../views/ProjectManagement/edit.vue"),
+    component: () => import(/* webpackChunkName: "project edit" */ "../views/ProjectManagement/edit.vue"),
     meta: {
       layout: "MainLayout",
       requiresAuth: true,
@@ -80,7 +89,7 @@ const routes = [
   {
     path: "/projects/edit-floor-plan",
     name: "EditFloorPlan",
-    component: () => import(/* webpackChunkName: "project add" */ "../views/ProjectManagement/edit-floorplan.vue"),
+    component: () => import(/* webpackChunkName: "project floor" */ "../views/ProjectManagement/edit-floorplan.vue"),
     meta: {
       layout: "MainLayout",
       requiresAuth: true,

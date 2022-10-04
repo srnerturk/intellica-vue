@@ -11,12 +11,13 @@ const actions = {
   login({ commit }, user) {
     return new Promise((resolve) => {
       new AxiosModule().post("/auth/login", user).then((response) => {
-        const token = response.data.accessToken;
-        if (token) {
+        if (!response.isError) {
+          const token = response.data.accessToken;
           commit("setToken", token);
           commit("setEmail", response.data.email);
           localStorage.setItem("mifi-token", token);
           localStorage.setItem("mifi-email", response.data.email);
+          localStorage.setItem("mifi-user-token", response.data.UserToken);
           resolve({ status: true });
         } else {
           resolve({ status: false, error: response.message });
@@ -40,7 +41,20 @@ const actions = {
         if (response.status === 200) {
           resolve({ status: true });
         } else {
-          resolve({ status: false, error: response.data.message });
+          resolve({ status: false, error: response.message });
+        }
+      });
+    });
+  },
+  // eslint-disable-next-line no-unused-vars
+  activateAccount({ commit }, credentials) {
+    return new Promise((resolve) => {
+      new AxiosModule().post("/auth/activateAccount", credentials).then((response) => {
+        console.log(response);
+        if (!response.isError) {
+          resolve({ status: true });
+        } else {
+          resolve({ status: false, error: response.message });
         }
       });
     });

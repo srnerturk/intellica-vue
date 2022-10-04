@@ -1,91 +1,15 @@
 <!-- eslint-disable max-len -->
 <template>
   <div
-    class="login-wrapper w-full p-2 h-full fixed flex flex-col justify-center items-center bg-gray-200"
+    class="login-wrapper w-full p-2 h-full fixed flex justify-center items-center flex-col bg-gray-200"
   >
     <div class="head w-full lg:w-[500px] mb-5 flex flex-row justify-between items-center">
       <img class="w-[140px]" src="@/assets/icons/logo.svg" alt="logo" />
-      <h1 class="text-xl font-bold text-mifiblue">Register</h1>
+      <h1 class="text-xl font-bold text-mifiblue">Create Password</h1>
     </div>
-    <form
-      @submit.prevent="onSubmit"
-      class="login relative w-full lg:w-[500px] bg-gray-50 rounded-md flex items-center justify-center flex-col p-10 z-10"
+    <div
+      class="login w-full lg:w-[500px] relative bg-gray-50 rounded-md flex items-center justify-center flex-col p-10 z-10"
     >
-      <div class="form-element p-2 mb-1 relative w-full">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="18"
-          height="18"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#212C55"
-          stroke-width="1"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="feather feather-user absolute top-4"
-        >
-          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-          <circle cx="12" cy="7" r="4"></circle>
-        </svg>
-        <input
-          class="bg-transparent h-40 w-full border-b-2 border-b-gray-300 outline-0 focus:border-b-gray-500 pl-6"
-          v-model="user.name"
-          type="text"
-          placeholder="Name"
-        />
-        <div class="error" v-if="!$v.user.name.required">Name is required</div>
-      </div>
-      <div class="form-element p-2 mb-1 relative w-full">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="18"
-          height="18"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#212C55"
-          stroke-width="1"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="feather feather-user absolute top-4"
-        >
-          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-          <circle cx="12" cy="7" r="4"></circle>
-        </svg>
-        <input
-          class="bg-transparent h-40 w-full border-b-2 border-b-gray-300 outline-0 focus:border-b-gray-500 pl-6"
-          v-model="user.surname"
-          type="text"
-          placeholder="Surname"
-        />
-        <div class="error" v-if="!$v.user.surname.required">Surname is required</div>
-      </div>
-      <div class="form-element p-2 mb-1 relative w-full">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="18"
-          height="18"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#212C55"
-          stroke-width="1"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="feather feather-mail absolute top-4"
-        >
-          <path
-            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-          ></path>
-          <polyline points="22,6 12,13 2,6"></polyline>
-        </svg>
-        <input
-          class="border-0 bg-transparent h-40 w-full border-b-2 border-b-gray-300 outline-0 focus:border-b-gray-500 pl-6"
-          v-model="user.email"
-          type="email"
-          placeholder="Email"
-        />
-        <div class="error" v-if="!$v.user.email.required">Email is required</div>
-      </div>
-
       <div class="form-element p-2 mb-1 relative w-full">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +27,7 @@
           <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
         </svg>
         <input
-          class="border-0 bg-transparent h-40 w-full border-b-2 border-b-gray-300 outline-0 focus:border-b-gray-500 pl-6"
+          class="bg-transparent h-40 w-full border-b-2 border-b-gray-300 outline-0 focus:border-b-gray-500 pl-6"
           v-model="user.password"
           type="password"
           placeholder="Password"
@@ -113,7 +37,6 @@
         </div>
         <div class="error" v-if="!$v.user.password.required">Password is required</div>
       </div>
-
       <div class="form-element p-2 mb-5 relative w-full">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -134,17 +57,17 @@
           class="border-0 bg-transparent h-40 w-full border-b-2 border-b-gray-300 outline-0 focus:border-b-gray-500 pl-6"
           v-model="user.passwordRpt"
           type="password"
-          placeholder="Re-enter Password"
+          placeholder="Password Repeat"
         />
         <div class="error" v-if="!$v.user.passwordRpt.sameAs">passwords must be the same</div>
       </div>
-      <div class="action p-2 flex items-center justify-center flex-col">
+      <div class="action p-2 flex items-center justify-start flex-col">
         <button
           :disabled="$v.$invalid"
-          type="submit"
-          class="bg-blue-800 text-amber-50 px-10 py-2 rounded-md text-sm font-bold register-btn"
+          @click="changePassword"
+          class="bg-blue-800 register-btn text-amber-50 px-10 py-2 rounded-md text-sm font-bold"
         >
-          Register
+          Change Password
         </button>
         <router-link class="text-sm font-medium text-mifiblue mt-2 underline" to="/login"
           >go to login page</router-link
@@ -174,21 +97,18 @@
           <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
         </svg>
       </div>
-    </form>
+    </div>
   </div>
 </template>
 <script>
-import { mapActions } from "vuex";
 import { required, sameAs, minLength } from "vuelidate/lib/validators";
+import { mapActions } from "vuex";
 
 export default {
-  name: "Register",
+  name: "CreatePassword",
   data() {
     return {
       user: {
-        name: "",
-        surname: "",
-        email: "",
         password: "",
         passwordRpt: "",
       },
@@ -197,16 +117,8 @@ export default {
     };
   },
   validations: {
+    token: "",
     user: {
-      name: {
-        required,
-      },
-      surname: {
-        required,
-      },
-      email: {
-        required,
-      },
       password: {
         required,
         minLength: minLength(8),
@@ -216,16 +128,21 @@ export default {
       },
     },
   },
+  created() {
+    this.token = this.$route.query.token;
+  },
   methods: {
-    ...mapActions(["register"]),
-    onSubmit() {
+    ...mapActions(["activateAccount"]),
+    changePassword() {
       this.$v.$touch();
       if (this.$v.$invalid) {
         this.$alertify.error("check form validations");
       } else {
-        this.loading = true;
-        this.register(this.user).then((r) => {
-          console.log(r);
+        const obj = {
+          password: this.user.password,
+          token: this.token,
+        };
+        this.activateAccount(obj).then((r) => {
           if (r.status) {
             this.$router.push({ name: "Login" });
           } else {
@@ -238,6 +155,7 @@ export default {
   },
 };
 </script>
+
 <style lang="css">
 .form-element .error {
   color: #d1264d;
