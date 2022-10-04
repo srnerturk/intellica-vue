@@ -29,10 +29,18 @@
                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
               </svg>
               <input
+                @keyup.enter="search"
+                v-model="q"
                 class="min-w-[250px] text-sm pl-2 h-[25px] outline-none"
                 type="text"
-                placeholder="id username or location"
+                placeholder="search name or email"
               />
+              <button
+                @click="search"
+                class="button text-sm bg-mifiblue text-white py-1 px-2 rounded-sm"
+              >
+                Search
+              </button>
             </div>
           </div>
         </div>
@@ -93,6 +101,7 @@ export default {
       modalIsOpen: false,
       removedId: 0,
       currentPage: 0,
+      q: "",
       testers: {
         thead: [
           "Tester ID",
@@ -123,9 +132,12 @@ export default {
     onCancel() {
       this.modalIsOpen = false;
     },
+    search() {
+      this.listTesters();
+    },
     listTesters() {
-      this.fetchTesterList(this.currentPage).then((r) => {
-        console.log(r);
+      console.log("search-term", this.q);
+      this.fetchTesterList({ page: this.currentPage, q: this.q }).then((r) => {
         const testers = [];
         r.data.forEach((tester) => {
           const user = {

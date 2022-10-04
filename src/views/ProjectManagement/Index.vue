@@ -29,10 +29,18 @@
                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
               </svg>
               <input
+                @keyup.enter="search"
+                v-model="q"
                 class="min-w-[250px] text-sm pl-2 h-[25px] outline-none"
                 type="text"
                 placeholder="id username or location"
               />
+              <button
+                @click="search"
+                class="button text-sm bg-mifiblue text-white py-1 px-2 rounded-sm"
+              >
+                Search
+              </button>
             </div>
           </div>
         </div>
@@ -87,6 +95,7 @@ export default {
   },
   data() {
     return {
+      q: "",
       modalIsOpen: false,
       removedId: 0,
       currentPage: 0,
@@ -120,8 +129,11 @@ export default {
         this.listProjects();
       });
     },
+    search() {
+      this.listProjects();
+    },
     listProjects() {
-      this.fetchProjectList(this.currentPage).then((r) => {
+      this.fetchProjectList({ page: this.currentPage, q: this.q }).then((r) => {
         const projects = [];
         r.data.forEach((project) => {
           const user = {

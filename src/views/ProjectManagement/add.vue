@@ -96,7 +96,7 @@ export default {
     FormButton,
   },
   mounted() {
-    this.fetchTesterList().then((r) => {
+    this.fetchTesterList({ page: 0, q: "" }).then((r) => {
       r.data.forEach((tester) => {
         const user = {
           id: tester.id,

@@ -23,9 +23,10 @@ const mutations = {
   },
 };
 const actions = {
-  fetchProjectList({ commit }, cpp = 0) {
+  fetchProjectList({ commit }, data) {
+    const url = `project/list/${data.page}/${data.q}`;
     return new Promise((resolve, reject) => {
-      new AxiosModule().get(`project/list/${cpp}`).then((response) => {
+      new AxiosModule().get(url).then((response) => {
         try {
           commit("setProjectList", response.data);
           resolve(response.data);
