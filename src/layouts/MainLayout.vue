@@ -19,8 +19,14 @@
               <span class="text-white">Dashboard</span>
             </router-link>
           </li>
-          <li>
-            <router-link to="/testers?page=1">
+          <li v-if="getUser.role === 'Tester'">
+            <router-link :to="`/testers/edit?id=${getUser.id}`">
+              <img src="@/assets/icons/user.svg" alt="profile" />
+              <span class="text-white">My Profile</span>
+            </router-link>
+          </li>
+          <li v-if="getUser.role !== 'Tester'">
+            <router-link :to="`/testers?page=1`">
               <img src="@/assets/icons/device_list.svg" alt="tester list" />
               <span class="text-white">Testers</span>
             </router-link>
@@ -61,7 +67,9 @@
             <div
               class="user-circle bg-mifiblue rounded-lg cursor-pointer border-2 p-3 flex items-center justify-center"
             >
-              <span class="text-white font-bold text-sm">{{ getEmail }}</span>
+              <span class="text-white font-bold text-sm"
+                >{{ getUser.name }} {{ getUser.surname }} - {{ getUser.role }}</span
+              >
             </div>
           </div>
         </div>
@@ -88,7 +96,7 @@ export default {
     },
   },
   computed: {
-    ...mapGetters(["getEmail"]),
+    ...mapGetters(["getUser"]),
   },
 };
 </script>

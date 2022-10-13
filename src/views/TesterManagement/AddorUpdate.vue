@@ -388,11 +388,11 @@ export default {
           email: tester.email,
           phone: tester.phone,
           address: {
-            country: tester.address.country,
-            city: tester.address.city,
-            zipCode: tester.address.zipCode,
-            detail: tester.address.detail,
-            state: tester.address.state,
+            country: tester.address?.country,
+            city: tester.address?.city,
+            zipCode: tester.address?.zipCode,
+            detail: tester.address?.detail,
+            state: tester.address?.state,
           },
         };
       });

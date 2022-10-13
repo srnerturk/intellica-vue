@@ -56,7 +56,11 @@
                 <line x1="3" y1="18" x2="3.01" y2="18"></line>
               </svg>
             </button> -->
-            <button @click.stop="onEdit(item.id)" v-if="editable" class="edit">
+            <button
+              @click.stop="onEdit(item.id)"
+              v-if="editable && getUser.role !== 'Tester'"
+              class="edit"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
@@ -73,7 +77,11 @@
                 <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
               </svg>
             </button>
-            <button @click.stop="onRemove(item.id)" v-if="deletable" class="delete">
+            <button
+              @click.stop="onRemove(item.id)"
+              v-if="deletable && getUser.role !== 'Tester'"
+              class="delete"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
@@ -154,6 +162,8 @@
   </div>
 </template>
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   name: "DataTable",
   props: {
@@ -171,6 +181,7 @@ export default {
     };
   },
   computed: {
+    ...mapGetters(["getUser"]),
     getPage() {
       return parseInt(this.$route.query.page, 0);
     },

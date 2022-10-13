@@ -48,6 +48,7 @@ const routes = [
     meta: {
       layout: "MainLayout",
       requiresAuth: true,
+      role: "admin",
     },
   },
   {
@@ -89,7 +90,20 @@ const routes = [
   {
     path: "/projects/edit-floor-plan",
     name: "EditFloorPlan",
-    component: () => import(/* webpackChunkName: "project floor" */ "../views/ProjectManagement/edit-floorplan.vue"),
+    component: () => import(
+      /* webpackChunkName: "project floor" */ "../views/ProjectManagement/edit-floorplan.vue"
+    ),
+    meta: {
+      layout: "MainLayout",
+      requiresAuth: true,
+    },
+  },
+  {
+    path: "/projects/edit-floor-plan-tester",
+    name: "EditFloorPlanTester",
+    component: () => import(
+      /* webpackChunkName: "project floor" */ "../views/ProjectManagement/edit-floorplan-tester.vue"
+    ),
     meta: {
       layout: "MainLayout",
       requiresAuth: true,

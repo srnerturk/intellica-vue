@@ -5,6 +5,7 @@ import Vuex from "vuex";
 import auth from "./modules/auth";
 import tester from "./modules/tester";
 import projects from "./modules/project";
+import device from "./modules/device";
 
 Vue.use(Vuex);
 
@@ -16,5 +17,6 @@ export default new Vuex.Store({
     auth,
     tester,
     projects,
+    device,
   },
 });

@@ -5,6 +5,7 @@ import AxiosModule from "@/utils/axiosModule";
 const state = {
   projectList: [],
   project: {},
+  dashboard: {},
 };
 const getters = {
   getProjects(state) {
@@ -12,6 +13,9 @@ const getters = {
   },
   getProject(state) {
     return state.project;
+  },
+  getDashboard(state) {
+    return state.dashboard;
   },
 };
 const mutations = {
@@ -21,10 +25,38 @@ const mutations = {
   setProject(state, data) {
     state.project = data;
   },
+  setDashboardData(state, data) {
+    state.dashboard = data;
+  },
 };
 const actions = {
   fetchProjectList({ commit }, data) {
     const url = `project/list/${data.page}/${data.q}`;
+    return new Promise((resolve, reject) => {
+      new AxiosModule().get(url).then((response) => {
+        try {
+          commit("setProjectList", response.data);
+          resolve(response.data);
+        } catch (error) {
+          reject(error);
+        }
+      });
+    });
+  },
+  fetchDashboardData({ commit }) {
+    return new Promise((resolve, reject) => {
+      new AxiosModule().get("/dashboard").then((response) => {
+        try {
+          commit("setDashboardData", response.data);
+          resolve(response.data);
+        } catch (error) {
+          reject(error);
+        }
+      });
+    });
+  },
+  fetchMyProjectList({ commit }, data) {
+    const url = `project/getMyProjects/${data.page}/${data.q}`;
     return new Promise((resolve, reject) => {
       new AxiosModule().get(url).then((response) => {
         try {

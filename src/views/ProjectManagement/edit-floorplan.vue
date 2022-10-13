@@ -84,9 +84,6 @@
       </div>
 
       <div class="actions flex justify-end mt-6">
-        <button class="action-link form-button">
-          <span class="text-lg font-bold text-mifired">Remove Floorplan</span>
-        </button>
         <FormButton @click="update" :loading="loading" type="button" class="action-link">
           <span class="text-lg font-bold text-mifiblue">Save Changes</span>
         </FormButton>

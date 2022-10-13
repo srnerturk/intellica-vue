@@ -94,7 +94,7 @@ export default {
     ConfirmModal,
   },
   computed: {
-    ...mapGetters(["getTesters"]),
+    ...mapGetters(["getTesters", "getUser"]),
   },
   data() {
     return {
@@ -144,7 +144,7 @@ export default {
             id: tester.id,
             name: tester.name,
             surname: tester.surname,
-            location: `${tester.address.city}, ${tester.address.state}`,
+            location: `${tester.address?.city || "empty"}, ${tester.address?.state || "empty"}`,
             email: tester.email,
             phone: tester.phone,
             total_floorplan: 0,

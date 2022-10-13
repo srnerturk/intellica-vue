@@ -15,8 +15,10 @@ Vue.use(VueAlertify);
 Vue.use(Vuelidate);
 Vue.component("vue-draggable-resizable", VueDraggableResizable);
 
-new Vue({
-  router,
-  store,
-  render: (h) => h(App),
-}).$mount("#app");
+store.dispatch("GetUserByEmail").then(() => {
+  new Vue({
+    router,
+    store,
+    render: (h) => h(App),
+  }).$mount("#app");
+});

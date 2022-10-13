@@ -45,7 +45,11 @@
           </div>
         </div>
         <div class="right">
-          <router-link class="action-link" :to="{ name: 'ProjectAdd' }">
+          <router-link
+            v-if="getUser.role !== 'Tester'"
+            class="action-link"
+            :to="{ name: 'ProjectAdd' }"
+          >
             <span class="text-lg font-bold text-mifiblue">Add New Project</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +87,7 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 import ConfirmModal from "@/components/ConfirmModal/index.vue";
 import DataTable from "@/components/DataTable/index.vue";
 
@@ -108,13 +112,17 @@ export default {
       },
     };
   },
+  computed: {
+    ...mapGetters(["getUser"]),
+  },
   methods: {
-    ...mapActions(["fetchProjectList", "deleteTester"]),
+    ...mapActions(["fetchProjectList", "deleteTester", "fetchMyProjectList"]),
     editProject(id) {
       this.$router.push({ name: "ProjectEdit", query: { id } });
     },
     goToMap(id) {
-      this.$router.push({ name: "EditFloorPlan", query: { id } });
+      const route = this.getUser.role !== "Tester" ? "EditFloorPlan" : "EditFloorPlanTester";
+      this.$router.push({ name: route, query: { id } });
     },
     removeProject(id) {
       this.modalIsOpen = true;
@@ -133,23 +141,43 @@ export default {
       this.listProjects();
     },
     listProjects() {
-      this.fetchProjectList({ page: this.currentPage, q: this.q }).then((r) => {
-        const projects = [];
-        r.data.forEach((project) => {
-          const user = {
-            id: project.id,
-            name: project.name,
-            status: project.status,
-            floorPlanCount: 0,
-            created_at: project.createdAt,
-          };
-          projects.push(user);
+      if (this.getUser.role !== "Tester") {
+        this.fetchProjectList({ page: this.currentPage, q: this.q }).then((r) => {
+          const projects = [];
+          r.data.forEach((project) => {
+            const user = {
+              id: project.id,
+              name: project.name,
+              status: project.status,
+              floorPlanCount: 0,
+              created_at: project.createdAt,
+            };
+            projects.push(user);
+          });
+          this.projects.data = projects;
+          this.projects.totalElements = r.totalCount;
+          this.projects.pageCount = Math.ceil(r.totalCount / r.dataPerPage);
+          this.projects.pageSize = r.dataPerPage;
         });
-        this.projects.data = projects;
-        this.projects.totalElements = r.totalCount;
-        this.projects.pageCount = Math.ceil(r.totalCount / r.dataPerPage);
-        this.projects.pageSize = r.dataPerPage;
-      });
+      } else {
+        this.fetchMyProjectList({ page: this.currentPage, q: this.q }).then((r) => {
+          const projects = [];
+          r.data.forEach((project) => {
+            const user = {
+              id: project.id,
+              name: project.name,
+              status: project.status,
+              floorPlanCount: 0,
+              created_at: project.createdAt,
+            };
+            projects.push(user);
+          });
+          this.projects.data = projects;
+          this.projects.totalElements = r.totalCount;
+          this.projects.pageCount = Math.ceil(r.totalCount / r.dataPerPage);
+          this.projects.pageSize = r.dataPerPage;
+        });
+      }
     },
   },
   created() {

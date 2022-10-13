@@ -97,6 +97,32 @@
           stroke-width="1"
           stroke-linecap="round"
           stroke-linejoin="round"
+          class="feather feather-phone absolute top-4"
+        >
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+          ></path>
+        </svg>
+        <input
+          class="border-0 bg-transparent h-40 w-full border-b-2 border-b-gray-300 outline-0 focus:border-b-gray-500 pl-6"
+          v-model="user.phone"
+          type="text"
+          placeholder="Phone"
+        />
+        <div class="error" v-if="!$v.user.phone.required">Phone is required</div>
+      </div>
+
+      <div class="form-element p-2 mb-1 relative w-full">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#212C55"
+          stroke-width="1"
+          stroke-linecap="round"
+          stroke-linejoin="round"
           class="feather feather-lock absolute top-4"
         >
           <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
@@ -189,6 +215,7 @@ export default {
         name: "",
         surname: "",
         email: "",
+        phone: "",
         password: "",
         passwordRpt: "",
       },
@@ -205,6 +232,9 @@ export default {
         required,
       },
       email: {
+        required,
+      },
+      phone: {
         required,
       },
       password: {
